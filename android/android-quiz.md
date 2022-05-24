@@ -696,7 +696,7 @@ xml
 - [x] /mipmap
 - [ ] /launcher
 
-#### Q46. Which drawable definition allows you to achieve the shape below?
+#### Q46. Which of this drawable definition allows you to achieve the shape below?
 
 ![img](image/43.jpeg)
 
