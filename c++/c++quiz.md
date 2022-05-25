@@ -372,7 +372,7 @@ void *ptr;
 
 [Reference](https://en.cppreference.com/w/cpp/language/pointer)
 
-#### Q25. What is the output of this code?
+#### Q25. What is the output in the next code?
 
 ```cpp
 int c=3; char d='A';
@@ -384,7 +384,7 @@ std::printf("c is %d and d is %c",c,d);
 - [x] c is 3 and d is A
 - [ ] c is c and d is d
 
-#### Q26. What is the output of this code?
+#### Q26. What is the output of the following code?
 
 ```cpp
 printf("1/2 = %f",(float)(1/2));
@@ -526,7 +526,7 @@ public class Dog extends Animal {
 };
 ```
 
-#### Q34. What is the output of this code?
+#### Q34. What is the output?
 
 ```cpp
 #include <cstdio>
