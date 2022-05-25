@@ -1203,18 +1203,11 @@ $('custom').dequeue();
 
 `all the listed selectors will target the text field since it has a type=text, a class=form-control, and an id=firstName`
 
-#### Q65. Which property of the jQuery event object references the DOM object that dispatched an event?
-
-- [x] target
-- [ ] self
-- [ ] source
-- [ ] object
-
 [Source: jQuery Docs: event.target](https://api.jquery.com/event.target/)
 
 `The target property can be the element that registered for the event or a descendant of it. It is often useful to compare event.target to this in order to determine if the event is being handled due to event bubbling.`
 
-#### Q66. You want to write a plugin that creates a new traversal function—such as parent() and children()—and behaves like the ones jQuery includes out of the box. It needs to correctly modify the list of selections jQuery tracks internally, build up a list of additional items, and return the merged collection. What do you need to return on the last line of the function in order for this plugin to work correctly?
+#### Q65. You want to write a plugin that creates a new traversal function—such as parent() and children()—and behaves like the ones jQuery includes out of the box. It needs to correctly modify the list of selections jQuery tracks internally, build up a list of additional items, and return the merged collection. What do you need to return on the last line of the function in order for this plugin to work correctly?
 
 ```JavaScript
 $.fn.myTraverse = function() {
@@ -1237,7 +1230,7 @@ $.fn.myTraverse = function() {
 
 [Extra Reading: bennadel.com](https://www.bennadel.com/blog/1739-using-pushstack-in-jquery-plugins-to-create-new-collections.htm)
 
-#### Q67. Given this snippet of HTML and jQuery code, what will the result look like?
+#### Q66. Given this snippet of HTML and jQuery code, what will the result look like?
 
 ```html
 <ul class="items">
@@ -1324,7 +1317,7 @@ $.fn.myTraverse = function() {
 **.nextAll([selector]) method**
 `Gets all following siblings of each element in the set of matched elements, optionally filtered by a selector.`
 
-#### Q68. You have an element with a series of code (not CSS) animations applied to it that could be triggered by code you control, or other code elsewhere (such as plugins). How can you fire some code when all those animations have completed?
+#### Q67. You have an element with a series of code (not CSS) animations applied to it that could be triggered by code you control, or other code elsewhere (such as plugins). How can you fire some code when all those animations have completed?
 
 - [ ]
 
@@ -1367,7 +1360,7 @@ $('#element')
 1. [Source: HTMLElement: animationend event | MDN ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event)
 2. [Example: Stackoverflow](https://stackoverflow.com/questions/49580666/check-if-an-css-animation-is-completed-with-jquery-or-js)
 
-#### Q69. HTML5 data attributes allow you to create valid custom attributes to store arbitrary data within DOM elements. jQuery has an API to interface with custom data such as the series of quotes below. How can you mark the second quote as your favorite?
+#### Q68. HTML5 data attributes allow you to create valid custom attributes to store arbitrary data within DOM elements. jQuery has an API to interface with custom data such as the series of quotes below. How can you mark the second quote as your favorite?
 
 ```html
 <div class="quotes">
@@ -1386,7 +1379,7 @@ $('#element')
 1. [Source: .data() | jQuery API Documentation](https://api.jquery.com/data/)
 2. [Source: :nth-child() | MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
-#### Q70. jQuery can create event handlers that execute exactly once. How is this done?
+#### Q69. jQuery can create event handlers that execute exactly once. How is this done?
 
 - [ ] `$('button').click(function() { console.log('this will only happen once'); }, false);`
 - [ ] `$('button').on('click', function() { console.log('this will only happen once'); }).off('click');`
@@ -1395,7 +1388,7 @@ $('#element')
 
 [Source: .one() | jQuery API Documentation](https://api.jquery.com/one/)
 
-#### Q71. You want to implement the behavior of an effect like `slideDown()` manually using `animate()`. What is one critical point you need to remember?
+#### Q70. You want to implement the behavior of an effect like `slideDown()` manually using `animate()`. What is one critical point you need to remember?
 
 - [ ] `slideDown()` requires animating the background color; doing so with `animate()` requires the jQuery Color plugin.
 - [x] `slideDown()` includes toggling visibility automatically. `animate()` does not automatically set any properties.
@@ -1406,7 +1399,7 @@ $('#element')
 
 [Source: .animate() | jQuery API Documentation](https://api.jquery.com/animate/)\
 
-#### Q72. What is the main difference between the `contents()` and `children()` functions?
+#### Q71. What is the main difference between the `contents()` and `children()` functions?
 
 - [ ] They both return the content of selected nodes, but `children()` also includes text and comment nodes.
 - [ ] The `contents()` function only includes text nodes of the selected elements.
@@ -1416,14 +1409,14 @@ $('#element')
 1. [Source: .children() | jQuery API Documentation](https://api.jquery.com/children/)
 2. [Source: .contents() | jQuery API Documentation](https://api.jquery.com/contents/)
 
-#### Q73. If you JavaScript project involves a lot of DOM manipulation, but no AJAX or animation, which version of jQuery should you use?
+#### Q72. If you JavaScript project involves a lot of DOM manipulation, but no AJAX or animation, which version of jQuery should you use?
 
 - [ ] jQuery 3 compressed
 - [ ] jQuery 3 slim
 - [ ] jQuery 2
 - [x] None of these - jQuery requires AJAX
 
-#### Q74. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
+#### Q73. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
 
 [ ] - A
 ```js
