@@ -906,7 +906,7 @@ This is line 3.
 ------------------------
 ```
 
-#### Q75. What would be in out.txt?
+#### Q75. What is the out.txt, in the next example?
 
 ```bash
 #!/bin/bash
