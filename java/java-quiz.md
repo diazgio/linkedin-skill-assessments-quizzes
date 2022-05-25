@@ -214,7 +214,7 @@ class Main {
 
 **Explanation:** `The answer is "123". The `abs()` method evaluates to the one inside mypackage.Math class.`
 
-#### Q11. What is the result of this code?
+#### Q11. What is the result of this next lines of code?
 
 ```java
 1: class MainClass {
@@ -469,7 +469,7 @@ class Main {
 - [ ] 2true
 - [x] 3true
 
-#### Q30. What is the result of this code?
+#### Q30. What is the result for this code?
 
 ```java
 1: class Main {
@@ -680,7 +680,7 @@ theList.forEach(System.out::println);
 - [x] It will never be cached by the CPU.
 - [ ] It will be preferentially garbage collected.
 
-#### Q43. What is the result of this code?
+#### Q43. What is the result for this next lines of code?
 
 ```java
 char smooch = 'x';
