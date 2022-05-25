@@ -1418,7 +1418,7 @@ $('#element')
 
 #### Q73. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
 
-[ ] - A
+- [ ] A
 ```js
 $(function({
     getData : $.get('http://httpbin.org/get'),
@@ -1427,7 +1427,7 @@ $(function({
     //DOM is ready, getData and delayedData are available
 });
 ```
-[ ] - B
+- [ ] B
 ```js
 $(
     $.get('http://httpbin.org/get'),
@@ -1436,7 +1436,7 @@ $(
     //DOM is ready, getData and delayedData are available
 });
 ```
-[ ] - C
+- [ ] C
 ```js
 $.when(
     $.get('http://httpbin.org/get'),
@@ -1445,7 +1445,7 @@ $.when(
     //DOM is ready, getData and delayedData are available
 });
 ```
-[x] - D
+- [x] D
 ```js
 $.ready(
     $.get('http://httpbin.org/get'),
