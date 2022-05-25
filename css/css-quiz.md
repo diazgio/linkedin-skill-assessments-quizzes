@@ -1425,29 +1425,29 @@ p:first-of-type:first-letter {
 
 #### Q106. Which choice will not set all links that include domain.com to pink?
 - [ ]
-```css
- a[href$='domain.com'] {
-  color: pink;
-}
-```
+  ```css
+    a[href$='domain.com'] {
+    color: pink;
+    }
+  ```
 - [x]
-```css
-a[href='*domain.com'] {
-  color: pink;
-}
-```
+  ```css
+    a[href='*domain.com'] {
+     color: pink;
+    }
+  ```
 - [ ]
-```css
-a[href*='domain.com'] {
-  color: rgb(255, 155, 155);
-}
-```
+  ```css
+    a[href*='domain.com'] {
+      color: rgb(255, 155, 155);
+    }
+  ```
 - [ ]
-```css
-a[href*='domain.com'] {
-  color: pink;
-}
-```
+  ```css
+    a[href*='domain.com'] {
+      color: pink;
+    }
+  ```
 
 [Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
@@ -1462,45 +1462,45 @@ a[href*='domain.com'] {
 
 #### Q108. You want to add a background circle behind an icon. Which style declaration is correct?
 - [ ]
-```css
-.glyphicon-bgcircle {
-  circle-radius: 50%;
-  margins: 50px;
-  background-color: #fdadc6;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-}
-```
+  ```css
+    .glyphicon-bgcircle {
+      circle-radius: 50%;
+      margins: 50px;
+      background-color: #fdadc6;
+      color: rgba(255, 255, 255, 1);
+      font-size: 24px;
+    }
+  ```
 - [ ]
-```css
-glyphicon-bgcircle {
-  border-circle: 50%;
-  padding: 50px;
-  background-color: #fdadc6;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-}
-```
+  ```css
+    glyphicon-bgcircle {
+      border-circle: 50%;
+      padding: 50px;
+      background-color: #fdadc6;
+      color: rgba(255, 255, 255, 1);
+      font-size: 24px;
+    }
+  ```
 - [x]
-```css
-.glyphicon-bgcircle {
-  border-radius: 50%;
-  padding: 50px;
-  background-color: #fdadc6;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-}
-```
+  ```css
+    .glyphicon-bgcircle {
+      border-radius: 50%;
+      padding: 50px;
+      background-color: #fdadc6;
+      color: rgba(255, 255, 255, 1);
+      font-size: 24px;
+    }
+  ```
 - [ ]
-```css
-.glyphicon-bgcircle {
-  radius-rounded: 50%;
-  margins: auto;
-  background-color: #fdadc6;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-}
-```
+  ```css
+    .glyphicon-bgcircle {
+      radius-rounded: 50%;
+      margins: auto;
+      background-color: #fdadc6;
+      color: rgba(255, 255, 255, 1);
+      font-size: 24px;
+    }
+  ```
 
 #### Q109. When using a font stack to declare the font family, in what order should the values appear?
 
