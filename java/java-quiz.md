@@ -160,7 +160,7 @@ class Three implements One, Two {
 }
 ```
 
-#### Q9. What is the output of this code?
+#### Q9. What is the output of the following code?
 
 ```java
 class Main {
@@ -256,7 +256,7 @@ class Main {
 - [ ] `java Main.class 1 "2" 2 5`
 - [ ] `java Main 1 "2" "3 4" 5`
 
-#### Q13. What is the output of this code?
+#### Q13. What is the output of the next code?
 
 ```java
 class Main {
@@ -274,7 +274,7 @@ class Main {
 
 **Reasoning:** The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore, this code will not compile as the number assigned to 'a' is larger than the int type can hold.
 
-#### Q14. What is the output of this code?
+#### Q14. What is the output of this piece of code?
 
 ```java
 class Main {
@@ -416,7 +416,7 @@ public class Main {
 - [ ] [1, 5, 10]
 - [ ] [10, 1, 5]
 
-#### Q26. What is the output of this code?
+#### Q26. What is the output?
 
 ```java
 class Main {
@@ -448,7 +448,7 @@ class Main {
 - [ ] `"nifty".getClass().getSimpleName() == "String"`
 - [x] `"nifty" instanceof String`
 
-#### Q29. What is the output of this code?
+#### Q29. What is the output of these lines of code?
 
 ```java
 import java.util.*;
@@ -533,7 +533,7 @@ public static void badMethod() {
 
 **Explanation**: `Error` is not inherited from `Exception`
 
-#### Q34. What is the output of this code?
+#### Q34. What is the output of this part of code?
 
 ```java
 class Main {
@@ -555,7 +555,7 @@ class Main {
 - [x] It will print "Hello World!" three times.
 - [ ] It will run forever.
 
-#### Q35. What is the output of this code?
+#### Q35. What is the output of this?
 
 ```java
 import java.util.*;
@@ -576,7 +576,7 @@ class Main {
 
 **Explanation**: The `java.util.Arrays.asList(T... a)` returns a fixed-size list backed by the specified array. (Changes to the returned list "write through" to the array.)
 
-#### Q36. What is the output of this code?
+#### Q36. What is the correct output of this code?
 
 ```java
 class Main {
@@ -820,7 +820,7 @@ public class Solution {
 - [ ] this
 - [ ] new
 
-#### Q52. What is the result of this code?
+#### Q52. What is the result of the next code?
 
 ```java
   1: int a = 1;
@@ -925,7 +925,7 @@ static void swapsies(int a, int b) {
 - [ ] 10 5
 - [ ] 5 5
 
-#### Q60. What is the result of this code?
+#### Q60. What is the result of this piece of code?
 
 ```java
 try {
@@ -1153,7 +1153,7 @@ for (int i = 44; i > 40; i--) {
 - [ ] neither inside nor outside the method
 - [ ] outside the method
 
-#### Q83. What is the output of this code?
+#### Q83. What is the output for this code?
 
 ```java
 public class Main {
@@ -1188,7 +1188,7 @@ public class Main {
 
 **Explanation**: Changing line 2 to `public static final String message` raises the error `message not initialized in the default constructor`
 
-#### Q85. What is the output of this code?
+#### Q85. What is the output for this piece of code?
 
 ```java
 import java.util.*;
@@ -1216,7 +1216,7 @@ class Main {
 - [ ] `ArrayList<String> words = {"Hello", "World"};`
 - [x] `ArrayList<String> words = new ArrayList<>(Arrays.asList("Hello", "World"));`
 
-#### Q87. What is the output of this code?
+#### Q87. What is the expected output of this code?
 
 ```java
 class Main {
@@ -1254,7 +1254,7 @@ class TaxCalculator {
 
 [Code sample](https://replit.com/@mattheweller/EverlastingShadyBraces#TaxCalculator.java)
 
-#### Q89. What is the output of this code?
+#### Q89. What is the output of this piece of code?
 
 ```java
  public class Main {
@@ -1288,7 +1288,7 @@ class TaxCalculator {
 
 [Reference](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)
 
-#### Q91. What is the output?
+#### Q91. What is the output for this lines?
 
 ```java
 import java.util.*;
