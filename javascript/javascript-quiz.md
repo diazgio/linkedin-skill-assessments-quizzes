@@ -1241,7 +1241,7 @@ const numbers = [1, 2, 3, 4, 5];
 
 [Reference array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-#### Q95.
+#### Q95. What is the result for this next lines of code presented here?
 
 ```js
 const obj = {
@@ -1340,7 +1340,7 @@ animals.unshift('Lizard');
 
 [Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)
 
-#### Q101. What is the output of this code?
+#### Q101. What is the right output of this code?
 
 ```js
 let x = 6 + 3 + '3';
@@ -1423,7 +1423,7 @@ export const printMe = (str) => console.log(str);
 
 [Reference importing libraries in javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
-#### Q107. What will be the output of this code?
+#### Q107. What will be the right output for this code?
 
 ```js
 const arr1 = [2, 4, 6];
