@@ -1506,7 +1506,7 @@ document.querySelectorAll('div').forEach((e) => {
 1. [Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 2. [Reference events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-#### Q113. What will this code log to the console?
+#### Q113. What will be the result for this code logged on the console?
 
 ```js
 const myNumbers = [1, 2, 3, 4, 5, 6, 7];
@@ -1591,7 +1591,7 @@ for (let value of cipherText) {
 2. [Reference MDN JavaScript Array entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
 3. [Reference MDN JavaScript Remainder/Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
 
-#### Q116. What will this code log to the console?
+#### Q116. What will be the right answer for this code log to the console?
 
 ```js
 const foo = [1, 2, 3];
@@ -1797,7 +1797,7 @@ const b = { x: 1 };
 
 [Reference](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)
 
-#### Q129. What will this code log to the console?
+#### Q129. What will be the result that appear in the console?
 
 ```js
 console.log(typeof 41.1);
