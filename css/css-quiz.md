@@ -1424,21 +1424,27 @@ p:first-of-type:first-letter {
 - [ ] font size, line height, letter spacing, width, height
 
 #### Q106. Which choice will not set all links that include domain.com to pink?
-
+[ ]
 ```css
-[] a[href$='domain.com'] {
+ a[href$='domain.com'] {
   color: pink;
 }
-
-[x] a[href='*domain.com'] {
+```
+[x]
+```css
+a[href='*domain.com'] {
   color: pink;
 }
-
-[] a[href*='domain.com'] {
+```
+[ ]
+```css
+a[href*='domain.com'] {
   color: rgb(255, 155, 155);
 }
-
-[] a[href*='domain.com'] {
+```
+[ ]
+```css
+a[href*='domain.com'] {
   color: pink;
 }
 ```
@@ -1447,12 +1453,12 @@ p:first-of-type:first-letter {
 
 #### Q107. Which property and value pair could be used to apply a linear gradient effect?
 
-```css
+
 [x] `background: linear-gradient(#648880, #293f50);`
 [ ] `background-image: linear(#648880, #293f50);`
 [ ] `background: gradient(linear, #648880, #293f50);`
 [ ] `background-color: linear-gradient(#648880, #293f50);`
-```
+
 
 #### Q108. You want to add a background circle behind an icon. Which style declaration is correct?
 - [ ]
