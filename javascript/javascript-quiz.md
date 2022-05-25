@@ -1144,7 +1144,7 @@ console.log(addFive(3));
 
 [Reference add js to html file](https://www.w3schools.com/tags/tag_script.asp)
 
-#### Q88. What would be the result in the console of running this code?
+#### Q88. What would be the result in the console of running this next lines of code?
 
 ```js
 for (var i = 0; i < 5; i++) {
