@@ -438,7 +438,7 @@ int main() {
 - [ ] true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same
 - [ ] 0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1
 
-#### Q33. What is the output of this program?
+#### Q33. What is the output of the next program?
 
 ```c
 int a=10, b=20;
