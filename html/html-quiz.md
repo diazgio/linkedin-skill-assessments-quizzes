@@ -840,7 +840,7 @@ This is a confusing question and there can be an arguments for both the second a
 - [ ] It specifies an image that should display until the video is played.
 - [ ] It specifies an image that should display while the video downloads.
 
-#### Q50. What does this code do?
+#### Q50. What does this following code do?
 
 ```html
 <audio controls src="sound.mp3" type="audio/mpeg">When does this text display?</audio>
