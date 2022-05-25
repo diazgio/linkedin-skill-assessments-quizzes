@@ -1388,7 +1388,7 @@ As Steve Krug once said, happy talk must die.
 
 [Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)
 
-#### Q87. In this code, what is _target_?
+#### Q87. In this following code, what is _target_?
 
 `<a target="_blank">...</a>`
 
