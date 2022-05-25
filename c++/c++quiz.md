@@ -894,7 +894,7 @@ class my_class {
 - [ ] long double
 - [ ] float
 
-#### Q51. What is the output of this piece of code?
+#### Q51. What is the output of this following piece of code?
 
 ```cpp
 int8_t a=200;
