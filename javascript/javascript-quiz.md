@@ -335,7 +335,7 @@ for (var i = 0; i < 5; i++) {
 
 [Reference javascript object static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods)
 
-#### Q22. What will be logged to the console?
+#### Q22. What will appear on the console?
 
 ```js
 var a = ['dog', 'cat', 'hen'];
@@ -1036,7 +1036,7 @@ const foo = {
 1. [Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)
 2. [Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
-#### Q82. What will be logged to the console?
+#### Q82. What will be logged at the console?
 
 ```js
 console.log('I');
@@ -1185,7 +1185,7 @@ seconds.type = 'fruit';
 
 [Reference Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
-#### Q91. What will be logged to the console??
+#### Q91. What will be logged to the console for this code?
 
 ```js
 'use strict';
@@ -1302,7 +1302,7 @@ for (var i = 0; i < vowels.length; i++) {
 
 [Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)
 
-#### Q98. What will be logged to the console?
+#### Q98. What will be logged to the console for this piece of code?
 
 ```js
 const x = 6 % 2;
