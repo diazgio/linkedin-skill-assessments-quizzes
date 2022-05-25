@@ -1767,7 +1767,7 @@ console.log(x + y + z);
 
 [Reference let statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
-#### Q127. What does this code print to the console?
+#### Q127. What does this next lines of code print to the console?
 
 ```js
 const x = [1, 2];
@@ -1831,7 +1831,7 @@ console.log(score);
 2. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 3. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
-#### Q131. What does this code print to the console?
+#### Q131. What does this piece of code print to the console?
 
 ```js
 let bear = {
