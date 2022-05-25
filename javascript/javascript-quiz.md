@@ -1159,7 +1159,7 @@ for (var i = 0; i < 5; i++) {
 
 [Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)
 
-#### Q89. What is the value of `dessert.type` after executing this code?
+#### Q89. What is the value of `dessert.type` after executing this piece of code?
 
 ```js
 const dessert = { type: 'pie' };
