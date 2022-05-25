@@ -612,7 +612,7 @@ cat >notes -
 - [ ] It appends text to an existing file called "notes."
 - [ ] It outputs the contents of the "notes" file to the screen, and then deletes it.
 
-#### Q55. What is the output of this code?
+#### Q55. What is the output of the following code?
 
 ```bash
 VAR="This old man came rolling"
