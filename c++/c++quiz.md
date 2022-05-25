@@ -1196,25 +1196,7 @@ bool is_even(int);
 - [ ] comparing floating point numbers as less-than.
 - [ ] assigning a variable to a reference.
 
-#### Q71. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?
-
-```cpp
-typedef struct{
-    unsigned int  age    : 4;
-    unsigned char gender : 1;
-    char                 : 0;
-    unsigned int  size   : 2;
-}child_t;
-```
-
-- [ ] Yes, it causes a compiler error because the colon character is not allowed in struct definitions.
-- [x] and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age and 1 bit for gender in the first byte, and 2 bits for size in the second byte.
-- [ ] Yes, it causes a compiler error because there is an unnamed field.
-- [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
-
-[Reference](https://en.cppreference.com/w/cpp/language/bit_field)
-
-#### Q72. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer ro any type?
+#### Q71. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer ro any type?
 
 - [ ] The compiler needs the dara type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and reference.
 - [ ] `void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.
@@ -1223,7 +1205,7 @@ typedef struct{
 
 [Reference](https://stackoverflow.com/questions/9802585/why-is-the-data-type-needed-in-pointer-declarations)
 
-### Q73. What is wrong with this piece of code?
+### Q72. What is wrong with this piece of code?
 
 ```cpp
 #include <iostream>
@@ -1241,7 +1223,7 @@ int main(){
 - [ ] The address of `str` is supposed to be used. That is `&str` instead of `str`.
 - [x] The input operator flow is inverted. it should start from `std::cin` and then flow (>>) into `str`.
 
-#### Q74. What is this expression equivalent to?
+#### Q73. What is this expression equivalent to?
 
 ```cpp
 A->B
@@ -1252,7 +1234,7 @@ A->B
 - [x] `(*A).B`
 - [ ] `&A.B`
 
-#### Q75. Which statement is true when declaring the member variable `count` as static?
+#### Q74. Which statement is true when declaring the member variable `count` as static?
 
 ```cpp
 class my_class{
@@ -1265,21 +1247,21 @@ class my_class{
 - [ ] The variable existd when no objects of the class have been defined, so it can be modified at any point in the source code.
 - [x] The variable cannot be modified by any part of the code in the same application or thread. However, other threads may modify it.
 
-#### Q76. When placed in a valid execution context, which statement will dynamically allocate memory from the heap for an integer of value 11?
+#### Q75. When placed in a valid execution context, which statement will dynamically allocate memory from the heap for an integer of value 11?
 
 - [ ] `int anInt = new int(11);`
 - [ ] `int* anInt = new int[11];`
 - [ ] `int anInt = new int[11];`
 - [x] `int* anInt = new int(11);`
 
-#### Q77. Which choice best describes the type `long`?
+#### Q76. Which choice best describes the type `long`?
 
 - [x] an integer number of at least 32 bits
 - [ ] a string with more than 255 characters
 - [ ] a pointer
 - [ ] a 64-bit floating point number
 
-#### Q78. Which of the following types has the closest functionality to a class?
+#### Q77. Which of the following types has the closest functionality to a class?
 
 - [x] `struct`
 - [ ] `union`
@@ -1288,7 +1270,7 @@ class my_class{
 
 [Reference](https://en.cppreference.com/w/c/language/struct)
 
-#### Q79. Given these records in a map, how will you update the value for the key "Sinead" to 22?
+#### Q78. Given these records in a map, how will you update the value for the key "Sinead" to 22?
 
 ![image](images/Q79.png)
 
