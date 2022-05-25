@@ -1254,7 +1254,7 @@ class TaxCalculator {
 
 [Code sample](https://replit.com/@mattheweller/EverlastingShadyBraces#TaxCalculator.java)
 
-#### Q89. What is the output of this piece of code?
+#### Q89. What is the correct output for this nest lines of code?
 
 ```java
  public class Main {
