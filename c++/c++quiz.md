@@ -1212,7 +1212,7 @@ int main(){
 - [ ] The address of `str` is supposed to be used. That is `&str` instead of `str`.
 - [x] The input operator flow is inverted. it should start from `std::cin` and then flow (>>) into `str`.
 
-#### Q72. What is this expression equivalent to?
+#### Q72. What is the next expression equivalent to?
 
 ```cpp
 A->B
