@@ -117,7 +117,7 @@ $('#ball').click(function () {
 });
 ```
 
-- [x]
+- [x] A
 
 ```js
 $(this).animate(
@@ -131,7 +131,7 @@ $(this).animate(
 );
 ```
 
-- [ ]
+- [ ] B
 
 ```js
 $(this).animate({ top: '-=100', left: '-=100' }, 600, function () {
@@ -139,7 +139,7 @@ $(this).animate({ top: '-=100', left: '-=100' }, 600, function () {
 });
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 $(this).animate(
@@ -153,7 +153,7 @@ $(this).animate(
 );
 ```
 
-- [ ]
+- [ ] D
 
 ```js
 $(this).animate({ top: '100', left: '100' }, 600, function () {
@@ -193,7 +193,7 @@ $.get('//example.com/api/v1/message').done(function (data) { var tonsOfItems = d
 all these messages to a large page });
 ```
 
-- [ ]
+- [ ] A
 
 ```js
 tonsOfItems.map(function (item) {
@@ -201,7 +201,7 @@ tonsOfItems.map(function (item) {
 });
 ```
 
-- [x]
+- [x] B
 
 ```js
 var tonsOfListItems = tonsOfItems.map(function (item) {
@@ -210,7 +210,7 @@ var tonsOfListItems = tonsOfItems.map(function (item) {
 $('.message-area--list').append(tonsOfListItems.join(''));
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 CSS.$messageList = $('.message-area--list');
@@ -219,7 +219,7 @@ $.each(tonsOfItems, function (idx, item) {
 });
 ```
 
-- [ ]
+- [ ] D
 
 ```js
 $.each(tonsOfItems, function (idx, item) {
@@ -347,7 +347,7 @@ $.each(tonsOfItems, function (idx, item) {
 
 #### Q19. jQuery's AJAX functions return objects that implement the Promise API. As a result, you can chain promises and avoid nested callbacks. What does that look like?
 
-- [x]
+- [x] A
 
 ```js
 $.get('hhttp://httpbin.org/delay/2')
@@ -360,7 +360,7 @@ $.get('hhttp://httpbin.org/delay/2')
   });
 ```
 
-- [ ]
+- [ ] B
 
 ```js
 $.get('hhttp://httpbin.org/delay/2')
@@ -373,7 +373,7 @@ $.get('hhttp://httpbin.org/delay/2')
   });
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 $.get('hhttp://httpbin.org/delay/2', function (response1) {
@@ -385,7 +385,7 @@ $.get('hhttp://httpbin.org/delay/2', function (response1) {
 });
 ```
 
-- [ ]
+- [ ] D
 
 ```js
 $.get('hhttp://httpbin.org/delay/2')
@@ -406,7 +406,7 @@ $('#ball').click(function () {
 });
 ```
 
-- [ ]
+- [ ] A
 
 ```js
 $(this).animate(
@@ -427,7 +427,7 @@ $(this).animate(
 );
 ```
 
-- [x]
+- [x] B
 
 ```js
 $(this).animate(
@@ -450,7 +450,7 @@ $(this).animate(
 );
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 $(this).animate(
@@ -471,7 +471,7 @@ $(this).animate(
 );
 ```
 
-- [ ]
+- [ ] D
 
 ```js
 $(this).animate(
@@ -506,7 +506,7 @@ $(this).animate(
 $('#container').wrap('<div class="wrapper"></div>').css('border', '2px solid red');
 ```
 
-- [ ]
+- [ ] A
 
 ```html
 <div class="wrapper" style="border: 2px solid red;">
@@ -516,7 +516,7 @@ $('#container').wrap('<div class="wrapper"></div>').css('border', '2px solid red
 </div>
 ```
 
-- [x]
+- [x] B
 
 ```html
 <div class="wrapper">
@@ -526,7 +526,7 @@ $('#container').wrap('<div class="wrapper"></div>').css('border', '2px solid red
 </div>
 ```
 
-- [ ]
+- [ ] C
 
 ```html
 <div id="container" style="border: 2px solid red;">
@@ -536,7 +536,7 @@ $('#container').wrap('<div class="wrapper"></div>').css('border', '2px solid red
 </div>
 ```
 
-- [ ]
+- [ ] D
 
 ```html
 <div id="container">
@@ -633,25 +633,25 @@ $(document).customPlugin();
 </ul>
 ```
 
-- [ ]
+- [ ] A
 
 ```js
 $('.menu-first > li').eq(0).css('font-weight', 'bold').eq(1).css('font-style', 'oblique');
 ```
 
-- [ ]
+- [ ] B
 
 ```js
 $('.menu-first > li').first().css('font-weight', 'bold').after().css('font-style', 'oblique');
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 $('.menu-first > li').first().css('font-weight', 'bold').second().css('font-style', 'oblique');
 ```
 
-- [x]
+- [x] D
 
 ```js
 $('.menu-first > li').eq(0).css('font-weight', 'bold').next().css('font-style', 'oblique');
@@ -720,13 +720,13 @@ $('#sidebar').click(function (evt) {
 <div id="elements"></div>
 ```
 
-- [ ]
+- [ ] A
 
 ```js
 $('#elements').append($('<p class="appended">As an HTML string</p>'));
 ```
 
-- [ ]
+- [ ] B
 
 ```js
 var p = document.createElement('p');
@@ -735,13 +735,13 @@ p.appendChild(text);
 $('#elements').append(p);
 ```
 
-- [x]
+- [x] C
 
 ```js
 $('#elements').append(<p class="appended">As a JSX object</p>);
 ```
 
-- [ ]
+- [ ] D
 
 ```js
 $('#elements').append(
@@ -1071,7 +1071,7 @@ function listResponder(evt) {
 </div>
 ```
 
-- [x]
+- [x] A
 
 ```JavaScript
 $('.ball--green').fadeIn(3000, function(){
@@ -1079,7 +1079,7 @@ $('.ball--green').fadeIn(3000, function(){
 });
 ```
 
-- [ ]
+- [ ] B
 
 ```JavaScript
 $('.ball--green').fade('in',3000).done(function(){
@@ -1087,13 +1087,13 @@ $('.ball--green').fade('in',3000).done(function(){
 });
 ```
 
-- [ ]
+- [ ] C
 
 ```JavaScript
 $('.ball--green').fadeIn(3).console().log("Animation is done!");
 ```
 
-- [ ]
+- [ ] D
 
 ```JavaScript
 $('.ball--green').fadeIn("3s", function(){
@@ -1136,7 +1136,7 @@ $('#element-1').animate({ top: '+=100' }); $('#element-2').animate({ top: '+=100
 $('#element-3').animate({ top: '+=100' });
 ```
 
-- [ ]
+- [ ] A
 
 ```JavaScript
 $('#element-1').animate({ top: '+=100' })
@@ -1145,7 +1145,7 @@ $('#element-1').animate({ top: '+=100' })
     .pushStack('#element-3').animate({ top: '+=100' })
 ```
 
-- [x]
+- [x] B
 
 ```JavaScript
 $('#element-1').animate({ top: '+=100' }, function() {
@@ -1155,7 +1155,7 @@ $('#element-1').animate({ top: '+=100' }, function() {
 });
 ```
 
-- [ ]
+- [ ] C
 
 ```JavaScript
 $('#element-1').animate({ top: '+=100' })
@@ -1163,7 +1163,7 @@ $('#element-1').animate({ top: '+=100' })
     .add('#element-3').animate({ top: '+=100' })
 ```
 
-- [ ]
+- [ ] D
 
 ```JavaScript
 $('#element-1').animate({ top: '+=100' }, {queue: 'custom'});
@@ -1248,7 +1248,7 @@ $.fn.myTraverse = function() {
 
 `$('.items').find('.active').nextAll().addClass('after-active');`
 
-- [x]
+- [x] A
 
 ```html
 <ul class="items">
@@ -1264,7 +1264,7 @@ $.fn.myTraverse = function() {
 </ul>
 ```
 
-- [ ]
+- [ ] B
 
 ```html
 <ul class="items">
@@ -1280,7 +1280,7 @@ $.fn.myTraverse = function() {
 </ul>
 ```
 
-- [ ]
+- [ ] C
 
 ```html
 <ul class="items">
@@ -1296,7 +1296,7 @@ $.fn.myTraverse = function() {
 </ul>
 ```
 
-- [ ]
+- [ ] D
 
 ```html
 <ul class="items">
