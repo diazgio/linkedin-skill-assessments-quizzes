@@ -939,7 +939,7 @@ int main(){
 
 [Reference](https://en.cppreference.com/w/c/language/operator_member_access)
 
-#### Q54. What would be the output of this code?
+#### Q54. What would be the output of?
 
 ```cpp
 int i0=4, i1=6, i2=8;
