@@ -301,67 +301,7 @@ echo ${!fname}
 - [ ] Syntax error
 - [ ] blank
 
-#### Q30. What will be the output of this script?
-
-![question](images/Q30/question.png)
-
-- [ ] `A` ![A](images/Q30/A.png)
-- [ ] `B` ![B](images/Q30/B.png)
-- [x] `C` ![C](images/Q30/C.png)
-- [ ] `D` ![D](images/Q30/D.png)
-
-Here's a text based version of Q.30:
-
-```bash
-ll
--rw-r--r-- 1 frankmolev staff 374   Jun 3 19:30 .
--rw-r--r-- 1 frankmolev staff 1666  Jun 3 19:30 ..
--rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file1.txt
--rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file2.txt
-..
-
-ll | sed -e 's,file,text,g'
-
-```
-
-- [ ] A
-
-```
-  -rw-r--r-- 1 frankmolev staff 374   Jun 3 19:30 .
-  -rw-r--r-- 1 frankmolev staff 1666  Jun 3 19:30 ..
-  -rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file1.file
-  -rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file2.file
-  ..
-```
-
-- [ ] B
-
-```
-  -rw-r--r-- 1 frankmolev staff 374   Jun 3 19:30 .
-  -rw-r--r-- 1 frankmolev staff 1666  Jun 3 19:30 ..
-  -rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file1.txt
-  -rw-r--r-- 1 frankmolev staff 0     Jun 3 19:30 file2.txt
-  ..
-```
-
-- [ ] C
-
-```
-  -rw-r--r-- 1 frankmolev staff 68    Jun 3 19:30 .
-  -rw-r--r-- 1 frankmolev staff 1666  Jun 3 19:30 ..
-```
-
-- [x] D
-
-```
--rw-r--r-- 1 frankmolev staff 374     Jun 3 19:30 .
--rw-r--r-- 1 frankmolev staff 1666    Jun 3 19:30 ..
--rw-r--r-- 1 frankmolev staff 0       Jun 3 19:30 text1.txt
--rw-r--r-- 1 frankmolev staff 0       Jun 3 19:30 text.txt
-..
-```
-
-#### Q31. What is wrong with this script?
+#### Q30. What is wrong with this script?
 
 ```bash
 #!/bin/bash
@@ -376,21 +316,21 @@ fi
 - [x] It will fail if the user hits the Enter (Return) key without entering a pet name when prompted.
 - [ ] The then statement needs to be on a separate line.
 
-#### Q32. How can you gather history together for multiple terminals?
+#### Q31. How can you gather history together for multiple terminals?
 
 - [ ] It just works by default.
 - [ ] `history --shared`
 - [ ] `history --combined`
 - [x] `shopt -s histappend`
 
-#### Q33. What is the difference between the $@ and $\* variables?
+#### Q32. What is the difference between the $@ and $\* variables?
 
 - [x] `$@` treats each quoted argument as a separate entity. `$*` treats the entire argument string as one entity.
 - [ ] `$*` treats each quoted argument as a separate entity. `$@` treats the entire argument string as one entity.
 - [ ] `$*` is used to count the arguments passed to a script, `$@` provides all arguments in one string.
 - [ ] `$*` is the wildcard that includes all arguments with word splitting, `$@` holds the same data but in an array.
 
-#### Q34. Which command is being run in this script to check if file.txt exists?
+#### Q33. Which command is being run in this script to check if file.txt exists?
 
 ```bash
 if [ -f file.txt ]; then
@@ -403,7 +343,7 @@ fi
 - [x] `the built-in [ command`
 - [ ] `/usr/bin/[[`
 
-#### Q35. What will be the output of this script?
+#### Q34. What will be the output of this script?
 
 ```bash
 #!/bin/bash
@@ -419,14 +359,14 @@ echo "${Linux[@]}"
 - [ ] Fedora Suse
 - [x] Debian Redhat Ubuntu Fedora Suse
 
-#### Q36. Which file allows you to save modifications to the shell environment across sessions?
+#### Q35. Which file allows you to save modifications to the shell environment across sessions?
 
 - [ ] `/etc/bash.conf`
 - [x] `~/.profile`
 - [ ] `/etc/bashprofile`
 - [ ] `~/profile`
 
-#### Q37. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?
+#### Q36. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?
 
 ```bash
 $ ls -l
@@ -439,7 +379,7 @@ total 0
 - [ ] It's possible that SELinux provides read, write, and execute permissions for user2 which are not visible with `ls -l`.
 - [ ] Yes, the `+` at the end of the 10-digit permission string signifies there's an extended attribute set. This could give user2 permissions to read, write, and execute data.txt.
 
-#### Q38. What does this script accomplish?
+#### Q37. What does this script accomplish?
 
 ```bash
 #!/bin/bash
@@ -456,7 +396,7 @@ done
 - [ ] It creates an indexed array of the associative array named ARRAY. It then uses a C-style for loop and the indexed array to loop through all items in the associative array, outputting the key and value of each array item using the index number.
 - [ ] It creates an associative array named ARRAY, which it loops through using a C-style for loop and the index numbers of each item in the associative array's keys, outputting the value of each item.
 
-#### Q39. What file would match the code below?
+#### Q38. What file would match the code below?
 
 ```bash
 ls Hello[[.vertical-line.]]World
@@ -467,7 +407,7 @@ ls Hello[[.vertical-line.]]World
 - [ ] `Hello[[.vertical-line.]]World`
 - [x] `Hello|World`
 
-#### Q40. What will be in out.txt?
+#### Q39. What will be in out.txt?
 
 ```bash
 ls nonexistentfile | grep "No such file" > out.txt
@@ -478,7 +418,7 @@ ls nonexistentfile | grep "No such file" > out.txt
 - [x] Nothing, out.txt will be empty.
 - [ ] It will be the contents of nonexistentfile.
 
-#### Q41. For the script to print "Is numeric" on screen, what would the user have to enter when prompted?
+#### Q40. For the script to print "Is numeric" on screen, what would the user have to enter when prompted?
 
 ```bash
 #!/bin/bash
@@ -497,7 +437,7 @@ fi
 
 The regex must not be quoted to work properly.
 
-#### Q42. What will be the difference between the output on the screen and the contents of out.txt
+#### Q41. What will be the difference between the output on the screen and the contents of out.txt
 
 ```bash
 mysql < file.sql > out.txt
@@ -508,28 +448,28 @@ mysql < file.sql > out.txt
 - [ ] The output on the screen will be identical to out.txt plus line numbers.
 - [ ] The out.txt file will hold STDERR and STDOUT will go to the screen.
 
-#### Q43. How would you find the last copy command run in your history?
+#### Q42. How would you find the last copy command run in your history?
 
 - [ ] history | find cp
 - [x] history | grep cp
 - [ ] grep cp history
 - [ ] cp history
 
-#### Q44. In order to write a script that iterates through the files in a directory, which of the following could you use?
+#### Q43. In order to write a script that iterates through the files in a directory, which of the following could you use?
 
 - [x] `bash for i in $(ls); do ... done`
 - [ ] `bash for $(ls); do ... done`
 - [ ] `bash for i in $ls; do ... done`
 - [ ] `bash for $ls; do ... done`
 
-#### Q45 When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?
+#### Q44. When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?
 
 - [x] |
 - [ ] ->
 - [ ] \#
 - [ ] @
 
-#### Q46. In the script shown below, what is **greeting**?
+#### Q45. In the script shown below, what is **greeting**?
 
 ```bash
 <em>#!/usr/bin/env bash</em>
@@ -542,14 +482,14 @@ echo $greeting, everybody!
 - [ ] a parameter
 - [x] a vairable
 
-#### Q47. Which statement checks whether the variable num is greater than five?
+#### Q46. Which statement checks whether the variable num is greater than five?
 
 - [ ] `(( \$num -gt 5 ))`
 - [ ] `[[$num -lt 5]]`
 - [x] `(( \$num > 5 ))`
 - [ ] `\$num > 5`
 
-#### Q48. Using Bash extended globbing, what will be the output of this command?
+#### Q47. Using Bash extended globbing, what will be the output of this command?
 
 ```bash
 $ ls -l
@@ -601,14 +541,14 @@ banapple
 pineapple
 ```
 
-#### Q49. When used from within a script, which variable contains the name of the script?
+#### Q48. When used from within a script, which variable contains the name of the script?
 
 - [x] \$0
 - [ ] \$# // number of positional parameters
 - [ ] \$\$ // pid of the current shell
 - [ ] \$@ // array-like construct of all positional parameters
 
-#### Q50. What does the + signify at the end of the 10-digit file permissions on data.txt?
+#### Q49. What does the + signify at the end of the 10-digit file permissions on data.txt?
 
 ```bash
 ls -l
@@ -620,7 +560,7 @@ ls -l
 - [x] There is an access control list
 - [ ] There is an extended attribute such as immutable set
 
-#### Q51. In Bash, what does the comment below do?
+#### Q50. In Bash, what does the comment below do?
 
 ```bash
 cd -
@@ -631,7 +571,7 @@ cd -
 - [ ] It deletes the current directory
 - [ ] It moves you one directory above your current working directory.
 
-#### Q52. What does this command do?
+#### Q51. What does this command do?
 
 ```bash
 cat > notes -
@@ -642,7 +582,7 @@ cat > notes -
 - [ ] Outputs the content of notes and deletes it
 - [ ] Appends text to the existing "notes"
 
-#### Q53. What is the output of:
+#### Q52. What is the output of:
 
 ```bash
 VAR="This old man came rolling"
@@ -654,14 +594,14 @@ echo "\${VAR//man/rolling}"
 - [ ] This old man came rolling
 - [ ] This old came
 
-#### Q54. The shell looks at the contents of a particular variable to identify which programs it can run. What is the name of this variable?
+#### Q53. The shell looks at the contents of a particular variable to identify which programs it can run. What is the name of this variable?
 
 - [ ] $INCLUDE
 - [x] $PATH
 - [ ] $PROGRAM
 - [ ] $PATHS
 
-#### Q55. What does this command sequence do?
+#### Q54. What does this command sequence do?
 
 ```bash
 cat >notes -
@@ -672,7 +612,7 @@ cat >notes -
 - [ ] It appends text to an existing file called "notes."
 - [ ] It outputs the contents of the "notes" file to the screen, and then deletes it.
 
-#### Q56. What is the output of this code?
+#### Q55. What is the output of this code?
 
 ```bash
 VAR="This old man came rolling"
@@ -684,7 +624,7 @@ echo "${VAR//man/rolling}"
 - [x] This old rolling came rolling
 - [ ] This old came
 
-#### Q57. What statement would you use to print this in the console?
+#### Q56. What statement would you use to print this in the console?
 
 `Shall we play a game? yes\no`
 
@@ -693,7 +633,7 @@ echo "${VAR//man/rolling}"
 - [x] `echo "Shall we play a game? yes\\no"`
 - [ ] `echo "Shall we play a game? yes\no"`
 
-#### Q58. Given a directory with these seven files, what would remain after executing these commands?
+#### Q57. Given a directory with these seven files, what would remain after executing these commands?
 
 ```bash
 archive.tar
@@ -743,7 +683,7 @@ image2.gif
 image2.jpg
 ```
 
-#### Q59. The code below seems to work and outputs "8 is greater than 5". However, what unexpected result will tell you it is not functioning properly?
+#### Q58. The code below seems to work and outputs "8 is greater than 5". However, what unexpected result will tell you it is not functioning properly?
 
 ```bash
 #!/bin/bash
@@ -758,7 +698,7 @@ fi
 - [x] There will be a file in the current directory named 5.
 - [ ] The variable $var is not quoted, which will lead to word splitting. This script will fail with a "unary operator expected" message if you change the value of
 
-#### Q60. What is the result of this script?
+#### Q59. What is the result of this script?
 
 ![question](images/Q60/question.png)
 
@@ -767,14 +707,14 @@ fi
 - [x] It removes all files in the current directory.
 - [ ] It removes all files except those in the 'foo' directory.
 
-#### Q61. Which one is true?
+#### Q60. Which one is true?
 
 - [x] SELinux policy rules are checked after DAC rules.
 - [ ] SELinux policy rules are checked before DAC rules
 - [ ] SELinux policy rules are never checked after DAC rules.
 - [ ] None of these
 
-#### Q62. Which does the below command do?
+#### Q61. Which does the below command do?
 
 ```bash
 w
@@ -785,7 +725,7 @@ w
 - [ ] It displays information about the users currently on the another machine.
 - [ ] None of these
 
-#### Q63. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:
+#### Q62. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:
 
 A constant is a variable that is a rock that isn't variable
 
@@ -799,42 +739,42 @@ echo "$var" | sed _____
 - [ ] s/variable/rock/g'
 - [ ] s/(.*\)variable\(.*variable\)/\1rock\2/'
 
-#### Q64. To make a Bash script named script.sh executable, what should you run?
+#### Q63. To make a Bash script named script.sh executable, what should you run?
 
 - [ ] exec script.sh
 - [x] chmod +x script.sh
 - [ ] bash script.sh
 - [ ] source script.sh
 
-#### Q65. How can you create a shared terminal in a Bash shell?
+#### Q64. How can you create a shared terminal in a Bash shell?
 
 - [x] screen
 - [ ] screen -X
 - [ ] screen --shared
 - [ ] terminal -shared
 
-#### Q66. Wich operator sends the output of ls to a file for later use?
+#### Q65. Wich operator sends the output of ls to a file for later use?
 
 - [ ] ls < filelist.txt
 - [ ] ls ¦ filelist.txt
 - [x] ls > filelist.txt
 - [ ] ls - filelist.txt
 
-#### Q67. When comparing items with case, what statement indicates an end to the evaluation block?
+#### Q66. When comparing items with case, what statement indicates an end to the evaluation block?
 
 - [ ] stop
 - [x] esac
 - [ ] done
 - [ ] exit
 
-#### Q68. To run a group of commands without spawning a subshell, which syntax would you use?
+#### Q67. To run a group of commands without spawning a subshell, which syntax would you use?
 
 - [ ] sh command1; command2
 - [ ] { command1; command2; }
 - [ ] (( command1; command2 ))
 - [x] command1; command2 )
 
-#### Q69. What are the results of the command with a user named jon?
+#### Q68. What are the results of the command with a user named jon?
 
 ```bash
 echo 'Hello, $(whoami)!'
@@ -845,35 +785,35 @@ echo 'Hello, $(whoami)!'
 - [x] Hello, $(whoami)!
 - [ ] Hello, whoami!
 
-#### Q70. How can you copy a directory to another system with compression?
+#### Q69. How can you copy a directory to another system with compression?
 
 - [ ] tar -ssh user@192.158.1.1 /bin/newfile
 - [x] tar cvzf - /wwwdata | ssh root@192.168.1.201 "dd of=/backup/wwwdata.tar.gz"
 - [ ] You can't compress the stream
 - [ ] scp -r directory user@192.168.1.1:/tmp
 
-#### Q71. To assign the command `ls -lah` to the shortcut command `lh`, what command should you use?
+#### Q70. To assign the command `ls -lah` to the shortcut command `lh`, what command should you use?
 
 - [x] alias lh='ls -lah'
 - [ ] link lh='ls -lah'
 - [ ] alias 'ls -lah'=lh
 - [ ] lh | ls -lah
 
-#### Q72. Which statement will print all of the fully qualified .cvs files in the home directory or subdirectories while not displaying any errors?
+#### Q71. Which statement will print all of the fully qualified .cvs files in the home directory or subdirectories while not displaying any errors?
 
 - [ ] find $USER_DIR -name "\*.csv" 2>/dev/null
 - [ ] find $HOME -name "\*.csv" 1>/dev/null
 - [x] find $HOME -name "\*.csv" 2>/dev/null
 - [ ] find HOME -name "\*.csv" 1>/dev/null
 
-#### Q73. In Bash, what does a # at the end of the default prompt string indicate?
+#### Q72. In Bash, what does a # at the end of the default prompt string indicate?
 
 - [x] that the user is acting as root
 - [ ] that the current working directory is the root of the file system
 - [ ] that there are updates for the system available
 - [ ] that the user is unprivileged
 
-#### Q74. What will be the output of this command?
+#### Q73. What will be the output of this command?
 
 ```bash
 $ ls -l
@@ -920,7 +860,7 @@ filec.txt
 
 The caret (`^`) symbol here negates matches inside the bracket. [Reference](https://tldp.org/LDP/abs/html/globbingref.html)
 
-#### Q75. What is the output of this command sequence?
+#### Q74. What is the output of this command sequence?
 
 ```bash
 cat <<EOF
@@ -966,7 +906,7 @@ This is line 3.
 ------------------------
 ```
 
-#### Q76. What would be in out.txt?
+#### Q75. What would be in out.txt?
 
 ```bash
 #!/bin/bash
