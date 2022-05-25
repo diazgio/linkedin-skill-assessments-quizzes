@@ -1317,50 +1317,7 @@ $.fn.myTraverse = function() {
 **.nextAll([selector]) method**
 `Gets all following siblings of each element in the set of matched elements, optionally filtered by a selector.`
 
-#### Q67. You have an element with a series of code (not CSS) animations applied to it that could be triggered by code you control, or other code elsewhere (such as plugins). How can you fire some code when all those animations have completed?
-
-- [ ]
-
-```js
-$('#element').on('animationend', function () {
-  console.log('Finally, everything is done!');
-});
-```
-
-- [ ]
-
-```js
-$('#element')
-  .on('promise')
-  .then(function () {
-    console.log('Finally, everything is done!');
-  });
-```
-
-- [ ]
-
-```js
-$('#element')
-  .promise()
-  .catch(function () {
-    console.log('Finally, everything is done!');
-  });
-```
-
-- [ ]
-
-```js
-$('#element')
-  .promise()
-  .then(function () {
-    console.log('Finally, everything is done!');
-  });
-```
-
-1. [Source: HTMLElement: animationend event | MDN ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event)
-2. [Example: Stackoverflow](https://stackoverflow.com/questions/49580666/check-if-an-css-animation-is-completed-with-jquery-or-js)
-
-#### Q68. HTML5 data attributes allow you to create valid custom attributes to store arbitrary data within DOM elements. jQuery has an API to interface with custom data such as the series of quotes below. How can you mark the second quote as your favorite?
+#### Q67. HTML5 data attributes allow you to create valid custom attributes to store arbitrary data within DOM elements. jQuery has an API to interface with custom data such as the series of quotes below. How can you mark the second quote as your favorite?
 
 ```html
 <div class="quotes">
@@ -1379,7 +1336,7 @@ $('#element')
 1. [Source: .data() | jQuery API Documentation](https://api.jquery.com/data/)
 2. [Source: :nth-child() | MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
-#### Q69. jQuery can create event handlers that execute exactly once. How is this done?
+#### Q68. jQuery can create event handlers that execute exactly once. How is this done?
 
 - [ ] `$('button').click(function() { console.log('this will only happen once'); }, false);`
 - [ ] `$('button').on('click', function() { console.log('this will only happen once'); }).off('click');`
@@ -1388,7 +1345,7 @@ $('#element')
 
 [Source: .one() | jQuery API Documentation](https://api.jquery.com/one/)
 
-#### Q70. You want to implement the behavior of an effect like `slideDown()` manually using `animate()`. What is one critical point you need to remember?
+#### Q69. You want to implement the behavior of an effect like `slideDown()` manually using `animate()`. What is one critical point you need to remember?
 
 - [ ] `slideDown()` requires animating the background color; doing so with `animate()` requires the jQuery Color plugin.
 - [x] `slideDown()` includes toggling visibility automatically. `animate()` does not automatically set any properties.
@@ -1399,7 +1356,7 @@ $('#element')
 
 [Source: .animate() | jQuery API Documentation](https://api.jquery.com/animate/)\
 
-#### Q71. What is the main difference between the `contents()` and `children()` functions?
+#### Q70. What is the main difference between the `contents()` and `children()` functions?
 
 - [ ] They both return the content of selected nodes, but `children()` also includes text and comment nodes.
 - [ ] The `contents()` function only includes text nodes of the selected elements.
@@ -1409,14 +1366,14 @@ $('#element')
 1. [Source: .children() | jQuery API Documentation](https://api.jquery.com/children/)
 2. [Source: .contents() | jQuery API Documentation](https://api.jquery.com/contents/)
 
-#### Q72. If you JavaScript project involves a lot of DOM manipulation, but no AJAX or animation, which version of jQuery should you use?
+#### Q71. If you JavaScript project involves a lot of DOM manipulation, but no AJAX or animation, which version of jQuery should you use?
 
 - [ ] jQuery 3 compressed
 - [ ] jQuery 3 slim
 - [ ] jQuery 2
 - [x] None of these - jQuery requires AJAX
 
-#### Q73. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
+#### Q72. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
 
 - [ ] A
 ```js
