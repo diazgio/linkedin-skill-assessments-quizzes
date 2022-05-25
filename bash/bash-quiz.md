@@ -698,7 +698,7 @@ fi
 - [x] There will be a file in the current directory named 5.
 - [ ] The variable $var is not quoted, which will lead to word splitting. This script will fail with a "unary operator expected" message if you change the value of
 
-#### Q59. What is the result of this script?
+#### Q59. What is the result of the following script?
 
 ![question](images/Q60/question.png)
 
