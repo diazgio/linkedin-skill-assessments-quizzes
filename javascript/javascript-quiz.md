@@ -224,7 +224,7 @@ NOTE: The first three are all partially correct and will match digits, but the *
 1. [Repeating characters](https://regexone.com/lesson/repeating_characters)
 2. [Kleene operators](https://regexone.com/lesson/kleene_operators)
 
-#### Q13. What is the result in the console of running this code?
+#### Q13. What is correct the result in the console of running this code?
 
 ```js
 'use strict';
