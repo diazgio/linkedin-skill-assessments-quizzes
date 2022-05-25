@@ -41,7 +41,7 @@ $('button').click(function () {
 `https://example.com/json-api/students`  
 `https://example.com/json-api/classes`
 
-- [ ]
+- [ ] A
 
 ```js
 $.get(
@@ -52,7 +52,7 @@ $.get(
 );
 ```
 
-- [ ]
+- [ ] B
 
 ```js
 $.when(
@@ -63,7 +63,7 @@ $.when(
 });
 ```
 
-- [ ]
+- [ ] C
 
 ```js
 $.bind(
@@ -74,7 +74,7 @@ $.bind(
 });
 ```
 
-- [x]
+- [x] D
 
 ```js
 $.ajax('https://example.com/json-api/students', {
