@@ -829,7 +829,7 @@ std::cout << ( nums[0] << nums[1] << nums[2] );
 - [ ] `0`
 - [ ] `243`
 
-#### Q46. What is the output of this code?
+#### Q46. What is the output of this code in the next lines?
 
 ```cpp
 float values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};
