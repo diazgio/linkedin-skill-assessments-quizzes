@@ -191,7 +191,7 @@ discountPrice = function (price) {
 
 [Reference defining javascript functions](https://www.w3schools.com/js/js_functions.asp)
 
-#### Q11. What is the result in the console of running the code shown?
+#### Q11. What is the correct result in the console of running the code shown?
 
 ```js
 var Storm = function () {};
