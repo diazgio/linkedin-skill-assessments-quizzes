@@ -904,7 +904,7 @@ public class MagicPower {
 - [x] class
 - [ ] method
 
-#### Q59. What does this code print?
+#### Q59. What does this following code print?
 
 ```java
 public static void main(String[] args) {
@@ -1700,7 +1700,7 @@ for (List list : myLists){
 
 **Explanation:** switch between different implementations of the `List` interface
 
-#### Q118. What does this code print?
+#### Q118. What does this piece of code print?
 
 ```java
 String a = "bikini";
