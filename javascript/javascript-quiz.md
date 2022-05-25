@@ -1717,7 +1717,7 @@ if(/* Insert Snippet Here */){
 
 [Reference Array.prototype.some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
-#### Q124. What is the output of this code?
+#### Q124. What is the output for this piece of code?
 
 ```js
 class RainForest {
@@ -1810,7 +1810,7 @@ console.log(typeof 41.1);
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#basic_usage)
 
-#### Q130. What is the output of this code?
+#### Q130. What is the correct output in this next lines of code?
 
 ```js
 let scores = [];
