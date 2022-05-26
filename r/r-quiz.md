@@ -500,16 +500,7 @@ result <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)
 - [ ] is.logical(a[1])
 - [ ] is.character(a[1])
 
-#### Q50. How do you return "October" from `x` in this code?
-
-`x <- as.Date("2018-10-01")`
-
-- [ ] as.month(x)
-- [x] months(x)
-- [ ] month(x)
-- [ ] attr(x)
-
-### Q51. How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?
+### Q50. How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?
 
 - [ ]
 
@@ -535,15 +526,8 @@ which_late <- which(late_delivery)
 which_late
 ```
 
-- [x]
 
-```
-late_delivery <- pizza$delivery_min >= 30
-late <- pizaa$late_delivery
-pizza$late
-```
-
-#### Q52. Which function returns `[1] TRUE FALSE TRUE`?
+#### Q51. Which function returns `[1] TRUE FALSE TRUE`?
 
 `indat <- c("Ash Rd","Ash Cir","Ash St")`
 
