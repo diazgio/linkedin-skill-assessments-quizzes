@@ -501,7 +501,7 @@ $title = $_POST[ 'title' ];
 
 [Ref](https://hazimhassan.com/linkedin-wordpress-assessment-answers-2021/)
 
-#### Q60. You would use a post instead of a page when the content is **\_**.
+#### Q60. You would use a post instead of a page when the content is **\_**.?
 
 - [ ] for a top-level menu item
 - [ ] nested (has a parent/child relationship with another piece of content)
