@@ -508,7 +508,7 @@ console.log(person);
 - [ ] `{}`
 - [ ] `Jane`
 
-#### Q62. What will this code log to the console?
+#### Q62. What will this piece of code log to the console?
 
 ```
 // File: person.js
