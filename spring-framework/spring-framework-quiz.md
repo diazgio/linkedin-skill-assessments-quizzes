@@ -517,7 +517,7 @@ Explanation: sha-1 is not considered secure anymore: https://en.wikipedia.org/wi
 
 [Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)
 
-#### Q54. What is printed when this code is run as a @SpringBootApplication?
+#### Q54. What is printed when this piece of code is run as a @SpringBootApplication?
 
 ```java
 @Component
