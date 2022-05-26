@@ -105,7 +105,7 @@ var test = 1 == 1
 - [ ] 1
 - [ ] This code contains an error
 
-#### Q10. What is the value of y?
+#### Q10. What is the value of the variable y?
 
 ```swift
 var x: Int?
