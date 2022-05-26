@@ -20,10 +20,10 @@ End Sub
         ```
 
 - [x]
-  ```
-  ID=5 Age = 20 Weight=0
-  ID=6 Age = 25 Weight=130
-  ```
+      ```
+      ID=5 Age = 20 Weight=0
+      ID=6 Age = 25 Weight=130
+      ```
 
 - [ ]
   ```
