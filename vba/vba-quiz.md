@@ -13,28 +13,28 @@ Sub ShowVitals()
 End Sub
 ```
 
-- [ ]
+- [ ] A
 
 ```
 ID=5 Age = 20 Weight=
 ID=6 Age = 25 Weight=130
 ```
 
-- [x]
+- [x] B
 
 ```
 ID=5 Age = 20 Weight=0
 ID=6 Age = 25 Weight=130
 ```
 
-- [ ]
+- [ ] C
 
 ```
 ID=5 Age = 20 Weight=Null
 ID=6 Age = 25 Weight=130
 ```
 
-- [ ]
+- [ ] D
 
 ```
 ID=5 Age = 20
@@ -214,32 +214,32 @@ End Type
 
 #### Q14. What is one way to duplicate a user form from one project into a different project?
 
-- [ ]
+- [ ] A
 
-1. Save and close the project with the existing user form.
-2. Click Insert > File.
-3. Browse to the location of the existing project.
-4. Right-click it and select the user-form you want to duplicate.
+    1. Save and close the project with the existing user form.
+    2. Click Insert > File.
+    3. Browse to the location of the existing project.
+    4. Right-click it and select the user-form you want to duplicate.
 
-- [ ]
+- [ ] B
 
-1. Open the existing user form in Desing Mode.
-2. Right-click the form and select Copy.
-3. Switch to the other project.
-4. Right-click Module and select Paste.
+    1. Open the existing user form in Desing Mode.
+    2. Right-click the form and select Copy.
+    3. Switch to the other project.
+    4. Right-click Module and select Paste.
 
-- [ ]
+- [ ] C
 
-1. In the Project Explorer, right-click the user form and select Copy.
-2. Switch to the new project.
-3. Right-click UserForms and select Paste.
+    1. In the Project Explorer, right-click the user form and select Copy.
+    2. Switch to the new project.
+    3. Right-click UserForms and select Paste.
 
-- [x]
+- [x] D
 
-1. Open the existing user form in Design Mode.
-2. Click File > Export File.
-3. Switch to the other project.
-4. Click File > Import File.
+    1. Open the existing user form in Design Mode.
+    2. Click File > Export File.
+    3. Switch to the other project.
+    4. Click File > Import File.
 
 #### Q15. The recording of a macro in Word is likely to be an incomplete record of the user's actions. Why?
 
@@ -362,25 +362,25 @@ End Enum
 
 #### Q30. How do you add a user form to a VBA project?
 
-- [ ]
+- [ ] A
 
-1. Select the project in the Project window of the Visual Basic Editor
-2. Click the Design Mode button and select Insert Mode
+    1. Select the project in the Project window of the Visual Basic Editor
+    2. Click the Design Mode button and select Insert Mode
 
-- [ ]
+- [ ] B
 
-1. Select the project in the Project window of the Visual Basic Editor
-2. Click the Toolbox button and select UserForm
+    1. Select the project in the Project window of the Visual Basic Editor
+    2. Click the Toolbox button and select UserForm
 
-- [ ]
+- [ ] C
 
-1. Select the project in the Project window of the Visual Basic Editor
-2. Right-click the Run menu and select Customize
+    1. Select the project in the Project window of the Visual Basic Editor
+    2. Right-click the Run menu and select Customize
 
-- [x]
+- [x] D
 
-1. Select the project in the Project window of the Visual Basic Editor
-2. Click Insert > UserForm
+    1. Select the project in the Project window of the Visual Basic Editor
+    2. Click Insert > UserForm
 
 #### Q31. Explicit variable declaration is required. MyVar is declared at both the module and the procedure level. What is the value of MyVar after first AAA() and then BBB() are run?
 
@@ -402,7 +402,7 @@ End Sub
 
 #### Q32. Which code block from class modules returns a compile error?
 
-- [ ]
+- [ ] A
 
 ```
 Public Property Get HDL() As Double
@@ -413,7 +413,7 @@ pHDL = Value
 End Property
 ```
 
-- [ ]
+- [ ] B
 
 ```
 Property Get HDL() As Double
@@ -424,7 +424,7 @@ pHDL = Value
 End Property
 ```
 
-- [ ]
+- [ ] C
 
 ```
 Public Property Get HDL() As Double
@@ -435,7 +435,7 @@ pHDL = Value
 End Property
 ```
 
-- [x]
+- [x] D
 
 ```
 Public Property Get HDL() As Single
