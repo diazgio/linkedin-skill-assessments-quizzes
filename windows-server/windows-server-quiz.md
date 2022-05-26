@@ -402,14 +402,14 @@
 
 [ref](https://biztechmagazine.com/article/2013/03/4-solutions-ensuring-dhcp-availability)
 
-#### Q56. You have installed the Remote Desktop Services role. Which remote desktop mode comes with two built-in licenses?
+#### Q56. Using Storage Pools under Files and Storage Services, you configure a mixture of SSD (solid state disk) and HDD (hard disk drive) for tiered storage by creating what?
 
-- [x] RDA Administration Mode
-- [ ] RDS Session Mode
-- [ ] RDS User Mode
-- [ ] RDA Application Mode
+- [ ] multitenancy volumes
+- [ ] storage pools
+- [ ] parity volumes
+- [x] storage spaces
 
-[reference](https://www.dell.com/support/kbdoc/en-si/000136576/windows-server-an-overview-of-windows-remote-desktop-services-licensing)
+[reference](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/storage-spaces-how-to-configure-storage-tiers-with-windows/ba-p/256700)
 
 #### Q57. In a two-tier hierarchy CA design, what is a common security best practice?
 
@@ -472,12 +472,3 @@
 - [ ] Standalone
 
 [reference](https://itfreetraining.com/lesson/catypes/)
-
-#### Q64. Using Storage Pools under Files and Storage Services, you configure a mixture of SSD (solid state disk) and HDD (hard disk drive) for tiered storage by creating what?
-
-- [ ] multitenancy volumes
-- [ ] storage pools
-- [ ] parity volumes
-- [x] storage spaces
-
-[reference](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/storage-spaces-how-to-configure-storage-tiers-with-windows/ba-p/256700)
