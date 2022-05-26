@@ -636,23 +636,14 @@ endif;
 
 [Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)
 
-#### Q75. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
-
-- [ ] `apply_filters( 'Hello World!', 'mytextdomain' );`
-- [ ] `esc_html( 'Hello World!', 'mytextdomain' );`
-- [ ] `$string = "Hello World!";`
-- [x] `__( 'Hello World!', 'mytextdomain' );`
-
-[Reference](https://wordpress.stackexchange.com/questions/231685/how-to-get-a-translated-string-from-a-language-other-than-the-current-one)
-
-#### Q76. Which of these are best practices in accessibility?
+#### Q75. Which of these are best practices in accessibility?
 
 - [ ] Do not skip heading levels.
 - [ ] Be sure there is proper color contrast between background and text.
 - [ ] If an activity can be completed with a mouse, it must also be accessible by keyboard.
 - [x] all of these answers
 
-#### Q77. JavaScript variables can hold many data types. Which data type does the following variable represent?
+#### Q76. JavaScript variables can hold many data types. Which data type does the following variable represent?
 
 `var x = "16"`
 
