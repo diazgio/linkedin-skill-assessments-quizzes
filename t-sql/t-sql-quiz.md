@@ -311,7 +311,7 @@ CREATE TABLE Students (
 );
 ```
 
-- [ ]
+- [ ] A
 
 ```
 SELECT StudentName
@@ -319,7 +319,7 @@ FROM Students
 WHERE Grade = (SELECT MIN(Grade) FROM Student);
 ```
 
-- [ ]
+- [ ] B
 
 ```
 SELECT TOP(1) Grade
@@ -327,7 +327,7 @@ FROM Students
 ORDER BY Grade;
 ```
 
-- [x]
+- [x] C
 
 ```
 SELECT MIN(Grade)
@@ -335,7 +335,7 @@ FROM Students
 ORDER BY Grade;
 ```
 
-- [ ]
+- [ ] D
 
 ```
 SELECT MIN(Grade)
@@ -344,7 +344,7 @@ FROM Students
 
 **Explanation:** `Column "Students.Grade" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.`
 
-#### Q33. Given a table with the following structure, which query will not return the lowest grade earned by any student?
+#### Q33. Which query will not return the lowest grade earned by any student?
 
 ![T-SQL-Q33](images/Q33.jpg)
 
