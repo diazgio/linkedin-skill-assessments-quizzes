@@ -347,7 +347,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] availability
 - [x] algorithms
 
-#### Q47. What is this diagram a good example of?
+#### Q47. What is this diagram an example of?
 
 ![Machine Learning Q45](images/machine-learning_Q45.jpg)
 
