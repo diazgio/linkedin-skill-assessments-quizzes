@@ -1222,7 +1222,7 @@ num_list[len(num_list)//2]
 
 [reference here](https://stackoverflow.com/questions/625083/what-init-and-self-do-in-python)
 
-#### Q93. What is the correct syntax for calling an instance method on a class named Game?
+#### Q93. What is the right syntax for calling an instance method on a class named Game?
 
 - [ ] my_game = Game(self) self.my_game.roll_dice()
 - [ ] my_game = Game() self.my_game.roll_dice()
@@ -1737,49 +1737,7 @@ Hello, I am from France
 
 [Reference](https://www.scaler.com/topics/python/data-abstraction-in-python/)
 
-#### Q129. Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?
-
-![Q129](images/Q129.png)
-
-- [ ] `sum(titanic['Survived'])`
-- [ ] `[x for x in titanic['Survived'] if x == 1]`
-- [ ] `len(titanic["Survived"])`
-- [ ] `sum(titanic['Survived']==0)`
-
-#### Q130. How would you create a list of tuples matching these lists of characters and actors?
-
-```python
-characters = ["Iron Man", "Spider Man", "Captain America"]
-actors = ["Downey", "Holland", "Evans"]
-
-# example output : [("IronMan", "Downey"), ("Spider Man", "Holland"), ("Captain America", "Evans")]
-```
-
-- [ ] `[(x,y)] for x in characters for y in actors]`
-- [ ] `zip(characters, actors)`
-- [ ]
-
-```
-d = {}
-
-for x in range(1,len(characters)):
-    d[x] = actors [x]
-```
-
-- [ ] `{x:y for x in characters for y in actors}`
-
-#### Q131. What will this statement return?
-
-```python
-{x : x*x for x in range(1,100)}
-```
-
-- [ ] a dictionary with x as a key, and x squared as its value; from 1 to 100
-- [ ] a dictionary with x as a key, and x squared as its value; from 1 to 99
-- [ ] a set of tuples, consisting of (x,x squared); from 1 to 99
-- [ ] a list with all numbers squared from 1 to 99
-
-#### Q132. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?
+#### Q129. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?
 
 ![Q132](images/Q132.png)
 
