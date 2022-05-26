@@ -14,10 +14,10 @@ End Sub
 ```
 
 - [ ]
-        ```
-        ID=5 Age = 20 Weight=
-        ID=6 Age = 25 Weight=130
-        ```
+       ```
+       ID=5 Age = 20 Weight=
+       ID=6 Age = 25 Weight=130
+       ```
 
 - [x]
       ```
@@ -26,16 +26,16 @@ End Sub
       ```
 
 - [ ]
-  ```
-  ID=5 Age = 20 Weight=Null
-  ID=6 Age = 25 Weight=130
-  ```
+      ```
+      ID=5 Age = 20 Weight=Null
+      ID=6 Age = 25 Weight=130
+      ```
 
 - [ ]
-  ```
-  ID=5 Age = 20
-  ID=6 Age = 25 Weight=130
-  ```
+      ```
+      ID=5 Age = 20
+      ID=6 Age = 25 Weight=130
+      ```
 
 #### Q2. This code shows the first statement of CalledSub. Which calling statement will work properly?
 
@@ -110,44 +110,40 @@ End Sub
 
 #### Q36. The VBA code block shown in the following four options runs when UserForm1's CommandButton1 button is clicked. Which block of code leaves UserFrom1 loaded but not visible until the FoundErrors function has checked it, and then enables processing to continue if no errors are found?
 
-- [ ] A
+- [ ]
+        ```
+        Private Sub CommandButton1_Click()
+        If FoundErrors(Me) Then _
+        Me.Show
+        End Sub
+        ```
 
-```
-Private Sub CommandButton1_Click()
-If FoundErrors(Me) Then _
-Me.Show
-End Sub
-```
+- [ ]
+        ```
+        Private Sub CommandButton1_Click()
+        If Not FoundErrors(UserForm1) Then _
+        Unload UserForm1
+        End Sub
+        ```
 
-- [ ] B
+- [x]
+        ```
+        Private Sub CommandButton1_Click()
+        Me.Hide
+        Do While FoundErrors(Me)
+        Me.Show
+        Loop
+        End Sub
+        ```
 
-```
-Private Sub CommandButton1_Click()
-If Not FoundErrors(UserForm1) Then _
-Unload UserForm1
-End Sub
-```
-
-- [x] C
-
-```
-Private Sub CommandButton1_Click()
-Me.Hide
-Do While FoundErrors(Me)
-Me.Show
-Loop
-End Sub
-```
-
-- [ ] D
-
-```
-Private Sub CommandButton1_Click()
-Do While FoundErrors(UserForm1)
-UserForm1.show
-Loop
-End Sub
-```
+- [ ]
+        ```
+        Private Sub CommandButton1_Click()
+        Do While FoundErrors(UserForm1)
+        UserForm1.show
+        Loop
+        End Sub
+        ```
 
 > The first requirement is to make UserForm1 loaded but not visible, therefore we need Me.Hide, **Me** in here referring to UserForm1
 
@@ -180,64 +176,64 @@ End Sub
 
 #### Q13. Which is a valid definition of a user-defined data type?
 
-- [x] A
-    ```
-        Type CBC
-        Name As String
-        Next As String
-        End Type
-    ```
-- [ ] B
-    ```
-        Type CBC
-        Name As String
-        \_Next As String
-        End Type
-    ```
-- [ ] C
-    ```
-        Type CBC
-        Name As String
-        @Option As String
-        End Type
-    ```
-- [ ] D
-    ```
-        Type CBC
-        Name As String
-        %For As String
-        End Type
-    ```
+- [x]
+        ```
+            Type CBC
+            Name As String
+            Next As String
+            End Type
+        ```
+- [ ]
+        ```
+            Type CBC
+            Name As String
+            \_Next As String
+            End Type
+        ```
+- [ ]
+        ```
+            Type CBC
+            Name As String
+            @Option As String
+            End Type
+        ```
+- [ ]
+        ```
+            Type CBC
+            Name As String
+            %For As String
+            End Type
+        ```
 
 #### Q14. What is one way to duplicate a user form from one project into a different project?
 
-- [ ] A
-
-    1. Save and close the project with the existing user form.
-    2. Click Insert > File.
-    3. Browse to the location of the existing project.
-    4. Right-click it and select the user-form you want to duplicate.
-
-- [ ] B
-
-    1. Open the existing user form in Desing Mode.
-    2. Right-click the form and select Copy.
-    3. Switch to the other project.
-    4. Right-click Module and select Paste.
-
-- [ ] C
-
-    1. In the Project Explorer, right-click the user form and select Copy.
-    2. Switch to the new project.
-    3. Right-click UserForms and select Paste.
-
-- [x] D
-
-    1. Open the existing user form in Design Mode.
-    2. Click File > Export File.
-    3. Switch to the other project.
-    4. Click File > Import File.
-
+- [ ]
+        ```markdown
+        1. Save and close the project with the existing user form.
+        2. Click Insert > File.
+        3. Browse to the location of the existing project.
+        4. Right-click it and select the user-form you want to duplicate.
+        ```
+- [ ]
+        ```markdown
+        1. Open the existing user form in Desing Mode.
+        2. Right-click the form and select Copy.
+        3. Switch to the other project.
+        4. Right-click Module and select Paste.
+        ```
+- [ ]
+        ```markdown
+        1. In the Project Explorer, right-click the user form and select Copy.
+        2. Switch to the new project.
+        3. Right-click UserForms and select Paste.
+        ```
+- [x]
+        ```markdown
+        1. Open the existing user form in Design Mode.
+        2. Click File > Export File.
+        3. Switch to the other project.
+        4. Click File > Import File.
+        ```
 #### Q15. The recording of a macro in Word is likely to be an incomplete record of the user's actions. Why?
 
 - [ ] Word's Macro Recorder does not record actions initiated by keyboard shortcuts.
