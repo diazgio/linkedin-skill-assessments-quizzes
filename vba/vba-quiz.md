@@ -13,28 +13,28 @@ Sub ShowVitals()
 End Sub
 ```
 
-- [ ]
+- [ ] A
 
 ```
 ID=5 Age = 20 Weight=
 ID=6 Age = 25 Weight=130
 ```
 
-- [x]
+- [x] B
 
 ```
 ID=5 Age = 20 Weight=0
 ID=6 Age = 25 Weight=130
 ```
 
-- [ ]
+- [ ] C
 
 ```
 ID=5 Age = 20 Weight=Null
 ID=6 Age = 25 Weight=130
 ```
 
-- [ ]
+- [ ] D
 
 ```
 ID=5 Age = 20
@@ -112,31 +112,48 @@ End Sub
 - [ ] TabStrip
 - [x] ListBox
 
-#### Q9. Below is a function named SquareIt. Which version of the subroutine named Area results in a compile error?
+#### Q36. The VBA code block shown in the following four options runs when UserForm1's CommandButton1 button is clicked. Which block of code leaves UserFrom1 loaded but not visible until the FoundErrors function has checked it, and then enables processing to continue if no errors are found?
+
+- [ ] A
 
 ```
-Function SquareIt(ByRef Basis As Integer) As Long
-SquareIt = Basis ^ 2
-End Function
-```
-
-- [ ] sub Area()
-
-```
-Dim Result As Long, Side As Integer
-Side = 5
-Result = Squarelt(Side)
+Private Sub CommandButton1_Click()
+If FoundErrors(Me) Then _
+Me.Show
 End Sub
 ```
 
-- [ ] Sub Area()
+- [ ] B
 
 ```
-Dim Result As Long, Side
-Side = 5
-Result = SquareIt(Cint(Side))
+Private Sub CommandButton1_Click()
+If Not FoundErrors(UserForm1) Then _
+Unload UserForm1
 End Sub
 ```
+
+- [x] C
+
+```
+Private Sub CommandButton1_Click()
+Me.Hide
+Do While FoundErrors(Me)
+Me.Show
+Loop
+End Sub
+```
+
+- [ ] D
+
+```
+Private Sub CommandButton1_Click()
+Do While FoundErrors(UserForm1)
+UserForm1.show
+Loop
+End Sub
+```
+
+> The first requirement is to make UserForm1 loaded but not visible, therefore we need Me.Hide, **Me** in here referring to UserForm1
 
 #### Q10. EmailAddress() is an array. It is declared by Dim EmailAddress(10) As String, and option Base 1 is in effect. How many rows and columns are in EmailAddress()?
 
@@ -167,28 +184,28 @@ End Sub
 
 #### Q13. Which is a valid definition of a user-defined data type?
 
-- [x]
+- [x] A
 
 Type CBC
 Name As String
 Next As String
 End Type
 
-- [ ]
+- [ ] B
 
 Type CBC
 Name As String
 \_Next As String
 End Type
 
-- [ ]
+- [ ] C
 
 Type CBC
 Name As String
 @Option As String
 End Type
 
-- [ ]
+- [ ] D
 
 Type CBC
 Name As String
@@ -461,46 +478,3 @@ End Sub
 - [ ] Y and Z
 - [x] Z = in a message box and then a subsequent error message
 - [ ] Y = in a message box and then a subsequent error message
-
-#### Q36. The VBA code block shown in the following four options runs when UserForm1's CommandButton1 button is clicked. Which block of code leaves UserFrom1 loaded but not visible until the FoundErrors function has checked it, and then enables processing to continue if no errors are found?
-
-- [ ]
-
-```
-Private Sub CommandButton1_Click()
-If FoundErrors(Me) Then _
-Me.Show
-End Sub
-```
-
-- [ ]
-
-```
-Private Sub CommandButton1_Click()
-If Not FoundErrors(UserForm1) Then _
-Unload UserForm1
-End Sub
-```
-
-- [x]
-
-```
-Private Sub CommandButton1_Click()
-Me.Hide
-Do While FoundErrors(Me)
-Me.Show
-Loop
-End Sub
-```
-
-- [ ]
-
-```
-Private Sub CommandButton1_Click()
-Do While FoundErrors(UserForm1)
-UserForm1.show
-Loop
-End Sub
-```
-
-> The first requirement is to make UserForm1 loaded but not visible, therefore we need Me.Hide, **Me** in here referring to UserForm1
