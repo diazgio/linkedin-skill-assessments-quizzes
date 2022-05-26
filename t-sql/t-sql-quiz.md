@@ -383,7 +383,7 @@ FROM Students
 - [ ] UPDATES Students SET team = "Philosophy Parrots" WHERE team = "Philosophy Pandas";
 - [ ] UPDATES Students SET team = Philosophy Parrots WHERE team = Philosophy Pandas;
 
-#### Q37. What is the result of this query?
+#### Q37. What is the correct result of this query?
 
 `SELECT 123+'123' AS Result;`
 
