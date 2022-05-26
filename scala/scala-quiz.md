@@ -366,7 +366,7 @@ myClass.foreach(println _)
 #### Q43. What's the best way to execute code in the background in a separate thread?
 
 - [ ] AltFuture
-- [ ] Future
+- [x] Future
 - [ ] AltProcess
 - [ ] AltThread
 
@@ -424,14 +424,7 @@ myClass.foreach(println _)
 - [ ] == cannot be applied to String.
 - [ ] == won't work on objects
 
-#### Q51. What's the best way to execute code in the background in a separate thread?
-
-- [ ] AltThread
-- [ ] AltFuture
-- [ ] AltProcess
-- [x] Future
-
-#### Q53. What value does this code return?
+#### Q52. What value does this code return?
 
 ```scala
 x= List(1,2,4); x(1)?
