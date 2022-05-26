@@ -169,37 +169,30 @@
 
 #### Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word "jQuery"?
 
-- [ ] .
-
-```
-$.ready(function() {
-// do stuff
-});
-```
-
-- [ ] .
-
-```
-(function($) {
-// do stuff
-})( jQuery );
-```
-
-- [x] .
-
-```
-$(function() {
-// do stuff
-});
-```
-
-- [ ] .
-
-```
-jQuery(function($) {
-// do stuff
-});
-```
+- [ ] 
+  ```
+  $.ready(function() {
+  // do stuff
+  });
+  ```
+- [ ]
+  ```
+  (function($) {
+  // do stuff
+  })( jQuery );
+  ```
+- [x]
+  ```
+  $(function() {
+  // do stuff
+  });
+  ```
+- [ ]
+  ```
+  jQuery(function($) {
+  // do stuff
+  });
+  ```
 
 #### Q23. What is the correct order of parameters for the add_action() function?
 
