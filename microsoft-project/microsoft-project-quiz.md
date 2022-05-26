@@ -303,35 +303,28 @@
 - [ ] From the **View** tab on ribbon, click **Sort**.
 - [ ] From the **View** tab on the ribbon, in the **Data** group, select **Group by**.
 
-#### Q40. You are managing a construction project schedule with key tasks that have dependencies on each other. You need to supply key materials to your team they begin to build different of the building. All materials must be inventoried before they can be used for the project. The completion of the materials delivery and inventory task, which will take longer than the different building sections, will drive the completion of the building sections. You need to create a link from the delivery and inventory task to of building task. Which link type is appropriate?
-
-- [ ] Finish-to-Finish (FF)
-- [ ] Start-to-Start (SS)
-- [ ] Start-to-Finish (SF)
-- [ ] Finish-to-Start (FS)
-
-#### Q41. When breaking down the work that needs to be done on a project, what is the smallest unit of work known as?
+#### Q40. When breaking down the work that needs to be done on a project, what is the smallest unit of work known as?
 
 - [x] work package
 - [ ] duration
 - [ ] work breakdown structure
 - [ ] task assignment
 
-#### Q42. A resource's hours have increased over the span of five days for a particular task. The duration has not changed, and the task is effort driven. What element can you add to the Task Usage view to see what has changed?
+#### Q41. A resource's hours have increased over the span of five days for a particular task. The duration has not changed, and the task is effort driven. What element can you add to the Task Usage view to see what has changed?
 
 - [ ] Add a column for the actual duration.
 - [ ] Add a column for the level assignments.
 - [x] Add a column for the Peak value.
 - [ ] Add a column for the assignment.
 
-#### Q43. You are modifying a project's work breakdown structure (WBS) code. What is the default length for any selected sequence type?
+#### Q42. You are modifying a project's work breakdown structure (WBS) code. What is the default length for any selected sequence type?
 
 - [x] any
 - [ ] 5
 - [ ] 3
 - [ ] 1
 
-#### Q44. You are working on a project schedule. You need two tasks to end at the same time so that your review team can do their work on both tasks. Which link type is appropriate?
+#### Q43. You are working on a project schedule. You need two tasks to end at the same time so that your review team can do their work on both tasks. Which link type is appropriate?
 
 - [ ] Start-to-Start (SS)
 - [ ] Finish-to-Start (FS)
