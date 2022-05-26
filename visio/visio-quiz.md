@@ -9,37 +9,30 @@
 
 #### Q2. What is the correct order of the three basic steps required to create nearly all diagrams?
 
-- [x] A
-
-```markdown
-1. Create a new diagram from one of the templates.
-2. Drag shapes onto the page.
-3. Add text to shapes (if required).
-```
-
-- [ ] B
-
-```markdown
-1. Open a starter diagram.
-2. Drag shapes around.
-3. Connect the shapes and add text.
-```
-
-- [ ] C
-
-```markdown
-1. Create a new diagram from one of the templates.
-2. Create shapes using the drawing tools.
-3. Add text to shapes (if required).
-```
-
-- [ ] D
-
-```markdown
-1. Open a starter diagram.
-2. Add text to shapes (if required).
-3. Drag shapes onto the page.
-```
+- [x]
+  ```markdown
+  1. Create a new diagram from one of the templates.
+  2. Drag shapes onto the page.
+  3. Add text to shapes (if required).
+  ```
+- [ ]
+  ```markdown
+  1. Open a starter diagram.
+  2. Drag shapes around.
+  3. Connect the shapes and add text.
+  ```
+- [ ]
+  ```markdown
+  1. Create a new diagram from one of the templates.
+  2. Create shapes using the drawing tools.
+  3. Add text to shapes (if required).
+  ```
+- [ ]
+  ```markdown
+  1. Open a starter diagram.
+  2. Add text to shapes (if required).
+  3. Drag shapes onto the page.
+  ```
 
 #### Q3. What is the difference between the **Drawing** tools in the **Tools** group on the **Home** tab and the **Drawing** tools on the **Mini Toolbar**?
 
@@ -83,23 +76,12 @@
 - [ ] a shape that is glued to others to add comments
 - [x] a one-dimensional shape that is used to connect two shapes
 
-#### Q9. Which flowchart shape indicates a question or branch in the process flow?
+#### Q9.Which of the following is a type of shape data list from which users can select an entry or can enter a new value?
 
-- [ ] A
-
-![image](images/001.png)
-
-- [x] B
-
-![image](images/002.png)
-
-- [ ] C
-
-![image](images/003.png)
-
-- [ ] D
-
-![image](images/004.png)
+- [ ] Visio list
+- [ ] list
+- [x] variable list
+- [ ] fixed list
 
 #### Q10. Some Business Process Model Notation (BPMN) shapes are further annotated by attaching a callout shape. Which option is associated with a callout shape?
 
@@ -254,34 +236,27 @@
 
 #### Q31. You have dragged a table shape from the Office Furniture stencil into an office layout diagram, but it is not the correct width. Which method can you _not_ use to set the width of the table?
 
-- [x] A
-
-```markdown
-1. Select the table shape.
-2. In the Size & Position window, type the desired width value into the Width field.
-```
-
-- [ ] B
-
-```markdown
-1. Select the table shape.
-2. In the Shape Data window, type the desired width value into the Width field.
-```
-
-- [ ] C
-
-```markdown
-1. Select the table shape.
-2. In the Size & Position window, type the desired width value into the X field.
-```
-
-- [ ] D
-
-```markdown
-1. Ensure that the Shape Data window is open.
-2. Select the table shape.
-3. Click and drag one of the shape's selection handles until the Width field displays the desired value.
-```
+- [x]
+  ```markdown
+  1. Select the table shape.
+  2. In the Size & Position window, type the desired width value into the Width field.
+  ```
+- [ ]
+  ```markdown
+  1. Select the table shape.
+  2. In the Shape Data window, type the desired width value into the Width field.
+  ```
+- [ ]
+  ```markdown
+  1. Select the table shape.
+  2. In the Size & Position window, type the desired width value into the X field.
+  ```
+- [ ]
+  ```markdown
+  1. Ensure that the Shape Data window is open.
+  2. Select the table shape.
+  3. Click and drag one of the shape's selection handles until the Width field displays the desired value.
+  ```
 
 #### Q32. What key combination do you use to return to viewing the whole page in Visio?
 
@@ -303,10 +278,3 @@
 - [x] .dwg
 - [ ] .xps
 - [ ] .pdf
-
-#### Q35.Which of the following is a type of shape data list from which users can select an entry or can enter a new value?
-
-- [ ] Visio list
-- [ ] list
-- [x] variable list
-- [ ] fixed list
