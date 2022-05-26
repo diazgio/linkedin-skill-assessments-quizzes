@@ -262,7 +262,7 @@ vals.insert("5")
 - [ ] Initialize the closure as read-only.
 - [ ] Declare the closure variable as lazy.
 
-#### Q24. What is wrong with this code?
+#### Q24. What is wrong with this piece of code?
 
 ```swift
 if let s = String.init("some string") {
@@ -446,7 +446,7 @@ let oThings = nThings.reduce("") { "\($0)\($1)" }
 - [ ] `try!`
 - [ ] `?try`
 
-#### Q40. What is wrong with this code?
+#### Q40. What is wrong with this following piece of code?
 
 ```swift
 protocol TUI {
@@ -505,7 +505,7 @@ func add(this x: Int, toThat y: Int)->{}
 - [x] argument labels
 - [ ] parameters names
 
-#### Q45. What is wrong with this code?
+#### Q45. What is wrong with this next lines of code?
 
 ```swift
 for (key, value) in [1: "one", 2: "two"]{
@@ -552,7 +552,7 @@ let vals = ("val", 1)
 - [ ] an optional
 - [ ] This code contains error
 
-#### Q49. What is wrong with this code?
+#### Q49. What is wrong with this next code?
 
 ```swift
 var x = 5
@@ -577,7 +577,7 @@ print(items["c"] as Any)
 - [ ] 1,2,3
 - [x] nil
 
-#### Q51. What is wrong with this code?
+#### Q51. What is the incorrect anwser for this code?
 
 ```swift
 let val = 5.0 + 10
@@ -789,7 +789,7 @@ let vt = (name: "ABC", val: 5)
 - [ ] let x = vt.val
 - [ ] let (`_`, x) = vt
 
-#### Q70. What is wrong with this code?
+#### Q70. What is wrong with this?
 
 ```swift
 class Person {
