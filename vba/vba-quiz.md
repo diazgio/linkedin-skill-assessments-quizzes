@@ -349,25 +349,26 @@ End Enum
 
 #### Q30. How do you add a user form to a VBA project?
 
-- [ ] A
-
+- [ ]
+    ```markdown
     1. Select the project in the Project window of the Visual Basic Editor
     2. Click the Design Mode button and select Insert Mode
-
-- [ ] B
-
+    ```
+- [ ]
+    ```markdown
     1. Select the project in the Project window of the Visual Basic Editor
     2. Click the Toolbox button and select UserForm
-
-- [ ] C
-
+    ```
+- [ ]
+    ```markdown
     1. Select the project in the Project window of the Visual Basic Editor
     2. Right-click the Run menu and select Customize
-
-- [x] D
-
+    ```
+- [x]
+    ```markdown
     1. Select the project in the Project window of the Visual Basic Editor
     2. Click Insert > UserForm
+    ```
 
 #### Q31. Explicit variable declaration is required. MyVar is declared at both the module and the procedure level. What is the value of MyVar after first AAA() and then BBB() are run?
 
@@ -389,49 +390,42 @@ End Sub
 
 #### Q32. Which code block from class modules returns a compile error?
 
-- [ ] A
-
-```
-Public Property Get HDL() As Double
-HDL = pHDL
-End Property
-Public Property Let HDL(Value As Double)
-pHDL = Value
-End Property
-```
-
-- [ ] B
-
-```
-Property Get HDL() As Double
-HDL = Value
-End Property
-Property Let HDL(Value As Double)
-pHDL = Value
-End Property
-```
-
-- [ ] C
-
-```
-Public Property Get HDL() As Double
-HDL = Value
-End Property
-Public Property Let HDL(Value As Double)
-pHDL = Value
-End Property
-```
-
-- [x] D
-
-```
-Public Property Get HDL() As Single
-HDL = pHDL
-End Property
-Public Property Let HDL(Value As Double)
-pHDL = Value
-End Property
-```
+- [ ]
+  ```
+  Public Property Get HDL() As Double
+  HDL = pHDL
+  End Property
+  Public Property Let HDL(Value As Double)
+  pHDL = Value
+  End Property
+  ```
+- [ ]
+  ```
+  Property Get HDL() As Double
+  HDL = Value
+  End Property
+  Property Let HDL(Value As Double)
+  pHDL = Value
+  End Property
+  ```
+- [ ]
+  ```
+  Public Property Get HDL() As Double
+  HDL = Value
+  End Property
+  Public Property Let HDL(Value As Double)
+  pHDL = Value
+  End Property
+  ```
+- [x]
+  ```
+  Public Property Get HDL() As Single
+  HDL = pHDL
+  End Property
+  Public Property Let HDL(Value As Double)
+  pHDL = Value
+  End Property
+  ```
 
 #### Q33. If VBA code declares FileCount as a constant rather than a variable, the code tends to run faster. Why is this?
 
