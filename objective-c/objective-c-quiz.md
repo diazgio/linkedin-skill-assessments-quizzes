@@ -188,7 +188,7 @@ NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]
 - [x] fields
 - [ ] all of these answers
 
-#### Q20. What is wrong with this code?
+#### Q20. What is wrong with this piece of code?
 
 ```
 @interface MyClass : NSObject
@@ -257,7 +257,7 @@ if ([keyPath isInstanceOf:[NSString class]]) {
 - [ ] Statement 2, since it specifies the class instance to use.
 - [ ] Statement 1, since it calls the auto-created setter on the property.
 
-#### Q27. What is wrong with this code?
+#### Q27. What is wrong with this next lines of code?
 
 ```
 float x = 2.0;
@@ -395,7 +395,7 @@ NSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];
 - [ ] one
 - [x] five
 
-#### Q39. What is wrong with this code?
+#### Q39. What is wrong with this?
 
 ```
 NSDictionary *d1 = @[@"v1", @4, @"v2", @5.6, @"v3"];
@@ -406,14 +406,3 @@ NSlog(@"d1: %@", d1);
 - [x] The last key is missing a value.
 - [ ] Dictionaries cannot have mixed types as values.
 - [ ] d1 is assigned an NSArray of values.
-
-#### Q40. What is the initial value of the property `val`?
-
-```
-@property (nonatomic, readonly) int val;
-```
-
-- [ ] 8
-- [ ] nil
-- [ ] -1
-- [ ] undefined
