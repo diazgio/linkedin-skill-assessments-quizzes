@@ -766,13 +766,11 @@ https://sfmagazine.com/post-entry/may-2020-excel-sharing-a-pivot-table-slicer-be
 - [ ] Total Sales This Year; Market Region
 - [ ] Representative ID Number; Total Sales This Year
 - [x] Market Region; Total Sales This Year
--
 
 #### Q93. Cell A1 contains the number 3. Which formula returns the text Apple?
 
 - [ ] `=SELECT(A1, "Banana", "Orange", "Apple", "Mango")`
 - [x] `=CHOOSE(A1, "Banana", "Orange", "Apple", "Mango")`
-- [x] `=CHOOSE(A1,"Banana","Orange","Apple","Mango")`
 - [ ] `=MATCH(A1,{"Banana","Orange","Apple","Mango"})`
 
 #### Q94. Which value is calculated when the formula **=AVERAGE(G2:G6)/AVERAGE(C2:C6)** is entered into cell H7?
