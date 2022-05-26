@@ -668,7 +668,7 @@ WHERE MATCH(address) AGAINST ('street, drive');
 - [ ] LIST DATABASES;
 - [ ] SHOW DB;
 
-#### Q70. What is the product of the database designing phase?
+#### Q70. What is the product of the database designing phase, choose the right answer?
 
 - [ ] all tables, columns, data types, indexes and their relationships
 - [ ] a list of entities, their relationship, and constraints
