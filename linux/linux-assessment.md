@@ -435,7 +435,7 @@ find / -size -10K -exec ls -l {} \;
 
 [A Cloud Guru's Blog](https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo#:~:text=Sudo%20asks%20for%20your%20user%20password.%C2%A0%20Note%20that%20it%20is%20asking%20for%20your%20password%2C%20not%20the%20root%20password.)
 
-#### Q55. When would this system cron job run its task?
+#### Q55. When would this system cron job run this task?
 
 `0 22 * * 1-5`
 
