@@ -327,7 +327,7 @@ for i in 0...100 {
 - [x] all of these answers
 - [ ] an instance of an optional type
 
-#### Q31. What does this code print?
+#### Q31. What does this piece of code prints?
 
 ```swift
 typealias Thing = [String:Any]
@@ -659,7 +659,7 @@ for i in ["0", "1"]{
 - [ ] three
 - [ ] This code does not compile
 
-#### Q59. What does this code print?
+#### Q59. What does this following code print?
 
 ```swift
 let names = ["Bear", "Tony", "Svante"]
@@ -694,7 +694,7 @@ let val = i * 6.0
 - [ ] 30
 - [ ] 0
 
-#### Q62. What does this code print?
+#### Q62. What will be printed with this code?
 
 ```swift
 enum Positions : Int {
