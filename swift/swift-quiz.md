@@ -205,7 +205,7 @@ let val = 5
 - [ ] a constant named val of type Number
 - [ ] a variable named val of type Int
 
-#### Q19. What is the error in this code?
+#### Q19. What is the error in this following code?
 
 ```swift
 extension String {
