@@ -337,33 +337,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [x] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
 - [ ] Template tags prefaced with the\_ don't accept arguments. Template tags prefaced with get_the do accept arguments.
 
-#### Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.
+#### Q42. JavaScript variables can hold many data types. Which data type does the following variable represent?
 
-```
-Link to the script directly from a template named page-contact.php using the get_header() template tag, like this:
-get_header( '<script src="/my-script.js"></script>' );
-Use functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:
-add_action( 'wp_enqueue_scripts', 'load_scripts' );
+`var x = "16"`
 
-function load_scripts() {
-    if ( is_page( 'contact' ) ) {
-    echo '<script src="/my-script.js"></script>';
-    }
-}
+- [ ] Boolean
+- [ ] Number
+- [x] String
+- [ ] Object
 
-Use functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:
-add_action( 'wp_enqueue_scripts', 'load_scripts' );
-    function load_scripts() {
-        if ( is_page( 'contact' ) ) {
-        wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );
-        }
-    }
-```
-
-- [ ] Link to the script directly from a template named page-contact.php, like this:
-- [ ] <head>
-- [ ] <script src="/my-script.js"></script>
-- [ ] </head>
+[Reference](https://www.w3schools.com/js/js_datatypes.asp)
 
 #### Q43. Where can you find the official WordPress documentation and usage guide?
 
@@ -379,12 +362,12 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 - [ ] Use Flexbox to create flexible page layouts.
 - [ ] all of these answers
 
-#### Q45. The Block API enables developers to register custom blocks in themes or plugins. How would you register a custom block?
+#### Q45. Which of these are best practices in accessibility?
 
-- [ ] Use the registerBlockName() function.
-- [ ] Use the createGutenBlock() function.
-- [ ] Use a block template.
-- [ ] Use the registerBlockType() function.
+- [ ] Do not skip heading levels.
+- [ ] Be sure there is proper color contrast between background and text.
+- [ ] If an activity can be completed with a mouse, it must also be accessible by keyboard.
+- [x] all of these answers
 
 #### Q46. Which software development principle, often used in WordPress, aims to reduce the repetition of code?
 
@@ -411,12 +394,14 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 **Explanation**: New versions usually come with speed improvements. Inactivating plugins improves performance. By exclusion, it's UTF8.
 
-#### Q49. On a regular WordPress install, what is the difference between transients and the object cache?
+#### Q49. Why can't you modify the query in a template page?
 
-- [ ] Transients are persistent and write to the wp_options. The object cache persists only for the particular page load.
-- [ ] Transients are stored in the WordPress database. The object cache is stored on the server where the WordPress install is located.
-- [ ] Transients are available for the duration of a user session and apply to all page components. The object cache is available only for scripts.
-- [ ] Transients persist only for the particular page load. The object cache is persistent and writes to the wp_options table.
+- [ ] The query can only be run inside the Loop.
+- [x] You can modify the query in a template page if you use `pre_get_posts()`.
+- [ ] According to WordPress best practices, the query should only be modified in `functions.php`.
+- [ ] Due to execution order, the query has already run by the time a template is loaded.
+
+[Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)
 
 #### Q50. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?
 
@@ -626,31 +611,3 @@ endif;
 - [ ] `category.php`
 
 [Reference](https://developer.wordpress.org/themes/basics/template-hierarchy/)
-
-#### Q74. Why can't you modify the query in a template page?
-
-- [ ] The query can only be run inside the Loop.
-- [x] You can modify the query in a template page if you use `pre_get_posts()`.
-- [ ] According to WordPress best practices, the query should only be modified in `functions.php`.
-- [ ] Due to execution order, the query has already run by the time a template is loaded.
-
-[Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)
-
-#### Q75. Which of these are best practices in accessibility?
-
-- [ ] Do not skip heading levels.
-- [ ] Be sure there is proper color contrast between background and text.
-- [ ] If an activity can be completed with a mouse, it must also be accessible by keyboard.
-- [x] all of these answers
-
-#### Q76. JavaScript variables can hold many data types. Which data type does the following variable represent?
-
-`var x = "16"`
-
-- [ ] Boolean
-- [ ] Number
-- [x] String
-- [ ] Object
-
-[Reference](https://www.w3schools.com/js/js_datatypes.asp)
-
