@@ -422,7 +422,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 - [ ] Theme settings
 - [ ] wp-config.php
-- [ ] Customizer
+- [x] Customizer
 - [ ] WordPress settings
 
 #### Q51. You can harden your WordPress site security by adding `__` to your wp-config.php file?
@@ -636,16 +636,7 @@ endif;
 
 [Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)
 
-#### Q75. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?
-
-- [ ] WordPress settings
-- [x] Customizer
-- [ ] wp-config.php
-- [ ] Theme settings
-
-[Reference](https://wordpress.org/support/article/creating-a-favicon/)
-
-#### Q76. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
+#### Q75. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
 
 - [ ] `apply_filters( 'Hello World!', 'mytextdomain' );`
 - [ ] `esc_html( 'Hello World!', 'mytextdomain' );`
@@ -654,14 +645,14 @@ endif;
 
 [Reference](https://wordpress.stackexchange.com/questions/231685/how-to-get-a-translated-string-from-a-language-other-than-the-current-one)
 
-#### Q77. Which of these are best practices in accessibility?
+#### Q76. Which of these are best practices in accessibility?
 
 - [ ] Do not skip heading levels.
 - [ ] Be sure there is proper color contrast between background and text.
 - [ ] If an activity can be completed with a mouse, it must also be accessible by keyboard.
 - [x] all of these answers
 
-#### Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?
+#### Q77. JavaScript variables can hold many data types. Which data type does the following variable represent?
 
 `var x = "16"`
 
