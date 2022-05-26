@@ -43,7 +43,7 @@ enum Direction {
 - [ ] It allows operations to wait for each other as desired.
 - [x] all of these answers.
 
-#### Q5. What is this code an example of?
+#### Q5. What is this following code an example of?
 
 ```swift
 let val = 5
