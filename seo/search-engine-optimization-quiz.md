@@ -51,28 +51,28 @@
 
 #### Q8. You want to block crawlers from accessing your entire website. What robots.txt entry would you use?
 
-- [ ]
+- [ ] A
 
 ```markdown
     User-agent: Allbots
     Disallow: \*
 ```
 
-- [ ]
+- [ ] B
 
 ```markdown
     User-agent: /
     Disallow: \*
 ```
 
-- [ ]
+- [ ] C
 
 ```markdown
     User-agent: /
     Disallow:
 ```
 
-- [x]
+- [x] D
 
 ```markdown
     User-agent: \*
@@ -144,7 +144,7 @@
 
 #### Q18. Which choice represents the best header structure?
 
-- [ ]
+- [ ] A
 
 ```markdown
     H1: How to Bak Bagels
@@ -155,7 +155,7 @@
     H6: Reviews
 ```
 
-- [ ]
+- [ ] B
 
 ```markdown
     H1: How to Bak Bagels
@@ -166,7 +166,7 @@
     H2: Reviews
 ```
 
-- [ ]
+- [ ] C
 
 ```markdown
     H1: How to Bak Bagels
@@ -177,7 +177,7 @@
     H2: Reviews
 ```
 
-- [x]
+- [x] D
 
 ```markdown
     H1: How to Bak Bagels
@@ -382,28 +382,28 @@
 
 #### Q44. You want to block crwlers from accessing your entire website. What robots.txt entry would you use?
 
-- [ ]
+- [ ] A
 
 ```
     User-agent: Allbots
     Disallow: *
 ```
 
-- [ ]
+- [ ] B
 
 ```
     User-agent: /
     Disallow: *
 ```
 
-- [ ]
+- [ ] C
 
 ```
     User-agent: *
     Disallow:
 ```
 
-- [x]
+- [x] D
 
 ```
     User-agent: *
@@ -542,17 +542,3 @@
 - [ ] irrelevant
 - [ ] biased
 - [x] thin
-
-#### Q63 What is a common benefit to long-tail keywords?
-
-- [ ] They are less competitive, and may have higher conversion rates.
-- [ ] Long-tail keywords are no longer relevant in today's SEO landscape.
-- [ ] They are less grandular, so you capture broader searches.
-- [ ] They are more competitive, but drive significantly more traffic.
-
-#### Q64 You have been asked to help a big e-commerce brand optimize their website for search engines. They currently have thousands of products listed on their website. What is your most appropriate first step?
-
-- [ ] Set campaign goals.
-- [ ] Conduct a technical audit.
-- [ ] Conduct a backlink audit.
-- [ ] Determine keyword strategy.
