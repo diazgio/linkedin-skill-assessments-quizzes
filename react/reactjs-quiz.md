@@ -803,7 +803,7 @@ ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));
 - [ ] where the root component is
 - [ ] where to create a new JavaScript file
 
-#### Q70. What is the name of this component?
+#### Q70. What is the name of this following component?
 
 ```javascript
 class Comp extends React.Component {
