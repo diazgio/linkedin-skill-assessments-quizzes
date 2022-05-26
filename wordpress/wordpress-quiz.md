@@ -300,12 +300,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [ ] HakerOne
 - [x] Trac
 
-#### Q37. What is a user role that is unique to WordPress Multisite?
+#### Q37. The WordPress block editor contains a number of default blocks, including blocks for paragraphs, images, quotes, and shortcode. Blocks are grouped into categories to help users browse and discover them. Which is not a category provided by WordPress core?
 
-- [ ] Owner
-- [x] Super Admin
-- [ ] MU Admin
-- [ ] Multisite Master
+- [ ] formatting
+- [ ] widgets
+- [ ] layout
+- [x] shortcodes
 
 #### Q38. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
 
@@ -678,10 +678,3 @@ endif;
 - [ ] nested (has a parent/child relationship with another piece of content)
 - [x] when the content is part of a blog.
 - [ ] evergreen
-
-#### Q80. The WordPress block editor contains a number of default blocks, including blocks for paragraphs, images, quotes, and shortcode. Blocks are grouped into categories to help users browse and discover them. Which is not a category provided by WordPress core?
-
-- [ ] formatting
-- [ ] widgets
-- [ ] layout
-- [x] shortcodes
