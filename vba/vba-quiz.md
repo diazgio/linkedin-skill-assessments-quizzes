@@ -14,6 +14,29 @@ End Sub
 ```
 
 - [ ]
+  ```markdown
+  1. An element with an ID of "nav"
+  2. A nav element
+  3. An element with a class of "nav"
+  ```
+- [ ]
+  ```markdown
+      They all target the same nav element.
+  ```
+- [x]
+  ```markdown
+  1. An element with an class of "nav"
+  2. A nav element
+  3. An element with a id of "nav"
+  ```
+- [ ]
+  ```markdown
+  1. An element with an class of "nav"
+  2. A nav element
+  3. An div with a id of "nav"
+  ```
+
+- [ ]
     ```
     ID=5 Age = 20 Weight=
     ID=6 Age = 25 Weight=130
