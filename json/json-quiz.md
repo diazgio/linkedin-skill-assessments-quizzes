@@ -651,7 +651,7 @@ Note: None of the above options appear to be correct. A correct answer would be 
 - [ ] key, "value"
 - [ ] 'key': 'value'
 
-#### Q55. What data type is encoded in the outermost component of the JSON shown?
+#### Q55. What data type is encoded in the outermost component of the JSON shown here?
 
 ```json
 {
