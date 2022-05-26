@@ -366,13 +366,6 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 - [ ] Press the Esc key.
 - [ ] Press the Spacebar.
 
-#### Q49. What is the term used for the arrangement of elements on a slide, such as Title and Content?
-
-- [ ] scheme
-- [x] layout
-- [ ] theme
-- [ ] design
-
 #### Q50. After you select the chart icon in a placeholder, what is the next step to create a chart?
 
 - [ ] Select the chart elements.
