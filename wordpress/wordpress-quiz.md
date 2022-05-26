@@ -501,12 +501,12 @@ $title = $_POST[ 'title' ];
 
 [Ref](https://hazimhassan.com/linkedin-wordpress-assessment-answers-2021/)
 
-#### Q60. Which software development principle, often used in WordPress, aims to reduce the repetition of code?
+#### Q60. You would use a post instead of a page when the content is **\_**.
 
-- [x] DRY
-- [ ] RRR
-- [ ] WET
-- [ ] KISS
+- [ ] for a top-level menu item
+- [ ] nested (has a parent/child relationship with another piece of content)
+- [x] when the content is part of a blog.
+- [ ] evergreen
 
 #### Q61. Which of these CSS classs naming convention is correct according to WordPress CSS Coding Standards?
 
@@ -672,9 +672,3 @@ endif;
 
 [Reference](https://www.w3schools.com/js/js_datatypes.asp)
 
-#### Q79. You would use a post instead of a page when the content is **\_**.
-
-- [ ] for a top-level menu item
-- [ ] nested (has a parent/child relationship with another piece of content)
-- [x] when the content is part of a blog.
-- [ ] evergreen
