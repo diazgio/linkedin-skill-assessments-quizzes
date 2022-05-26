@@ -897,7 +897,7 @@ print $match[1]."\n";
 - [ ] [squirrel]
 - [ ] The quick grey squirrel.
 
-#### Q72. What is the output of this script?
+#### Q72. What is the output of this piece of script?
 
 `$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya'];`
 `$i = 0;`
