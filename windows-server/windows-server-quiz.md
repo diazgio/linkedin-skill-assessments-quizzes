@@ -445,12 +445,3 @@
 - [ ] Client
 
 [reference](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)
-
-#### Q61. You set up a storage area network that makes use of iSCSI storage. You then install the iSNS Server service feature on Windows Server 2012 R2. Why do you need this feature?
-
-- [x] to provide discovery services of iSCSI devices
-- [ ] to view information about host bus adapters
-- [ ] to manage RAID storage volumes
-- [ ] to set up storage Fibre Channels
-
-[reference](https://thesolving.com/storage/how-to-install-and-configure-a-isns-server-on-windows-2012-r2/#)
