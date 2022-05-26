@@ -14,16 +14,9 @@
 - [ ] the color of each house in a small neighborhood
 - [x] the weather conditions for each house in a small neighborhood
 
-#### Q3.1 Why would you create an abstract class, if it can have no real instances?
+#### Q3. Why would you create an abstract class, if it can have no real instances?
 
-- [x] to avoid redundant coding in children
-- [ ] to explore a hypothetical class
-- [ ] to prevent unwanted method implementation
-- [ ] to reserve memory for an unspecified class type
-
-#### Q3.2 Why would you create an abstract class, if it can have no real instances?
-
-- [x] to have common behavior in derived classes
+- [x] to function as a base for subclasses
 - [ ] to explore a hypothetical class
 - [ ] to prevent unwanted method implementation
 - [ ] to reserve memory for an unspecified class type
@@ -80,13 +73,6 @@
 #### Q11.1 When is a constructor executed?
 
 - [x] when an object is created from a class using the new keyword
-- [ ] when an class is defined using the class keyword
-- [ ] every time an object is referenced
-- [ ] when an object is created from a class using the create keyword
-
-#### Q11.2 When is a constructor executed?
-
-- [x] when an object is created from a class
 - [ ] when an class is defined using the class keyword
 - [ ] every time an object is referenced
 - [ ] when an object is created from a class using the create keyword
@@ -156,10 +142,9 @@
 
 #### Q21. Which type of inheritance must be used so that the resultant is hybrid?
 
-- [x] multiple
+- [x] multiple, hierarchical
 - [ ] any type of inheritance
 - [ ] multilevel
-- [x] hierarchical
 
 _NOTE_: Hybrid inheritance is a composition of multiple and hierarchical inheritances
 
@@ -269,113 +254,105 @@ _NOTE_: Hybrid inheritance is a composition of multiple and hierarchical inherit
 
 [reference link](https://en.wikipedia.org/wiki/Class-responsibility-collaboration_card)
 
-#### Q36.1 How are contents of a composition different from those of aggregation?
+#### Q36. How are contents of a composition different from those of aggregation?
 
 - [ ] if one element of an aggregation is dereferenced, all its elements are eligible for garbage collection
 - [x] if a composition dies, the contents die
 - [ ] the contents of a composition are all siblings
 - [ ] an aggregation contains only abstract classes
 
-#### Q36.2 Which statement about compositions and aggregations is true?
+#### Q37. Which statement about compositions and aggregations is true?
 
 - [ ] if one element of an aggregation is dereferenced, all its elements are eligible for garbage collection
 - [x] if a composition dies, the contents die
 - [ ] the contents of a composition are all siblings
 - [ ] an aggregation contains only abstract classes
 
-#### Q37. What is the result of using more abstraction?
+#### Q38. What is the result of using more abstraction?
 
 - [ ] it can increase code vulnerability
 - [ ] it can make code unsafe
 - [x] it can limit code readability
 - [ ] it can be safer for coding
 
-#### Q38. Which is false for a member function of a class?
+#### Q39. Which is false for a member function of a class?
 
 - [ ] Member functions can be defined only inside or outside the class body.
 - [ ] Member functions can be made to be friends of another class.
 - [x] Member functions do not need to be declared inside the class definition.
 - [ ] All member functions need to be defined.
 
-#### Q39. Why is inheritance used when creating a new class?
+#### Q40. Why is inheritance used when creating a new class?
 
 - [ ] to protect attributes from unwanted changes
 - [ ] to delegate coding responsibility more efficiently
 - [ ] to conserve memory
-- [x] to avoid writing duplicate code
-- [x] to separate class behavior from the more general
+- [x] to avoid writing duplicate code, to separate class behavior from the more general
 
 _NOTE_: I don't have 4th variant in my test, it changed to new 5th variant. Is it also true?
 
-#### Q40. In addition to attributes and behaviours, what quality must a class possess?
+#### Q41. In addition to attributes and behaviours, what quality must a class possess?
 
 - [x] a name
 - [ ] a state
 - [ ] a color
 - [ ] an object
 
-#### Q41. Which type of function among the following shows polymorphism?
+#### Q42. Which type of function among the following shows polymorphism?
 
 - [ ] inline function
 - [ ] undefined function
 - [x] virtual function
 - [ ] class member function
 
-#### Q42. Which words in the following list are candidates for objects: trumpet, clean, enrage, leaf, tree, collapse, active, and lively?
+#### Q43. Which words in the following list are candidates for objects: trumpet, clean, enrage, leaf, tree, collapse, active, and lively?
 
 - [ ] leaf and tree
 - [ ] clean, enrage, and collapse
 - [ ] clean, active, and lively
 - [x] leaf, tree, and trumpet
 
-#### Q43. What best describes what object-oriented programming does?
+#### Q44. What best describes what object-oriented programming does?
 
 - [x] It focuses on objects that interact cleanly with one another.
 - [ ] It programs exclusively to interfaces.
 - [ ] It programs exclusively to classes.
 - [ ] It creates one class for all business logic.
 
-#### Q44. Can abstract classes be used in multilevel inheritance?
+#### Q45. Can abstract classes be used in multilevel inheritance?
 
 - [ ] No, abstract classes can be used only in single-level inheritance since they must be immediately implemented.
 - [x] yes, always
 - [ ] yes, but with only one abstract class
 - [ ] No, abstract classes do not have constructors.
 
-#### Q45. What type of inheritance may lead to the diamond problem?
+#### Q46. What type of inheritance may lead to the diamond problem?
 
 - [ ] single level
 - [ ] multilevel
 - [ ] hierarchical
 - [x] multiple
 
-#### Q46. What is the relationship between abstraction and encapsulation?
+#### Q47. What is the relationship between abstraction and encapsulation?
 
 - [x] Abstraction is about making relevant information visible, while encapsulation enables a programmer to implement the desired level of abstraction.
 - [ ] Abstraction and encapsulation are essentially the same.
 - [ ] Abstraction and encapsulation are unrelated.
 - [ ] Encapsulation is about making relevant information visible, while abstraction enables a programmer to implement the desired level of encapsulation.
 
-#### Q47. Which of these keywords are access specifiers?
+#### Q48. Which of these keywords are access specifiers?
 
 - [ ] abstract and public
 - [x] public and private
 - [ ] this and final
 - [ ] final and abstract
 
-#### Q48. What is a reference to an object?
+#### Q49. What is a reference to an object?
 
 - [ ] It is the address of variable only -- not the method of an object.
 - [ ] It is a shallow pointer that contains address of an object.
 - [ ] It is the physical address of an object.
 - [x] It is the address where the variables and methods of an object are stored.
-
-#### Q49. Why is unit testing harder in OOP than functional programming?
-
-- [x] Objects may maintain internal state, which is not easily accessible by the tests.
-- [ ] The quality of unit testing frameworks for functional languages is better.
-- [ ] OOP promotes code reuse, which means that your tests have to consider more use cases.
-- [ ] Object-oriented languages tend to rely on frameworks such as Spring or Hibernate, which make them difficult to test.
 
 #### Q50. What is the function of a user diagram?
 
@@ -461,30 +438,28 @@ _NOTE_: I don't have 4th variant in my test, it changed to new 5th variant. Is i
 - [x] No, changes will be automatically reflected in the calling function.
 - [ ] Yes, the object must be the same in the caller function.
 
-#### Q62. Why is inheritance?
-
-#### Q63. What is the best example of a superclass and subclass relationship?
+#### Q62. What is the best example of a superclass and subclass relationship?
 
 - [x] car:toyota
 - [ ] ducks:pond
 - [ ] toes:feet
 - [ ] rock:stone
 
-#### Q64. Which statements best describe the Gang of Four design patterns called Memento and Observer?
+#### Q63. Which statements best describe the Gang of Four design patterns called Memento and Observer?
 
 - [ ] Memento notifies multiple classes of changes. Observer captures and restores an object's internal state.
 - [ ] Memento defers the exact steps of an algorithm to a subclass. Observer defines a new operation to a class without change.
 - [ ] Memento alters an object's behavior when its state changes. Observer encapsulates an algorithm inside a class.
 - [x] Memento captures and restores an object's internal state. Observer notifies multiple classes of changes.
 
-#### Q65. What does the value (0.5,0.5,0.5) indicate in the class diagram specification position: Coordinate = (0.5,0.5,0.5)?
+#### Q64. What does the value (0.5,0.5,0.5) indicate in the class diagram specification position: Coordinate = (0.5,0.5,0.5)?
 
 - [ ] a default value of the Coordinate attribute
 - [ ] the size of the position array
 - [ ] an increment of the position attribute value
 - [x] a default value of the position attribute
 
-#### Q66. What is the most accurate example of the Liskov substitution principle?
+#### Q65. What is the most accurate example of the Liskov substitution principle?
 
 - [ ]
 
@@ -532,14 +507,14 @@ public class Honda extends Car{}
 
 [reference link](https://stackoverflow.com/a/44913313/1573267)
 
-#### Q67. What is the difference between a parameter and an argument?
+#### Q66. What is the difference between a parameter and an argument?
 
 - [ ] An argument can have many values while a parameter can have only one value.
 - [ ] An argument is the variable used for input values in a method. A parameter is the specific input value passed to the method.
 - [x] A parameter is a variable in the declaration of a function. An argument is the value of this variable that gets passed to the function.
 - [ ] Parameters and arguments are the same
 
-#### Q68. What is the scope of a class nested inside another class?
+#### Q67. What is the scope of a class nested inside another class?
 
 - [ ] Protected scope
 - [ ] Private scope
@@ -548,98 +523,98 @@ public class Honda extends Car{}
 
 > Explanation: It depends on the access specifier and the type of inheritance used with the class, because if the class is inherited then the nested class can be used by subclass too, provided it’s not of private type.
 
-#### Q69. Methods and attributes that define an object are a kind of blueprint called what?
+#### Q68. Methods and attributes that define an object are a kind of blueprint called what?
 
 - [ ] a collection
 - [ ] a variable
 - [x] a class
 - [ ] a procedure
 
-#### Q70. Assume single inheritance is used with classes A and B while A is the base class. Then assume classes C, D, and E, where C is a base class and D is derived from C, then E is derived from D. Class C is made to inherit from class B. Which type of inheritance is reflected?
+#### Q69. Assume single inheritance is used with classes A and B while A is the base class. Then assume classes C, D, and E, where C is a base class and D is derived from C, then E is derived from D. Class C is made to inherit from class B. Which type of inheritance is reflected?
 
 - [x] Multilevel
 - [ ] Hybrid
 - [ ] Single level
 - [ ] Multiple
 
-#### Q71. What is the main idea behind separation of concerns?
+#### Q70. What is the main idea behind separation of concerns?
 
 - [x] All of these answers
 - [ ] Applications are decomposed into parts
 - [ ] Parts are defined with minimal overlap
 - [ ] Each part is responsible for a separate concern
 
-#### Q72. What is the purpose of the finally block?
+#### Q71. What is the purpose of the finally block?
 
 - [x] To always run the finally block of code when the try block exits
 - [ ] To run code when an exception has not occurred
 - [ ] To run the block if an exception occurred
 - [ ] To run code whenever garbage collection requires it
 
-#### Q73. Which choice is not an OOP language?
+#### Q72. Which choice is not an OOP language?
 
 - [ ] C#
 - [ ] Java
 - [x] C
 - [ ] Python
 
-#### Q74. What is the function of a finalizer or destructor?
+#### Q73. What is the function of a finalizer or destructor?
 
 - [x] To relinquish resources that are no longer needed
 - [ ] To delete a variable name
 - [ ] To reset an attribute value
 - [ ] To hold space, even after an object is no longer being used
 
-#### Q75. An instance of which type of class cannot be created?
+#### Q74. An instance of which type of class cannot be created?
 
 - [ ] Protected class
 - [ ] Base class
 - [ ] Anonymous class
 - [x] Abstract class
 
-#### Q76. In the context of OOP, what is composition?
+#### Q75. In the context of OOP, what is composition?
 
 - [ ] Composition is the act of one object passing to another object an operation to be performed on behalf of the initial object.
 - [x] Composition is a part/hole relationship where an object is composed of one or more other objects, each of which is considered a part of the whole.
 - [ ] Composition is a binding where the class/name association is not made until the object designated by the name is created at execution time
 - [ ] Composition is a process of collecting classes that provide a set of services for a particular domain
 
-#### Q77. Static polymorphism uses method \_ ?
+#### Q76. Static polymorphism uses method \_ ?
 
 - [x] overloading
 - [ ] inheritance
 - [ ] abstraction
 - [ ] overriding
 
-#### Q78. What does a concrete class not have?
+#### Q77. What does a concrete class not have?
 
 - [ ] parents
 - [x] pure virtual functions
 - [ ] attributes
 - [ ] purposes
 
-#### Q79. How does dynamic typing complicate troubleshooting?
+#### Q78. How does dynamic typing complicate troubleshooting?
 
 - [x] It can be difficult to identify variables that are incorrectly typed
 - [ ] The dynamic variables can assume only limited values
 - [ ] Storage is fixed for dynamic variables
 - [ ] Static variables are more flexible than dynamic variables
 
-#### Q80. What is the difference between early binding and late binding?
+#### Q79. What is the difference between early binding and late binding?
 
 - [ ] Early binding is when a variable is assigned a value when a scope is created. Late binding is when a variable is assigned a value after a scope is exited
 - [ ] Early binding is when a variable is assigned a value when the program starts. Late binding is when a variable is assigned after the program is running
 - [ ] There is no difference. In both cases, variables are assigned values when a program has completed startup and is running
 - [x] Early binding is when a variable is assigned its value at compile time. Late binding is when a variable is assigned a value at run time
 
-#### Q81. What is the difference between an interface and an abstract class?
+#### Q80. What is the difference between an interface and an abstract class?
 
 - [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
 - [ ] Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interface
 - [x] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces
 - [ ] Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface
 
-#### Q82. What parameters are required to be passed to a class constructor?
+#### Q81. What parameters are required to be passed to a class constructor?
 
 `Here they haven't mentioned any specific language so let's consider all languages.`
 
@@ -648,9 +623,16 @@ public class Honda extends Car{}
 - [ ] reference to this pointer // While Python & Javascript may require passing this or self in the constructor, It is not passed in Java constructor.
 - [x] none // Above 3 are incorrect so "none" is the answer
 
-#### Q83. What are the four principles of object-oriented programming?
+#### Q82. What are the four principles of object-oriented programming?
 
 - [ ] manipulation, encapsulation, inheritance, and dependency inversion
 - [ ] dependency inversion, open/closed principle, encapsulation, and inheritance
 - [ ] interface segregation, abstraction, dependency inversion, and inheritance
 - [x] abstraction, encapsulation, inheritance, and polymorphism
+
+#### Q83. Why is unit testing harder in OOP than functional programming?
+
+- [x] Objects may maintain internal state, which is not easily accessible by the tests.
+- [ ] The quality of unit testing frameworks for functional languages is better.
+- [ ] OOP promotes code reuse, which means that your tests have to consider more use cases.
+- [ ] Object-oriented languages tend to rely on frameworks such as Spring or Hibernate, which make them difficult to test.
