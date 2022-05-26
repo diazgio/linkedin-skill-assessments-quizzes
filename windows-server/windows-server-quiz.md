@@ -454,12 +454,3 @@
 - [ ] to set up storage Fibre Channels
 
 [reference](https://thesolving.com/storage/how-to-install-and-configure-a-isns-server-on-windows-2012-r2/#)
-
-#### Q62. What type of CAs must be domain members and are typically online to issue certificates or certificate policies?
-
-- [x] Enterprise
-- [ ] Root
-- [ ] Client
-- [ ] Standalone
-
-[reference](https://itfreetraining.com/lesson/catypes/)
