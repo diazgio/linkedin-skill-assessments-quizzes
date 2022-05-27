@@ -31,40 +31,33 @@
 #### Q5. What is the correct set of component classes needed to implement a RecyclerView of items that displays a list of widgets vertically?
 
 - [ ]
-
-```
-      RecycleView
-      RecyclerView.Adapter<T extends BaseAdapter>
-      RecyclerView.ViewHolder<T extends BaseViewHolder>
-      LinearLayoutManager
-```
-
+  ```
+  RecycleView
+  RecyclerView.Adapter<T extends BaseAdapter>
+  RecyclerView.ViewHolder<T extends BaseViewHolder>
+  LinearLayoutManager
+  ```
 - [ ]
-
-```
-      RecycleView
-      RecyclerView.Adapter
-      RecyclerView.ViewHolder<T extends BaseViewHolder>
-      LinearLayoutManager
-```
-
+  ```
+  RecycleView
+  RecyclerView.Adapter
+  RecyclerView.ViewHolder<T extends BaseViewHolder>
+  LinearLayoutManager
+  ```
 - [ ]
-
-```
-      RecycleView
-      RecyclerView.Adapter
-      RecyclerView.ViewHolder
-      LinearLayoutManager
-```
-
+  ```
+  RecycleView
+  RecyclerView.Adapter
+  RecyclerView.ViewHolder
+  LinearLayoutManager
+  ```
 - [x]
-
-```
-      RecycleView
-      RecyclerView.Adapter<VH extends ViewHolder>
-      RecyclerView.ViewHolder
-      LinearLayoutManager
-```
+  ```
+  RecycleView
+  RecyclerView.Adapter<VH extends ViewHolder>
+  RecyclerView.ViewHolder
+  LinearLayoutManager
+  ```
 
 #### Q6. The Android system kills process when it needs to free up memory. The likelihood of the system killing a given process depends on the state of the process and the activity at the time. With combination of process and activity state is most likely to be killed?
 
@@ -76,42 +69,35 @@
 #### Q7. You have created a NextActivity class that relies on a string containing some data that pass inside the intent Which code snippet allows you to launch your activity?
 
 - [ ]
-
-```
-        Intent(this, NextActivity::class.java).also { intent ->
-            startActivity(intent)
-        }
-```
-
+  ```
+  Intent(this, NextActivity::class.java).also { intent ->
+      startActivity(intent)
+  }
+  ```
 - [ ]
-
-```
-        Intent(this, NextActivity::class.java).apply {
-            put(EXTRA_NEXT, "some data")
-        }.also { intent ->
-            activityStart(intent)
-        }
-```
-
+  ```
+  Intent(this, NextActivity::class.java).apply {
+      put(EXTRA_NEXT, "some data")
+  }.also { intent ->
+      activityStart(intent)
+  }
+  ```
 - [x]
-
-```
-        Intent(this, NextActivity::class.java).apply {
-            putExtra(EXTRA_NEXT, "some data")
-        }.also { intent ->
-            startActivity(intent)
-        }
-```
-
+  ```
+  Intent(this, NextActivity::class.java).apply {
+      putExtra(EXTRA_NEXT, "some data")
+  }.also { intent ->
+      startActivity(intent)
+  }
+  ```
 - [ ]
-
-```
-        Intent(this, NextActivity::class.java).apply {
-            put(EXTRA_NEXT, "some data")
-        }.also { intent ->
-            activityStart(intent)
-        }
-```
+  ```
+  Intent(this, NextActivity::class.java).apply {
+      put(EXTRA_NEXT, "some data")
+  }.also { intent ->
+      activityStart(intent)
+  }
+  ```
 
 #### Q8. You want to include about and setting modules in your project. Which files accurately reflects their inclusion?
 
@@ -130,44 +116,37 @@
 #### Q10. How would you specify in your build.gradle file that your app required at least API level 21 to run, but that it can be tested on API level 28?
 
 - [ ]
-
+  ```
+  defaultConfig {
+    ...
+    minApiVersion 21
+    targetApiVersion 28
+  }
 ```
-      defaultConfig {
-        ...
-        minApiVersion 21
-        targetApiVersion 28
-      }
-```
-
 - [ ]
-
-```
-      defaultConfig {
-        ...
-        targetSdkVersion 21
-        testSdkVersion 28
-      }
-```
-
+  ```
+  defaultConfig {
+    ...
+    targetSdkVersion 21
+    testSdkVersion 28
+  }
+  ```
 - [ ]
-
-```
-      defaultConfig {
-        ...
-        minSdkVersion 21
-        testApiVersion 28
-      }
-```
-
+  ```
+  defaultConfig {
+    ...
+    minSdkVersion 21
+    testApiVersion 28
+  }
+  ```
 - [x]
-
-```
-      defaultConfig {
-        ...
-      minSdkVersion 21
-        targetSdkVersion 28
-      }
-```
+  ```
+  defaultConfig {
+    ...
+    minSdkVersion 21
+    targetSdkVersion 28
+  }
+  ```
 
 #### Q11. When will an activity's onActivityResult()be called?
 
@@ -274,31 +253,26 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
 ![img](image/shape.png)
 
 - [ ]
-
-```
+  ```
     xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
-        android:shape="oval">
-        <stroke
-            android:width="4dp"
+	android:shape="oval">
+	<stroke
+	    android:width="4dp"
 	    android:color="@android:color/white" />
 	<solid android:color="@android:color/black" />
     </shape>
-```
-
+  ```
 - [ ]
-
-```
+  ```
     xml
     <oval xmlns:android="http://schemas.android.com/apk/res/android">
         <stroke android:width="4dp" android:color="@android:color/black"/>
         <solid android:color="@android:color/white"/>
     </oval>
-```
-
+  ```
 - [x]
-
-```
+  ```
     xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="oval">
@@ -307,11 +281,9 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
             android:color="@android:color/black" />
         <solid android:color="@android:color/white" />
     </shape>
-```
-
+  ```
 - [ ]
-
-```
+  ```
     xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="oval">
@@ -320,7 +292,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
             android:color="@android:color/white" />
         <solid android:color="@android:color/white" />
     </shape>
-```
+  ```
 
 #### Q23. To persist a small collection of key-value data, what should you use?
 
