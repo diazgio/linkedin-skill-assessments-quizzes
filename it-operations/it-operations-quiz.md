@@ -95,16 +95,18 @@
   battery
   expansion slots
 
-- [ ] basic I/O
-      cooling
-      NIC
-      graphics
-      expansion slots
-- [ ] basic I/O
-      graphics
-      NIC
-      mass storage
-      expansion slots
+- [ ] 
+  basic I/O
+  cooling
+  NIC
+  graphics
+  expansion slots
+- [ ] 
+  basic I/O
+  graphics
+  NIC
+  mass storage
+  expansion slots
 - [ ]
   basic I/O
   graphics
