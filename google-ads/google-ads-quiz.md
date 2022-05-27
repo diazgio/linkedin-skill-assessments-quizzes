@@ -7,12 +7,12 @@
 - [ ] the website URL
 - [ ] the call-to-action
 
-#### Q2. When reviewing the **Recommendations** page, you identify a suggestion that you want to use. What is the most practical way to implement the suggestion?
+#### Q2. Which solution allows you to show ads in Google search results, only if the user has previously visited your website?
 
-- [ ] Copy the optimization, visit the ad group, and past the optimization.
-- [ ] Follow the step-by-step instructions.
-- [ ] Visit the ad group, click the **Optimization** drop-down, and select **Apply All**.
-- [ ] Click **Apply** on the recommendation.
+- [ ] MDC
+- [ ] ECPC
+- [x] RLSA
+- [ ] Target ROAS
 
 #### Q3. Griff has noticed that his best-performing keywords has started to see an increased CPC, despite no changes on his part. What is the most likely reason for this?
 
@@ -91,12 +91,12 @@
 - [ ] $0.04
 - [ ] $0.06
 
-#### Q14. Raisa starting running a new ad campaign a month ago. Without making any changes, she noticed that her CPC has gone down significantly in the last week. What could have caused this?
+#### Q14. Tabitha has a mobile application that is complementary to her website. She wants to make it known to potential customers, but driving app downloads is not her main goal. What would you recommend she configure on her Google Ads?
 
-- [ ] a decrease in ad Quality Score
-- [ ] an increase in daily budget
-- [ ] changes in competitor campaigns
-- [ ] an increase of landing page inbound links
+- [x] app extension
+- [ ] Universal App campaign
+- [ ] Mobile App campaign
+- [ ] download extension
 
 #### Q15. Which ad rotation setting uses machine learning to prioritize ads based upon expected performance?
 
@@ -188,17 +188,3 @@
 - [ ] Do not include the sale in the ad text, as this likley violated Google Ads editorial policies.
 - [x] Add a countdown customizer to the ad text.
 - [ ] Manually adjust the ad text as frequently as possible to reflect the time remaining
-
-#### Q28. Tabitha has a mobile application that is complementary to her website. She wants to make it known to potential customers, but driving app downloads is not her main goal. What would you recommend she configure on her Google Ads?
-
-- [x] app extension
-- [ ] Universal App campaign
-- [ ] Mobile App campaign
-- [ ] download extension
-
-#### Q29. Which solution allows you to show ads in Google search results, only if the user has previously visited your website?
-
-- [ ] MDC
-- [ ] ECPC
-- [x] RLSA
-- [ ] Target ROAS
