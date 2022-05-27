@@ -172,44 +172,37 @@ func Add(a, b int) {
 }
 ```
 
-- [ ] A
-
-```go
-// Calculate a + b
-// - a: int
-// - b: int
-// - returns: int
-func Add(a, b int) {
-  return a + b
-}
-```
-
-- [ ] B
-
-```go
-// Does a + b
-func Add(a, b int) {
-  return a + b
-}
-```
-
-- [x] C
-
-```go
-// Add returns the sum of a and b
-func Add(a, b int) {
-  return a + b
-}
-```
-
-- [ ] D
-
-```go
-// returns the sum of a and b
-func Add(a, b int) {
-  return a + b
-}
-```
+- [ ]
+  ```go
+  // Calculate a + b
+  // - a: int
+  // - b: int
+  // - returns: int
+  func Add(a, b int) {
+    return a + b
+  }
+  ```
+- [ ]
+  ```go
+  // Does a + b
+  func Add(a, b int) {
+    return a + b
+  }
+  ```
+- [x]
+  ```go
+  // Add returns the sum of a and b
+  func Add(a, b int) {
+    return a + b
+  }
+  ```
+- [ ]
+  ```go
+  // returns the sum of a and b
+  func Add(a, b int) {
+    return a + b
+  }
+  ```
 
 Explanation: documentation block should start with a function name
 
@@ -492,16 +485,9 @@ fmt.Println("%f\n", price)
 - [ ] Set GOOS to **arm64** and GOARCH to **osx**.
 - [x] Set GOOS to **darwin** and GOARCH to **arm64**.
 
-[documentation](https://pkg.go.dev/cmd/go#hdr-Build_constraints)
+[documentation](https://pkg.go.dev/cmd/go#hdr-Build_constraints)`
 
-#### Q41. What is the correct syntax ta start a goroutine that will `print Hello Gopher!`?
-
-- [ ] `go(fmt.Println("Hello Gopher!"))`
-- [ ] `go func() { fmt.Println("Hello Gopher!") }`
-- [ ] `go fmt.Println("Hello Gopher!")`
-- [ ] `Go fmt.Println("Hello Gopher!")`
-
-#### Q42. If you iterate over a map in a for range loop, in which order will the key:value pairs be accessed?
+#### Q41. If you iterate over a map in a for range loop, in which order will the key:value pairs be accessed?
 
 - [x] in pseudo-random order that cannot be predicted
 - [ ] in reverse order of how they were added, last in first out
