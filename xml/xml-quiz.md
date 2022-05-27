@@ -297,57 +297,50 @@
 </cars>
 ```
 
-- [ ] A
-
-```xquery
-<ul>
-{
-    for $x in doc("cars.xml")/cars/car
-    where $x/year>2000
-    order by $x/year descending
-    return <li>{$x}</li>
-}
-</ul>
-```
-
-- [ ] B
-
-```xquery
-<ol>
-{
-    for $x in doc("cars.xml")/cars/car
-    where $x/year>2000
-    order by $x/year desc
-    return <li>{data($x)}</li>
-}
-</ol>
-```
-
-- [ ] C
-
-```xquery
-<ul>
-{
-    for $x in doc("cars.xml")/cars/car
-    where $x/year>2000
-    order by $x/year
-    return <li>{$x}</li>
-}
-</ul>
-```
-
-- [x] D
-
-```xquery
-<ol>
-{
-    for $x in doc("cars.xml")/cars/car
-    where $x/year>2000
-    order by $x/year descending
-    return <li>{data($x)}</li>
-}
-</ol>
-```
+- [ ]
+  ```xquery
+  <ul>
+  {
+      for $x in doc("cars.xml")/cars/car
+      where $x/year>2000
+      order by $x/year descending
+      return <li>{$x}</li>
+  }
+  </ul>
+  ```
+- [ ]
+  ```xquery
+  <ol>
+  {
+      for $x in doc("cars.xml")/cars/car
+      where $x/year>2000
+      order by $x/year desc
+      return <li>{data($x)}</li>
+  }
+  </ol>
+  ```
+- [ ]
+  ```xquery
+  <ul>
+  {
+      for $x in doc("cars.xml")/cars/car
+      where $x/year>2000
+      order by $x/year
+      return <li>{$x}</li>
+  }
+  </ul>
+  ```
+- [x]
+  ```xquery
+  <ol>
+  {
+      for $x in doc("cars.xml")/cars/car
+      where $x/year>2000
+      order by $x/year descending
+      return <li>{data($x)}</li>
+  }
+  </ol>
+  ```
 
 [reference link:](https://stackoverflow.com/questions/6001357/xquery-order-by-ascending-and-descending)
 
@@ -490,61 +483,54 @@ NOTE: [XPather](http://xpather.com/) shows that all answers are incorrect. Repor
 ```
 
 - [ ]
-
-```css
-cars {
-  display: block;
-}
-car(make),
-car(model),
-car(year) {
-  display: inline;
-  padding-top: 0.5em;
-}
-```
-
+  ```css
+  cars {
+    display: block;
+  }
+  car(make),
+  car(model),
+  car(year) {
+    display: inline;
+    padding-top: 0.5em;
+  }
+  ```
 - [x]
-
-```css
-car,
-cars {
-  display: block;
-}
-make,
-model,
-year {
-  display: inline;
-  padding-top: 0.5em;
-}
-```
-
+  ```css
+  car,
+  cars {
+    display: block;
+  }
+  make,
+  model,
+  year {
+    display: inline;
+    padding-top: 0.5em;
+  }
+  ```
 - [ ]
-
-```css
-cars {
-  display: block;
-}
-car.make,
-car.model,
-car.year {
-  display: inline;
-  padding-top: 0.5em;
-}
-```
-
+  ```css
+  cars {
+    display: block;
+  }
+  car.make,
+  car.model,
+  car.year {
+    display: inline;
+    padding-top: 0.5em;
+  }
+  ```
 - [ ]
-
-```css
-cars {
-  display: block;
-}
-car#make,
-car#model,
-car#year {
-  display: inline;
-  padding-top: 0.5em;
-}
-```
+  ```css
+  cars {
+    display: block;
+  }
+  car#make,
+  car#model,
+  car#year {
+    display: inline;
+    padding-top: 0.5em;
+  }
+  ```
 
 #### Q41. An XML document contains this code as part of the DTD: <!ELEMENT car (make, model?, year+, price*)>. What are the rules that need to be followed for each of the elements?
 
