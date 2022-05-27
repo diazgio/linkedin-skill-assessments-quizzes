@@ -53,11 +53,9 @@
 
 - [ ] The order is not important.
 - [x]
-
   1. Modem
   2. Gateway
   3. Switch
-
 - [ ]
   1. Modem
   2. Switch
