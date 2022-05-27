@@ -345,36 +345,29 @@ FlowLog:
 
 #### Q45. You have a UDP load balancer that is created by an instance that is running an NGINX proxy. Your application performance management (APM) solution can detect failures in your load balancer instance and transfer the Elastic IP to a passive standby instance. Using the AWS CLI, which script do you program into your APM to move the Elastic IP?
 
-- [x] A
-
-```
-aws ec2 disassociate-address --association-id eipassoc-2bebb712
-aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
-```
-
-- [ ] B
-
-```
-aws ec2 release-address --association-id eipassoc-2bebb712
-aws ec2 assign-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
-```
-
-- [ ] C
-
-```
-aws ec2 stop-instances --instance-ids i-8b953
-wait 30
-aws ec2 disassociate-address --association-id eipassoc-2bebb712
-aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
-aws ec2 start-instances --instance-ids i-8b953
-```
-
-- [ ] D
-
-```
-aws ec2 release-address --association-id eipassoc-2bebb712
-aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
-```
+- [x]
+  ```
+  aws ec2 disassociate-address --association-id eipassoc-2bebb712
+  aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
+  ```
+- [ ]
+  ```
+  aws ec2 release-address --association-id eipassoc-2bebb712
+  aws ec2 assign-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
+  ```
+- [ ]
+  ```
+  aws ec2 stop-instances --instance-ids i-8b953
+  wait 30
+  aws ec2 disassociate-address --association-id eipassoc-2bebb712
+  aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
+  aws ec2 start-instances --instance-ids i-8b953
+  ```
+- [ ]
+  ```
+  aws ec2 release-address --association-id eipassoc-2bebb712
+  aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
+  ```
 
 #### Q46. What service can host your Docker containers?
 
@@ -508,33 +501,26 @@ aws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a
 
 #### Q63. Your application performance management (APM) system can read the status of your CloudWatch monitors and perform scripted actions. When the CloudWatch metric StatusCheckFailed enters a failed state (a value of 1), you would like your APM to automatically repair the instance. Which script do you use?
 
-- [x] A
-
-```
-aws ec2 stop-instances --instance-ids i-0b263919b6498b123
-aws ec2 start-instances --instance-ids i-0b263919b6498b123
-```
-
-- [ ] B
-
-```
-aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
-```
-
-- [ ] C
-
-```
-aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
-wait 30
-aws ec2 start-instance --instance-ids i-0b263919b6498b123
-```
-
-- [ ] D
-
-```
-aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
-aws ec2 start-instances --instance-ids i-0b263919b6498b123
-```
+- [x]
+  ```
+  aws ec2 stop-instances --instance-ids i-0b263919b6498b123
+  aws ec2 start-instances --instance-ids i-0b263919b6498b123
+  ```
+- [ ]
+  ```
+  aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
+  ```
+- [ ]
+  ```
+  aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
+  wait 30
+  aws ec2 start-instance --instance-ids i-0b263919b6498b123
+  ```
+- [ ]
+  ```
+  aws ec2 reboot-instances --instance-ids i-0b263919b6498b123
+  aws ec2 start-instances --instance-ids i-0b263919b6498b123
+  ```
 
 #### Q64. What is wrong with the third incoming security group rule, which allows all traffic from sg-269afc5e to go to an Ubuntu EC2 instance configured as a web server?
 
@@ -550,33 +536,26 @@ aws ec2 start-instances --instance-ids i-0b263919b6498b123
 
 ![image](images/003.png)
 
-- [x] A
-
-```
-Destination 1: 10.0.0.0/16, Target 1: local;
-Destination 2: 0.0.0.0/0, Target 2: nat-09b4832
-```
-
-- [ ] B
-
-```
-Destination 1: 10.0.0.0/24, Target 1: local;
-Destination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6
-```
-
-- [ ] C
-
-```
-Destination 1: 10.0.0.0/24, Target 1: subnet-1948ba2;
-Destination 2: 0.0.0.0/0, Target 2: nat-09b4832
-```
-
-- [ ] D
-
-```
-Destination 1: 10.0.0.0/16, Target 1: vpc-12bd09ac2;
-Destination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6
-```
+- [x]
+  ```
+  Destination 1: 10.0.0.0/16, Target 1: local;
+  Destination 2: 0.0.0.0/0, Target 2: nat-09b4832
+  ```
+- [ ]
+  ```
+  Destination 1: 10.0.0.0/24, Target 1: local;
+  Destination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6
+  ```
+- [ ]
+  ```
+  Destination 1: 10.0.0.0/24, Target 1: subnet-1948ba2;
+  Destination 2: 0.0.0.0/0, Target 2: nat-09b4832
+  ```
+- [ ]
+  ```
+  Destination 1: 10.0.0.0/16, Target 1: vpc-12bd09ac2;
+  Destination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6
+  ```
 
 #### Q66. To comply with auditing requirements of some compliance standards, which AWS tool can be enabled to maintain an audit log of access and changes to your AWS infrastructure?
 
@@ -618,29 +597,31 @@ Destination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6
 
 ![image](images/004.png)
 
-- [ ] A
-
-```
-IF (all match)
-    Path is /signup*
-    Query string is signup:new
-Then
-    Forward to ecs-cluse-service <there is a typo - yes!
-```
-
-- [ ] B
-
-```
-IF (all match)
-    Path is /sign/new/&
-    Query request method is POST
-Then
-    Forward to ecs-cluse-service
-```
-
-- [ ] C ...One more with POST
-- [x] D ...Only one with Get
-
+- [ ]
+  ```
+  IF (all match)
+      Path is /signup*
+      Query string is signup:new
+  Then
+      Forward to ecs-cluse-service <there is a typo - yes!
+  ```
+- [ ]
+  ```
+  IF (all match)
+      Path is /sign/new/&
+      Query request method is POST
+  Then
+      Forward to ecs-cluse-service
+  ```
+- [ ] 
+  ```
+  ...One more with POST
+  ```
+- [x]
+ ```
+ ...Only one with Get
+ ```
+ 
 #### Q71. Which AWS service can host the web application server for a WordPress site?
 
 - [ ] S3
