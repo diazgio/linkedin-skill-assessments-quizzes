@@ -618,9 +618,9 @@ FlowLog:
   ...One more with POST
   ```
 - [x]
- ```
- ...Only one with Get
- ```
+  ```
+  ...Only one with Get
+  ```
  
 #### Q71. Which AWS service can host the web application server for a WordPress site?
 
