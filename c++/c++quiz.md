@@ -133,48 +133,40 @@ v1 and v2 point to the same vector.
 
 #### Q11. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?
 
-- [x] A
-
-```cpp
-typedef struct {
-    int sunday:1;
-    int monday:1;
-    // more days
-    int friday:1;
-    int saturday:1;
-} weekdays;
-```
-
-- [ ] B
-
-```cpp
-typedef char[7]: weekdays;
-```
-
-- [ ] C
-
-```cpp
-typedef struct {
-    bit sunday:1;
-    bit monday:1;
-    // more days
-    bit friday:1;
-    bit saturday:1;
-} weekdays;
-
-```
-
-- [ ] D
-
-```cpp
-typedef struct {
-    bit sunday;
-    bit monday;
-    // more days
-    bit friday;
-    bit saturday;
-} weekdays;
-```
+- [x]
+  ```cpp
+  typedef struct {
+      int sunday:1;
+      int monday:1;
+      // more days
+      int friday:1;
+      int saturday:1;
+  } weekdays;
+  ```
+- [ ]
+  ```cpp
+  typedef char[7]: weekdays;
+  ```
+- [ ]
+  ```cpp
+  typedef struct {
+      bit sunday:1;
+      bit monday:1;
+      // more days
+      bit friday:1;
+      bit saturday:1;
+  } weekdays;
+  ```
+- [ ]
+  ```cpp
+  typedef struct {
+      bit sunday;
+      bit monday;
+      // more days
+      bit friday;
+      bit saturday;
+  } weekdays;
+  ```
 
 _NOTE_: Correct syntax is that each variable size is 1 bit. `bit` is not a type in C++. [Reference](https://en.cppreference.com/w/cpp/language/bit_field)
 
@@ -285,50 +277,43 @@ else {
 
 #### Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?
 
-- [x] A
-
-```cpp
-int get_length(char *str) {
-    int count=0;
-    while(str[count++]);
-    return count-1;
-}
-```
-
-- [ ] B
-
-```cpp
-int get_length(char *str) {
-    int count=0;
-    while(str!=NULL){
-        count++;
-        str++;
-    }
-    return count;
-}
-```
-
-- [ ] C
-
-```cpp
-int get_length(char *str) {
-    int count=0;
-    while((*str)++)
-        count++;
-    return count;
-}
-```
-
-- [ ] D
-
-```cpp
-int get_length(char *str) {
-    int count=0;
-    while(str++)
-        count++;
-    return count;
-}
-```
+- [x]
+  ```cpp
+  int get_length(char *str) {
+      int count=0;
+      while(str[count++]);
+      return count-1;
+  }
+  ```
+- [ ]
+  ```cpp
+  int get_length(char *str) {
+      int count=0;
+      while(str!=NULL){
+          count++;
+          str++;
+      }
+      return count;
+  }
+  ```
+- [ ]
+  ```cpp
+  int get_length(char *str) {
+      int count=0;
+      while((*str)++)
+          count++;
+      return count;
+  }
+  ```
+- [ ]
+  ```cpp
+  int get_length(char *str) {
+      int count=0;
+      while(str++)
+          count++;
+      return count;
+  }
+  ```
 
 #### Q21. Which STL class is the best fit for implementing a collection of data that is always ordered so that the pop operation always gets the greatest of the elements? Suppose you are interested only in push and pop operations.
 
@@ -450,41 +435,34 @@ char *str = buff+11;
 char c;
 ```
 
-- [ ] A
-
-```cpp
-c = buff[16];
-c = str[5];
-c = *(buff+16);
-c = *(str+5);
-```
-
-- [ ] B
-
-```cpp
-c = *(buff[15]);
-c = *(str[4]);
-c = buff+15;
-c = str+4;
-```
-
-- [x] C
-
-```cpp
-c = buff[15];
-c = str[4];
-c = *(buff+15);
-c = *(str+4);
-```
-
-- [ ] D
-
-```cpp
-c = *(buff[16]);
-c = *(str[5]);
-c = buff+16;
-c = str+5;
-```
+- [ ]
+  ```cpp
+  c = buff[16];
+  c = str[5];
+  c = *(buff+16);
+  c = *(str+5);
+  ```
+- [ ]
+  ```cpp
+  c = *(buff[15]);
+  c = *(str[4]);
+  c = buff+15;
+  c = str+4;
+  ```
+- [x]
+  ```cpp
+  c = buff[15];
+  c = str[4];
+  c = *(buff+15);
+  c = *(str+4);
+  ```
+- [ ]
+  ```cpp
+  c = *(buff[16]);
+  c = *(str[5]);
+  c = buff+16;
+  c = str+5;
+  ```
 
 #### Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?
 
@@ -494,37 +472,30 @@ class Animal{
 }
 ```
 
-- [ ] A
-
-```cpp
-class Dog :: public Animal {
-   //....
-};
-```
-
-- [x] B
-
-```cpp
-class Dog : public Animal {
-   //....
-};
-```
-
-- [ ] C
-
-```cpp
-public class Animal :: Dog {
-   //....
-};
-```
-
-- [ ] D
-
-```cpp
-public class Dog extends Animal {
-   //....
-};
-```
+- [ ]
+  ```cpp
+  class Dog :: public Animal {
+     //....
+  };
+  ```
+- [x]
+  ```cpp
+  class Dog : public Animal {
+     //....
+  };
+  ```
+- [ ]
+  ```cpp
+  public class Animal :: Dog {
+     //....
+  };
+  ```
+- [ ]
+  ```cpp
+  public class Dog extends Animal {
+     //....
+  };
+  ```
 
 #### Q34. What is the output?
 
@@ -562,43 +533,36 @@ center.x = 5;
 center.y = 3;
 ```
 
-- [x] A
+- [x]
+  ```cpp
+  typedef struct coord {
+      int x;
+      int y;
+  };
+  ```
+- [ ]
+  ```cpp
+  typedef struct coord {
+      int x;
+      int y;
+  } coord;
+  ```
+- [ ]
+  ```cpp
+  typedef struct {
+      int x;
+      int y;
+  } coord;
+  ```
+- [ ]
+  ```cpp
+  struct coord {
+      int x;
+      int y;
+  };
 
-```cpp
-typedef struct coord {
-    int x;
-    int y;
-};
-```
-
-- [ ] B
-
-```cpp
-typedef struct coord {
-    int x;
-    int y;
-} coord;
-```
-
-- [ ] C
-
-```cpp
-typedef struct {
-    int x;
-    int y;
-} coord;
-```
-
-- [ ] D
-
-```cpp
-struct coord {
-    int x;
-    int y;
-};
-
-typedef struct coord coord;
-```
+  typedef struct coord coord;
+  ```
 
 #### Q37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.
 
@@ -608,40 +572,33 @@ for (i=1;i<10;i++){
 }
 ```
 
-- [x] A
-
-```cpp
-i=1;
-while(i<10){
-    cout<<++i<<endl;
-}
-```
-
-- [ ] B
-
-```cpp
-for (int i:{1,2,3,4,5,6,7,8,9}) {
-    cout<<i<<endl;
-}
-```
-
-- [ ] C
-
-```cpp
-i = 1;
-do {
-    cout<<i++<<endl;
-} while(i<10);
-```
-
-- [ ] D
-
-```cpp
-i = 1;
-loop:
-    cout<<i++<<endl;
-    if(i<10) goto loop;
-```
+- [x]
+  ```cpp
+  i=1;
+  while(i<10){
+      cout<<++i<<endl;
+  }
+  ```
+- [ ]
+  ```cpp
+  for (int i:{1,2,3,4,5,6,7,8,9}) {
+      cout<<i<<endl;
+  }
+  ```
+- [ ]
+  ```cpp
+  i = 1;
+  do {
+      cout<<i++<<endl;
+  } while(i<10);
+  ```
+- [ ]
+  ```cpp
+  i = 1;
+  loop:
+      cout<<i++<<endl;
+      if(i<10) goto loop;
+  ```
 
 #### Q38. What does this part of a main.cpp file do?
 
@@ -660,79 +617,65 @@ loop:
 bool is_even(int);
 ```
 
-- [x] A
-
-```cpp
-bool is_even(float f);
-bool is_even(char *str);
-```
-
-- [ ] B
-
-```cpp
-bool is_even(float f);
-bool is_even(char str);
-```
-
-- [ ] C
-
-```cpp
-bool is_even_float(float f);
-bool is_even_str(char *str);
-```
-
-- [ ] D
-
-```cpp
-float is_even(float f);
-char *is_even(char *str);
-```
+- [x]
+  ```cpp
+  bool is_even(float f);
+  bool is_even(char *str);
+  ```
+- [ ]
+  ```cpp
+  bool is_even(float f);
+  bool is_even(char str);
+  ```
+- [ ]
+  ```cpp
+  bool is_even_float(float f);
+  bool is_even_str(char *str);
+  ```
+- [ ]
+  ```cpp
+  float is_even(float f);
+  char *is_even(char *str);
+  ```
 
 #### Q40. Which choice is an include guard for the header file `my_library.h`?
 
-- [ ] A
+- [ ]
+  ```cpp
+  #ifdef MY_LIBRARY_H
+  #define MY_LIBRARY_H
 
-```cpp
-#ifdef MY_LIBRARY_H
-#define MY_LIBRARY_H
+  // my_library.h content
 
-// my_library.h content
+  #endif /* MY_LIBRARY_H */
+  ```
+- [x]
+  ```cpp
+  #ifndef MY_LIBRARY_H
+  #define MY_LIBRARY_H
 
-#endif /* MY_LIBRARY_H */
-```
+  // my_library.h content
 
-- [x] B
+  #endif /* MY_LIBRARY_H */
+  ```
+- [ ]
+  ```cpp
+  #ifdef MY_LIBRARY_H
+  #undef MY_LIBRARY_H
 
-```cpp
-#ifndef MY_LIBRARY_H
-#define MY_LIBRARY_H
+  // my_library.h content
 
-// my_library.h content
+  #endif /* MY_LIBRARY_H */
+  ```
+- [ ]
+  ```cpp
+  #define MY_LIBRARY_H
+  #include MY_LIBRARY_H
 
-#endif /* MY_LIBRARY_H */
-```
+  // my_library.h content
 
-- [ ] C
-
-```cpp
-#ifdef MY_LIBRARY_H
-#undef MY_LIBRARY_H
-
-// my_library.h content
-
-#endif /* MY_LIBRARY_H */
-```
-
-- [ ] D
-
-```cpp
-#define MY_LIBRARY_H
-#include MY_LIBRARY_H
-
-// my_library.h content
-
-#undef MY_LIBRARY_H
-```
+  #undef MY_LIBRARY_H
+  ```
 
 #### Q41. What's wrong with this definition when using a pre-C++11 compiler?
 
@@ -764,41 +707,34 @@ complexNumber(float real, float im)
  im_part(im){}
 ```
 
-- [ ] A
-
-```cpp
-complexNumber(float real, float im) {
-    this->real = real_part;
-    this->im = im_part;
-}
-```
-
-- [ ] B
-
-```cpp
-complexNumber(float real, float im) {
-    this->real_part(real);
-    this->im_part(im);
-}
-```
-
-- [x] C
-
-```cpp
-complexNumber(float real, float im) {
-    this->real_part = real;
-    this->im_part = im;
-}
-```
-
-- [ ] D
-
-```cpp
-complexNumber(float real, float im) {
-    this->real_part = &real;
-    this->im_part = &im;
-}
-```
+- [ ]
+  ```cpp
+  complexNumber(float real, float im) {
+      this->real = real_part;
+      this->im = im_part;
+  }
+  ```
+- [ ]
+  ```cpp
+  complexNumber(float real, float im) {
+      this->real_part(real);
+      this->im_part(im);
+  }
+  ```
+- [x]
+  ```cpp
+  complexNumber(float real, float im) {
+      this->real_part = real;
+      this->im_part = im;
+  }
+  ```
+- [ ]
+  ```cpp
+  complexNumber(float real, float im) {
+      this->real_part = &real;
+      this->im_part = &im;
+  }
+  ```
 
 #### Q44. What is the result from executing this code snippet?
 
@@ -1012,78 +948,64 @@ std::memset(buff,20,50);
 std::array<uint32_t, 50> my_array;
 ```
 
-- [x] A
-
-```cpp
-std::sort(my_array.begin(), my_array.end(),
-    [](uint32_t a, uint32_t b) {
-        return a < b;
-    })
-```
-
-- [ ] B
-
-```cpp
-lambda(uint32_t a, uint32_t b){
-    return a < b;
-}
-std::sort(my_array.begin(), my_array.end(), lambda);
-```
-
-- [ ] C
-
-```cpp
-std::sort(my_array.begin(), my_array.end(),
-    lambda(uint32_t a, uint32_t b){
-        return a < b;
-    })
-```
-
-- [ ] D
-
-```cpp
-lambda(uint32_t a, uint32_t b){
-    return a < b;
-}
-std::sort(my_array.begin(), my_array.end(), &lambda);
-```
+- [x]
+  ```cpp
+  std::sort(my_array.begin(), my_array.end(),
+      [](uint32_t a, uint32_t b) {
+          return a < b;
+      })
+  ```
+- [ ]
+  ```cpp
+  lambda(uint32_t a, uint32_t b){
+      return a < b;
+  }
+  std::sort(my_array.begin(), my_array.end(), lambda);
+  ```
+- [ ]
+  ```cpp
+  std::sort(my_array.begin(), my_array.end(),
+      lambda(uint32_t a, uint32_t b){
+          return a < b;
+      })
+  ```
+- [ ]
+  ```cpp
+  lambda(uint32_t a, uint32_t b){
+      return a < b;
+  }
+  std::sort(my_array.begin(), my_array.end(), &lambda);
+  ```
 
 [Reference](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160)
 
 #### Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?
 
-- [x] A
-
-```cpp
-void std::mutex::lock(){
-    while(!this->try_lock());
-}
-```
-
-- [ ] B
-
-```cpp
-void std::mutex::lock(){
-    return (this->try_lock());
-}
-```
-
-- [ ] C
-
-```cpp
-void std::mutex::lock(){
-    while(1)
-        this->try_lock();
-}
-```
-
-- [ ] D
-
-```cpp
-void std::mutex::lock(){
-    while(this->try_lock());
-}
-```
+- [x]
+  ```cpp
+  void std::mutex::lock(){
+      while(!this->try_lock());
+  }
+  ```
+- [ ]
+  ```cpp
+  void std::mutex::lock(){
+      return (this->try_lock());
+  }
+  ```
+- [ ]
+  ```cpp
+  void std::mutex::lock(){
+      while(1)
+          this->try_lock();
+  }
+  ```
+- [ ]
+  ```cpp
+  void std::mutex::lock(){
+      while(this->try_lock());
+  }
+  ```
 
 #### Q61. What is the purpose of a destructor?
 
