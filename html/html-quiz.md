@@ -90,47 +90,40 @@
 
 ![Sample text](images/ss-2.png?raw=true)
 
-- [ ] A
-
-```html
-<details>
-  <summary>Parmesan Deviled Eggs</summary>
-  <p>
-    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
-  </p>
-</details>
-```
-
-- [ ] B
-
-```html
-<h4>▸ Parmesan Deviled Eggs</h4>
-<p>
-  These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
-</p>
-```
-
-- [x] C
-
-```html
-<details open>
-  <summary>Parmesan Deviled Eggs</summary>
-  <p>
-    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
-  </p>
-</details>
-```
-
-- [ ] D
-
-```html
-<details>
+- [ ]
+  ```html
+  <details>
+    <summary>Parmesan Deviled Eggs</summary>
+    <p>
+      These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
+    </p>
+  </details>
+  ```
+- [ ]
+  ```html
   <h4>▸ Parmesan Deviled Eggs</h4>
   <p>
     These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
   </p>
-</details>
-```
+  ```
+- [x]
+  ```html
+  <details open>
+    <summary>Parmesan Deviled Eggs</summary>
+    <p>
+      These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
+    </p>
+  </details>
+  ```
+- [ ]
+  ```html
+  <details>
+    <h4>▸ Parmesan Deviled Eggs</h4>
+    <p>
+      These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
+    </p>
+  </details>
+  ```
 
 #### Q13. What is the purpose of the `<samp>` element?
 
@@ -171,31 +164,48 @@
 - [ ] type
 - [ ] rel
 
-#### Q18. What is the correct markup for `alt` attribute of an image?
+#### Q18. How would you mark up a header for a table row?
 
-- [ ] A
-
-```html
-<img src="cubism.jpg" alt="Version of ""Whistler's Mother"" in cubist style">
-```
-
-- [ ] B
-
-```html
-<img src="cubism.jpg" alt="Version of "Whistler's Mother" in cubist style">
-```
-
-- [x] C
-
-```html
-<img src="cubism.jpg" alt='Version of "Whistler\'s Mother" in cubist style'>
-```
-
-- [ ] D
-
-```html
-<img src="cubism.jpg" alt="Version of \"Whistler's Mother\" in cubist style">
-```
+- [x]
+  ```HTML
+  <table>
+    <thead scope="row"><th row="1">Header</th></thead>
+    <tr>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```HTML
+  <table>
+    <tr>
+    <th scope="row">Header</th>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```HTML
+  <table>
+    <tr>
+      <thead scope="row">Header</thead>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```HTML
+  <table>
+    <tr>
+      <th>Header</th>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+  </table>
+  ```
 
 #### Q19. In the code below, what is the purpose of the **id** attribute?
 
@@ -214,46 +224,39 @@
 On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap for mankind."
 ```
 
-- [x] A
-
-```markdown
-<p>
-  On <time datetime="1969-07-21">July 21, 1969</time>, Neil Armstrong said,
-  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
-    >One small step for man, one giant leap for mankind.</q
-  >
-</p>
-```
-
-- [ ] B
-
-```markdown
-<p>
-  On July 21, 1969, Neil Armstrong said,
-  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
-    >One small step for man, one giant leap for mankind.</q
-  >
-</p>
-```
-
-- [ ] C
-
-```markdown
-<p>
-  On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>
-</p>
-```
-
-- [ ] D
-
-```markdown
-<p>
-  On <time datetime="07-21-1969">July 21, 1969</time>, Neil Armstrong said,
-  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
-    >One small step for man, one giant leap for mankind.</q
-  >
-</p>
-```
+- [x]
+  ```markdown
+  <p>
+    On <time datetime="1969-07-21">July 21, 1969</time>, Neil Armstrong said,
+    <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
+      >One small step for man, one giant leap for mankind.</q
+    >
+  </p>
+  ```
+- [ ]
+  ```markdown
+  <p>
+    On July 21, 1969, Neil Armstrong said,
+    <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
+      >One small step for man, one giant leap for mankind.</q
+    >
+  </p>
+  ```
+- [ ]
+  ```markdown
+  <p>
+    On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>
+  </p>
+  ```
+- [ ]
+  ```markdown
+  <p>
+    On <time datetime="07-21-1969">July 21, 1969</time>, Neil Armstrong said,
+    <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"
+      >One small step for man, one giant leap for mankind.</q
+    >
+  </p>
+  ```
 
 #### Q21. What should fill the blank in this HTML code?
 
@@ -277,56 +280,49 @@ On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap f
 
 #### Q23. What is the best way to code three choices within a form so that the user can select only one item?
 
-- [ ] A
+- [ ]
+  ```markdown
+  <label for="example">Make a choice:</label>
+  <datalist id="example">
 
-```markdown
-<label for="example">Make a choice:</label>
-<datalist id="example">
+    <option value="Choice 1"></option>
+    <option value="Choice 2"></option>
+    <option value="Choice 3"></option>
+  </datalist>
+  ```
+- [ ]
+  ```markdown
+  <p>Make a choice:</p>
+  <input id="choices" name="example" />
 
-  <option value="Choice 1"></option>
-  <option value="Choice 2"></option>
-  <option value="Choice 3"></option>
-</datalist>
-```
+  <datalist value="choices">
+    <option value="Choice 1"></option>
+    <option value="Choice 2"></option>
+    <option value="Choice 3"></option>
+  </datalist>
+  ```
+- [ ]
+  ```markdown
+  <label for="example">Make a choice:</label>
+  <input list="example" id="choices" name="choices" />
 
-- [ ] B
+  <datalist id="choices">
+    <option value="Choice 1">Choice 1</option>
+    <option value="Choice 2">Choice 2</option>
+    <option value="Choice 3">Choice 3</option>
+  </datalist>
+  ```
+- [x]
+  ```markdown
+  <label for="example">Make a choice:</label>
+  <input list="choices" id="example" name="example" />
 
-```markdown
-<p>Make a choice:</p>
-<input id="choices" name="example" />
-
-<datalist value="choices">
-  <option value="Choice 1"></option>
-  <option value="Choice 2"></option>
-  <option value="Choice 3"></option>
-</datalist>
-```
-
-- [ ] C
-
-```markdown
-<label for="example">Make a choice:</label>
-<input list="example" id="choices" name="choices" />
-
-<datalist id="choices">
-  <option value="Choice 1">Choice 1</option>
-  <option value="Choice 2">Choice 2</option>
-  <option value="Choice 3">Choice 3</option>
-</datalist>
-```
-
-- [x] D
-
-```markdown
-<label for="example">Make a choice:</label>
-<input list="choices" id="example" name="example" />
-
-<datalist id="choices">
-  <option value="Choice 1"></option>
-  <option value="Choice 2"></option>
-  <option value="Choice 3"></option>
-</datalist>
-```
+  <datalist id="choices">
+    <option value="Choice 1"></option>
+    <option value="Choice 2"></option>
+    <option value="Choice 3"></option>
+  </datalist>
+  ```
 
 #### Q24. How do you confirm that a document is written in HTML5?
 
@@ -356,77 +352,70 @@ On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap f
 
 ![Table with yellow background](images/ss-4.png?raw=true)
 
-- [ ] A
-
-```markdown
-<table>
-  <scope cols="2" style="background-color: yellow">
-  <tr>
-    <th>Col 1</th>
-    <th>Col 2</th>
-    <th>Col 3</th>
-  </tr>
-  <tr>
-    <td>first</td>
-    <td>second</td>
-    <td>third</td>
-  </tr>
-</table>
-```
-
-- [x] B
-
-```markdown
-<table>
-  <colgroup span="2" style="background-color: yellow">
-  <tr>
-    <th>Col 1</th>
-    <th>Col 2</th>
-    <th>Col 3</th>
-  </tr>
-  <tr>
-    <td>first</td>
-    <td>second</td>
-    <td>third</td>
-  </tr>
-</table>
-```
-
-- [ ] C
-
-```markdown
-<table>
-  <group cols="2" style="background-color: yellow">
-  <tr scope="row">
-    <th>Col 1</th>
-    <th>Col 2</th>
-    <th>Col 3</th>
-  </tr>
-  <tr scope="row">
-    <td>first</td>
-    <td>second</td>
-    <td>third</td>
-  </tr>
-</table>
-```
-
-- [ ] D
-
-```markdown
-<table>
-  <columns colspan="2" style="background-color: yellow">
-  <tr>
-    <th>Col 1</th>
-    <th>Col 2</th>
-    <th>Col 3</th>
-  </tr>
-  <tr>
-    <td>first</td>
-    <td>second</td>
-    <td>third</td>
-  </tr>
-</table>
-```
+- [ ]
+  ```markdown
+  <table>
+    <scope cols="2" style="background-color: yellow">
+    <tr>
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+    </tr>
+    <tr>
+      <td>first</td>
+      <td>second</td>
+      <td>third</td>
+    </tr>
+  </table>
+  ```
+- [x]
+  ```markdown
+  <table>
+    <colgroup span="2" style="background-color: yellow">
+    <tr>
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+    </tr>
+    <tr>
+      <td>first</td>
+      <td>second</td>
+      <td>third</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```markdown
+  <table>
+    <group cols="2" style="background-color: yellow">
+    <tr scope="row">
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+    </tr>
+    <tr scope="row">
+      <td>first</td>
+      <td>second</td>
+      <td>third</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```markdown
+  <table>
+    <columns colspan="2" style="background-color: yellow">
+    <tr>
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+    </tr>
+    <tr>
+      <td>first</td>
+      <td>second</td>
+      <td>third</td>
+    </tr>
+  </table>
+  ```
 
 #### Q27. What is the `<hr>`tag typically used for?
 
@@ -458,37 +447,34 @@ This is a confusing question and there can be an arguments for both the second a
 
 #### Q29. Which HTML snippet links back to the very top of a webpage?
 
-- [x] A
+- [x]
+  ```markdown
+  <a id="top"></a>
 
-```markdown
-<a id="top"></a>
+  <!-- placed at the top of the page -->
 
-<!-- placed at the top of the page -->
+  <a href="#top">back to top</a>
+  ```
 
-<a href="#top">back to top</a>
-```
+  - [ ] B
 
-- [ ] B
+  ```markdown
+  <a name="top"></a>
 
-```markdown
-<a name="top"></a>
+  <!-- placed at the top of the page -->
 
-<!-- placed at the top of the page -->
+  <a href="#top">back to top</a>
+  ```
 
-<a href="#top">back to top</a>
-```
+  - [ ] C
 
-- [ ] C
-
-```markdown
-<a href="#">back to top</a> <a href="#top">back to top</a>
-```
-
-- [ ] D
-
-```markdown
-<button href="#">back to top</button> <button href="#top">back to top</button>
-```
+  ```markdown
+  <a href="#">back to top</a> <a href="#top">back to top</a>
+  ```
+- [ ]
+  ```markdown
+  <button href="#">back to top</button> <button href="#top">back to top</button>
+  ```
 
 #### Q30. Which three tags where deprecated in HTML4 but returned to HTML5?
 
@@ -526,29 +512,22 @@ This is a confusing question and there can be an arguments for both the second a
 
 **We are fond of our TLAs in web design.**
 
-- [ ] A
-
-```html
-<p>We are fond of our <span title="three-letter acronyms">TLAs</span> in web design.</p>
-```
-
-- [ ] B
-
-```html
-<p>We are fond of our TLAs in web design.</p>
-```
-
-- [x] C
-
-```html
-<p>we are fond of our <abbr title="three-letter acronyms">TLAs</abbr> in web design.</p>
-```
-
-- [ ] D
-
-```html
-<p>we are fond of our <acronym title="three-letter acronym">TLAs</acronym> in web design.</p>
-```
+- [ ]
+  ```html
+  <p>We are fond of our <span title="three-letter acronyms">TLAs</span> in web design.</p>
+  ```
+- [ ]
+  ```html
+  <p>We are fond of our TLAs in web design.</p>
+  ```
+- [x]
+  ```html
+  <p>we are fond of our <abbr title="three-letter acronyms">TLAs</abbr> in web design.</p>
+  ```
+- [ ]
+  ```html
+  <p>we are fond of our <acronym title="three-letter acronym">TLAs</acronym> in web design.</p>
+  ```
 
 `<acronym>` has been removed in HTML5 and shouldn't be used anymore. Instead web developers should use the `<abbr>` element.
 
@@ -556,55 +535,50 @@ This is a confusing question and there can be an arguments for both the second a
 
 ![Sample list](images/ss-6.png?raw=true)
 
-- [ ] A
-
-```markdown
-<ul>
-  <li>
-    office
-    <ol style="circle">
-      <li>staple</li>
-      <li>paper</li>
-    </ol>
-  </li>
-  <li>
-    groceries
-    <ol style="circle">
-      <li>milk</li>
-    </ol>
-  </li>
-</ul>
-```
-
-- [x] B
-
-```markdown
-<ul>
-  <li>Office Supplies
-    <ul>
-      <li>Stapler</li>
-      <li>Paper clips</li>
-    </ul>
-  </li>
-  <li>Groceries
-    <ul>
-      <li>Milk</li>
-    </ul>
-  </li>
-</ul>
-```
-
-- [ ] C
-
-```markdown
-<ul>
-  <li>office</li>
-  <li>staple</li>
-  <li>paper</li>
-  <li>groceries</li>
-  <li>milk</li>
-</ul>
-```
+- [ ]
+  ```markdown
+  <ul>
+    <li>
+      office
+      <ol style="circle">
+        <li>staple</li>
+        <li>paper</li>
+      </ol>
+    </li>
+    <li>
+      groceries
+      <ol style="circle">
+        <li>milk</li>
+      </ol>
+    </li>
+  </ul>
+  ```
+- [x]
+  ```markdown
+  <ul>
+    <li>Office Supplies
+      <ul>
+        <li>Stapler</li>
+        <li>Paper clips</li>
+      </ul>
+    </li>
+    <li>Groceries
+      <ul>
+        <li>Milk</li>
+      </ul>
+    </li>
+  </ul>
+  ```
+- [ ]
+  ```markdown
+  <ul>
+    <li>office</li>
+    <li>staple</li>
+    <li>paper</li>
+    <li>groceries</li>
+    <li>milk</li>
+  </ul>
+  ```
 
 #### Q37. What should fill the blank below?
 
@@ -621,51 +595,44 @@ This is a confusing question and there can be an arguments for both the second a
 
 ![quote](images/ss-5.png?raw=true)
 
-- [ ] A
-
-```markdown
-<p>
-  "Making money is what you have to do to sustain a business—being driven to make something of value
-  and purpose is much more powerful."
-</p>
-<p><em>Lynda Weinman</em></p>
-```
-
-- [ ] B
-
-```markdown
-<blockquote>
-  <q
-    >"Making money is what you have to do to sustain a business—being driven to make something of
-    value and purpose is much more powerful."</q
-  >
-  <cite><em>Lynda Weinman</em></cite>
-</blockquote>
-```
-
-- [x] C
-
-```markdown
-<blockquote>
+- [ ]
+  ```markdown
   <p>
-    "Making money is what you have to do to sustain a business—being driven to make something of
-    value and purpose is much more powerful."
+    "Making money is what you have to do to sustain a business—being driven to make something of value
+    and purpose is much more powerful."
   </p>
-  <cite>Lynda Weinman</cite>
-</blockquote>
-```
-
-- [ ] D
-
-```markdown
-<section>
-  <q
-    >"Making money is what you have to do to sustain a business—being driven to make something of
-    value and purpose is much more powerful."</q
-  >
-  <cite>Lynda Weinman</cite>
-</section>
-```
+  <p><em>Lynda Weinman</em></p>
+  ```
+- [ ]
+  ```markdown
+  <blockquote>
+    <q
+      >"Making money is what you have to do to sustain a business—being driven to make something of
+      value and purpose is much more powerful."</q
+    >
+    <cite><em>Lynda Weinman</em></cite>
+  </blockquote>
+  ```
+- [x]
+  ```markdown
+  <blockquote>
+    <p>
+      "Making money is what you have to do to sustain a business—being driven to make something of
+      value and purpose is much more powerful."
+    </p>
+    <cite>Lynda Weinman</cite>
+  </blockquote>
+  ```
+- [ ]
+  ```markdown
+  <section>
+    <q
+      >"Making money is what you have to do to sustain a business—being driven to make something of
+      value and purpose is much more powerful."</q
+    >
+    <cite>Lynda Weinman</cite>
+  </section>
+  ```
 
 #### Q39. Which choice uses the correct terminology in describing this markup: `<p>info</p>`?
 
@@ -728,51 +695,44 @@ This is a confusing question and there can be an arguments for both the second a
 
 ![Table](images/ss-1.png?raw=true 'table')
 
-- [ ] A
-
-```markdown
-<tr>
-  <td>Table cell 1</td>
-  <td>Table cell 2</td>
-</tr>
-<tr>
-  <td rowspan="2">Table cell 3</td>
-</tr>
-```
-
-- [ ] B
-
-```markdown
-<tr>
-  <td>Table cell 1</td>
-  <td>Table cell 2</td>
-  <td>Table cell 3</td>
-</tr>
-```
-
-- [x] C
-
-```markdown
-<tr>
-  <td>Table cell 1</td>
-  <td>Table cell 2</td>
-</tr>
-<tr>
-  <td colspan="2">Table cell 3</td>
-</tr>
-```
-
-- [ ] D
-
-```markdown
-<tr>
-  <td>Table cell 1</td>
-  <td>Table cell 2</td>
-</tr>
-<tr>
-  <td>Table cell 3</td>
-</tr>
-```
+- [ ]
+  ```markdown
+  <tr>
+    <td>Table cell 1</td>
+    <td>Table cell 2</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Table cell 3</td>
+  </tr>
+  ```
+- [ ]
+  ```markdown
+  <tr>
+    <td>Table cell 1</td>
+    <td>Table cell 2</td>
+    <td>Table cell 3</td>
+  </tr>
+  ```
+- [x]
+  ```markdown
+  <tr>
+    <td>Table cell 1</td>
+    <td>Table cell 2</td>
+  </tr>
+  <tr>
+    <td colspan="2">Table cell 3</td>
+  </tr>
+  ```
+- [ ]
+  ```markdown
+  <tr>
+    <td>Table cell 1</td>
+    <td>Table cell 2</td>
+  </tr>
+  <tr>
+    <td>Table cell 3</td>
+  </tr>
+  ```
 
 #### Q47. Which choice is NOT a legal value for the **name** attribute within a `<meta>` tag?
 
@@ -783,55 +743,48 @@ This is a confusing question and there can be an arguments for both the second a
 
 #### Q48. Which form is coded correctly?
 
-- [ ] A
-
-```markdown
-<form>
-  <legend>Title</legend>
-  <fieldset>
-    <label for="name">Your name:</label>
-    <input type="text" name="name" id="name" />
-    <button type="submit">Submit</button>
-  </fieldset>
-</form>
-```
-
-- [ ] B
-
-```markdown
-<form>
-  <fieldset>
+- [ ]
+  ```markdown
+  <form>
     <legend>Title</legend>
-    <p>Your name:</p>
+    <fieldset>
+      <label for="name">Your name:</label>
+      <input type="text" name="name" id="name" />
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  ```
+- [ ]
+  ```markdown
+  <form>
+    <fieldset>
+      <legend>Title</legend>
+      <p>Your name:</p>
+      <input type="text" name="name" id="name" />
+      <input type="submit" value="Submit" />
+    </fieldset>
+  </form>
+  ```
+- [x]
+  ```markdown
+  <form>
+    <fieldset>
+      <legend>Title</legend>
+      <label for="name">Your name:</label>
+      <input type="text" name="name" id="name" />
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  ```
+- [ ]
+  ```markdown
+  <form>
+    <legend>Title</legend>
+    <label for="name">Your name:</label>
     <input type="text" name="name" id="name" />
     <input type="submit" value="Submit" />
-  </fieldset>
-</form>
-```
-
-- [x] C
-
-```markdown
-<form>
-  <fieldset>
-    <legend>Title</legend>
-    <label for="name">Your name:</label>
-    <input type="text" name="name" id="name" />
-    <button type="submit">Submit</button>
-  </fieldset>
-</form>
-```
-
-- [ ] D
-
-```markdown
-<form>
-  <legend>Title</legend>
-  <label for="name">Your name:</label>
-  <input type="text" name="name" id="name" />
-  <input type="submit" value="Submit" />
-</form>
-```
+  </form>
+  ```
 
 #### Q49. What does the **poster** attribute do in the `<video>` tag?
 
@@ -925,59 +878,52 @@ This is a confusing question and there can be an arguments for both the second a
 </ul></nav>
 ```
 
-- [ ] A
-
-```markdown
-<nav><ul>
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a></li>
-    <ul>
-      <li><a href="#">Link 2a</a></li>
-    </ul>
-  <li><a href="#">Link 3</a></li>
-</ul></nav>
-```
-
-- [x] B
-
-```markdown
-<nav><ul>
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a>
-    <ul>
-      <li><a href="#">Link 2a</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Link 3</a></li>
-</ul></nav>
-```
-
-- [ ] C
-
-```markdown
-<ul><nav>
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a>
-    <ul><nav>
-      <li><a href="#">Link 2a</a></li>
-    </nav></ul>
-  </li>
-  <li><a href="#">Link 3</a></li>
-</nav></ul>
-```
-
-- [ ] D
-
-```markdown
-<nav><ul>
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a></li>
+- [ ]
+  ```markdown
   <nav><ul>
-    <li><a href="#">Link 2a</a></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+      <ul>
+        <li><a href="#">Link 2a</a></li>
+      </ul>
+    <li><a href="#">Link 3</a></li>
   </ul></nav>
-  <li><a href="#">Link 3</a></li>
-</ul></nav>
-```
+  ```
+- [x]
+  ```markdown
+  <nav><ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a>
+      <ul>
+        <li><a href="#">Link 2a</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Link 3</a></li>
+  </ul></nav>
+  ```
+- [ ]
+  ```markdown
+  <ul><nav>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a>
+      <ul><nav>
+        <li><a href="#">Link 2a</a></li>
+      </nav></ul>
+    </li>
+    <li><a href="#">Link 3</a></li>
+  </nav></ul>
+  ```
+- [ ]
+  ```markdown
+  <nav><ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <nav><ul>
+      <li><a href="#">Link 2a</a></li>
+    </ul></nav>
+    <li><a href="#">Link 3</a></li>
+  </ul></nav>
+  ```
 
 #### Q60. What is the correct way to code a comment in HTML?
 
@@ -1079,53 +1025,46 @@ This is a confusing question and there can be an arguments for both the second a
 </table>
 ```
 
-- [ ] A
-
-```HTML
-<caption>A table</caption>
+- [ ]
+  ```HTML
+  <caption>A table</caption>
+    <table>
+      <td>
+        <tr>Cell 1</tr>
+        <tr>Cell 2</tr>
+      </td>
+    </table>
+  ```
+- [ ]
+  ```HTML
+  <caption>A table</caption>
   <table>
-    <td>
-      <tr>Cell 1</tr>
-      <tr>Cell 2</tr>
-    </td>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
   </table>
-```
-
-- [ ] B
-
-```HTML
-<caption>A table</caption>
-<table>
-  <tr>
-    <td>Cell 1</td>
-    <td>Cell 2</td>
-  </tr>
-</table>
-```
-
-- [x] C
-
-```HTML
-<table>
-  <caption>A table</caption>
-  <tr>
-    <td>Cell 1</td>
-    <td>Cell 2</td>
-  </tr>
-</table>
-```
-
-- [ ] D
-
-```HTML
-<table>
-  <tr>
-    <td>Cell 1</td>
-    <td>Cell 2</td>
-  </tr>
-  <caption>A table</caption>
-</table>
-```
+  ```
+- [x]
+  ```HTML
+  <table>
+    <caption>A table</caption>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+  </table>
+  ```
+- [ ]
+  ```HTML
+  <table>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+    <caption>A table</caption>
+  </table>
+  ```
 
 #### Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?
 
@@ -1147,37 +1086,30 @@ This is a confusing question and there can be an arguments for both the second a
 
 #### Q73. Which list comprises three empty elements?
 
-- [ ] A
-
-```HTML
-<area>
-<embed>
-<strong>
-```
-
-- [ ] B
-
-```HTML
-<input>
-<br>
-<p>
-```
-
-- [ ] C
-
-```HTML
-<link>
-<meta>
-<title>
-```
-
-- [x] D
-
-```HTML
-<wbr>
-<base>
-<source>
-```
+- [ ]
+  ```HTML
+  <area>
+  <embed>
+  <strong>
+  ```
+- [ ]
+  ```HTML
+  <input>
+  <br>
+  <p>
+  ```
+- [ ]
+  ```HTML
+  <link>
+  <meta>
+  <title>
+  ```
+- [x]
+  ```HTML
+  <wbr>
+  <base>
+  <source>
+  ```
 
 #### Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?
 
@@ -1222,97 +1154,83 @@ As Steve Krug once said, happy talk must die.
 
 #### Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?
 
-- [ ] A
-
-```markdown
-<p>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</p>
-```
-
-- [ ] B
-
-```markdown
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
-```
-
-- [ ] C
-
-```markdown
- <nav>
-    <ol>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-     </ol>
+- [ ]
+  ```markdown
+  <p>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </p>
+  ```
+- [ ]
+  ```markdown
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
-```
-
-- [x] D
-
-```markdown
- <nav>
-   <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-```
+  ```
+- [ ]
+  ```markdown
+   <nav>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       </ol>
+    </nav>
+  ```
+- [x]
+  ```markdown
+   <nav>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  ```
 
 #### Q79. Which choice is the best way to mark up this layout?
 
 ![Image of footer](images/ss-8.png?raw=true)
 
-- [x] A
-
-```markdown
-<h4>Mailing Address</h4>
-<address>
-  6410 Via Real <br>
-  Carpinteria, CA 93013<br>
-  <a href="mailto:info@linkedin.com">info@linkedin.com</a>
-</address>
-```
-
-- [ ] B
-
-```markdown
-<h4><strong>Mailing Address</h4>
-<address><em>
-  6410 Via Real <br>
-  Carpinteria, CA 93013<br>
-  <a href="mailto:info@linkedin.com">info@linkedin.com</a>
-</em></address>
-```
-
-- [ ] C
-
-```markdown
-<h4>Mailing Address</h4>
-<p><em>
-  6410 Via Real <br>
-  Carpinteria, CA 93013<br>
-  <a href="mailto:info@linkedin.com">info@linkedin.com</a>
-</em></p>
-```
-
-- [ ] D
-
-```markdown
-<p><strong>Mailing Address</strong></p>
-<p><em>
-  6410 Via Real <br>
-  Carpinteria, CA 93013<br>
-  <a href="mailto:info@linkedin.com">info@linkedin.com</a>
-</em></p>
-```
+- [x]
+  ```markdown
+  <h4>Mailing Address</h4>
+  <address>
+    6410 Via Real <br>
+    Carpinteria, CA 93013<br>
+    <a href="mailto:info@linkedin.com">info@linkedin.com</a>
+  </address>
+  ```
+- [ ]
+  ```markdown
+  <h4><strong>Mailing Address</h4>
+  <address><em>
+    6410 Via Real <br>
+    Carpinteria, CA 93013<br>
+    <a href="mailto:info@linkedin.com">info@linkedin.com</a>
+  </em></address>
+  ```
+- [ ]
+  ```markdown
+  <h4>Mailing Address</h4>
+  <p><em>
+    6410 Via Real <br>
+    Carpinteria, CA 93013<br>
+    <a href="mailto:info@linkedin.com">info@linkedin.com</a>
+  </em></p>
+  ```
+- [ ]
+  ```markdown
+  <p><strong>Mailing Address</strong></p>
+  <p><em>
+    6410 Via Real <br>
+    Carpinteria, CA 93013<br>
+    <a href="mailto:info@linkedin.com">info@linkedin.com</a>
+  </em></p>
+  ```
 
 [Source: W3Schools](https://www.w3schools.com/tags/tag_address.asp)
 
@@ -1399,37 +1317,30 @@ As Steve Krug once said, happy talk must die.
 
 #### Q88. What is the correct way to add a submit URL to a `button` element?
 
-- [ ] A
-
-```HTML
-<button submit="http://example.com/process">
-  Process data
-</button>
-```
-
-- [ ] B
-
-```HTML
-<button action="http://example.com/process">
-  Process data
-</button>
-```
-
-- [x] C
-
-```HTML
-<button formaction="http://example.com/process">
-  Process data
-</button>
-```
-
-- [ ] D
-
-```HTML
-<button method="http://example.com/process">
-  Process data
-</button>
-```
+- [ ]
+  ```HTML
+  <button submit="http://example.com/process">
+    Process data
+  </button>
+  ```
+- [ ]
+  ```HTML
+  <button action="http://example.com/process">
+    Process data
+  </button>
+  ```
+- [x]
+  ```HTML
+  <button formaction="http://example.com/process">
+    Process data
+  </button>
+  ```
+- [ ]
+  ```HTML
+  <button method="http://example.com/process">
+    Process data
+  </button>
+  ```
 
 `formaction — The URL that processes the information submitted by the button. Overrides the action attribute of the button's form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)
 
@@ -1488,37 +1399,30 @@ As Steve Krug once said, happy talk must die.
 
 #### Q95. The value attribute is associated with which set of tags ?
 
-- [x] A
-
-```HTML
-<li>
-<input>
-<option>
-```
-
-- [ ] B
-
-```HTML
-<input>
-<option>
-<textarea>
-```
-
-- [ ] C
-
-```HTML
-<button>
-<input>
-<form>
-```
-
-- [ ] D
-
-```HTML
-<input>
-<label>
-<meter>
-```
+- [x]
+  ```HTML
+  <li>
+  <input>
+  <option>
+  ```
+- [ ]
+  ```HTML
+  <input>
+  <option>
+  <textarea>
+  ```
+- [ ]
+  ```HTML
+  <button>
+  <input>
+  <form>
+  ```
+- [ ]
+  ```HTML
+  <input>
+  <label>
+  <meter>
+  ```
 
 #### Q96. What is wrong with this code?
 
@@ -1600,45 +1504,38 @@ As Steve Krug once said, happy talk must die.
 
 #### Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?
 
-- [x] A
-
-```HTML
-<aside>
-  <h3>Comments</h3>
-  <article> First comment.</article>
-  <article> Second comment.</article>
-</aside>
-```
-
-- [ ] B
-
-```HTML
-<div aria="dpub-comments">
-  <h3>Comments</h3>
-  <div aria="dpub-comment"> First comment.</div>
-  <div aria="dpub-comment"> Second comment.</div>
-</div>
-```
-
-- [ ] C
-
-```HTML
-<aside>
-  <h3>Comments</h3>
-  <aside> First comment.</aside>
-  <aside> Second comment.</aside>
-</aside>
-```
-
-- [ ] D
-
-```HTML
-<div typeof="comments">
-  <h3>Comments</h3>
-  <div typeof="comment"> First comment.</div>
-  <div typeof="comment"> Second comment.</div>
-</div>
-```
+- [x]
+  ```HTML
+  <aside>
+    <h3>Comments</h3>
+    <article> First comment.</article>
+    <article> Second comment.</article>
+  </aside>
+  ```
+- [ ]
+  ```HTML
+  <div aria="dpub-comments">
+    <h3>Comments</h3>
+    <div aria="dpub-comment"> First comment.</div>
+    <div aria="dpub-comment"> Second comment.</div>
+  </div>
+  ```
+- [ ]
+  ```HTML
+  <aside>
+    <h3>Comments</h3>
+    <aside> First comment.</aside>
+    <aside> Second comment.</aside>
+  </aside>
+  ```
+- [ ]
+  ```HTML
+  <div typeof="comments">
+    <h3>Comments</h3>
+    <div typeof="comment"> First comment.</div>
+    <div typeof="comment"> Second comment.</div>
+  </div>
+  ```
 
 `The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Example:a user-submitted comment.`
 [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
@@ -1691,49 +1588,42 @@ As Steve Krug once said, happy talk must die.
 
 #### Q108. Which description is coded correctly?
 
-- [x] A
-
-```HTML
-<dl>
-  <dt>Server</dt>
-  <dd>Software used to serve webpages, like Apache.</dd>
-  <dd> Hardware used to provide data to other computers.</dd>
-  <!-- Other terms and descriptions -->
-</dl>
-```
-
-- [ ] B
-
-```HTML
-<dt>
-  <dl>Server</dl>
-  <dd>Software used to serve webpages, like Apache.</dd>
-  <dd> Hardware used to provide data to other computers.</dd>
-  <!-- Other terms and descriptions -->
-</dt>
-```
-
-- [ ] C
-
-```HTML
-<dl>
-  <dt>Server</dt>
-  <dd>Software used to serve webpages, like Apache.</dd>
-  <dt> Hardware used to provide data to other computers.</dt>
-  <!-- Other terms and descriptions -->
-</dl>
-```
-
-- [ ] D
-
-```HTML
-<dl>
-  <dd>Server</dd>
-  <dt>Software used to serve webpages, like Apache.</dt>
-  <dt> Hardware used to provide data to other computers.</dt>
-  <!-- Other terms and descriptions -->
-</dl>
-```
+- [x]
+  ```HTML
+  <dl>
+    <dt>Server</dt>
+    <dd>Software used to serve webpages, like Apache.</dd>
+    <dd> Hardware used to provide data to other computers.</dd>
+    <!-- Other terms and descriptions -->
+  </dl>
+  ```
+- [ ]
+  ```HTML
+  <dt>
+    <dl>Server</dl>
+    <dd>Software used to serve webpages, like Apache.</dd>
+    <dd> Hardware used to provide data to other computers.</dd>
+    <!-- Other terms and descriptions -->
+  </dt>
+  ```
+  - [ ]
+  ```HTML
+  <dl>
+    <dt>Server</dt>
+    <dd>Software used to serve webpages, like Apache.</dd>
+    <dt> Hardware used to provide data to other computers.</dt>
+    <!-- Other terms and descriptions -->
+  </dl>
+  ```
+- [ ]
+  ```HTML
+  <dl>
+    <dd>Server</dd>
+    <dt>Software used to serve webpages, like Apache.</dt>
+    <dt> Hardware used to provide data to other computers.</dt>
+    <!-- Other terms and descriptions -->
+  </dl>
+  ```
 
 [Source 1](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element)
 [Source 2](https://www.w3schools.com/tags/tag_dl.asp)
@@ -1763,53 +1653,3 @@ As Steve Krug once said, happy talk must die.
 - [ ] `<style media="color-mode: dark">/* CSS code */</style>`
 - [x] `<style media="prefers-color-scheme: dark">/* CSS code */</style>`
 - [ ] `<style media="color-scheme: dark">/* CSS code */</style>`
-
-#### Q111. How would you mark up a header for a table row?
-
-- [x] A
-
-```HTML
-<table>
-  <thead scope="row"><th row="1">Header</th></thead>
-  <tr>
-    <td>10</td>
-    <td>18</td>
-  </tr>
-</table>
-```
-
-- [ ] B
-
-```HTML
-<table>
-  <tr>
-  <th scope="row">Header</th>
-    <td>10</td>
-    <td>18</td>
-  </tr>
-</table>
-```
-
-- [ ] C
-
-```HTML
-<table>
-  <tr>
-    <thead scope="row">Header</thead>
-    <td>10</td>
-    <td>18</td>
-  </tr>
-</table>
-```
-
-- [ ] D
-
-```HTML
-<table>
-  <tr>
-    <th>Header</th>
-    <td>10</td>
-    <td>18</td>
-  </tr>
-</table>
-```
