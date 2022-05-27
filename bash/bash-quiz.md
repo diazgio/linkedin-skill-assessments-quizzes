@@ -503,43 +503,36 @@ $ shopt -s extglob
 $ ls -l @(ba*(na)|a+(p)le)
 ```
 
-- [x] a
-
-```bash
-apple
-banana
-```
-
-- [ ] b
-
-```bash
-apple
-banana
-bananapple
-banapple
-pineapple
-strawberry
-```
-
-- [ ] c
-
-```bash
-apple
-banana
-bananappple
-banapple
-pineapple
-```
-
-- [ ] d
-
-```bash
-apple
-banana
-bananapple
-banapple
-pineapple
-```
+- [x]
+  ```bash
+  apple
+  banana
+  ```
+- [ ]
+  ```bash
+  apple
+  banana
+  bananapple
+  banapple
+  pineapple
+  strawberry
+  ```
+- [ ]
+  ```bash
+  apple
+  banana
+  bananappple
+  banapple
+  pineapple
+  ```
+- [ ]
+  ```bash
+  apple
+  banana
+  bananapple
+  banapple
+  pineapple
+  ```
 
 #### Q48. When used from within a script, which variable contains the name of the script?
 
@@ -650,38 +643,33 @@ textfile2.txt
 rm !(*gif|*jpg)`
 ```
 
-- [ ] a
-
-```bash
-archive.tar
-image1.gif
-image1.jpg
-image2.gif
-image2.jpg
-textfile1.txt
-textfile2.txt
-```
-
-- [ ] b
-
-```bash
-archive.tar
-textfile1.txt
-textfile2.txt
-```
-
-- [ ] c
-
-All of this files will be deleted
-
-- [x] d:
-
-```bash
-image1.gif
-image1.jpg
-image2.gif
-image2.jpg
-```
+- [ ]
+  ```bash
+  archive.tar
+  image1.gif
+  image1.jpg
+  image2.gif
+  image2.jpg
+  textfile1.txt
+  textfile2.txt
+  ```
+- [ ]
+  ```bash
+  archive.tar
+  textfile1.txt
+  textfile2.txt
+  ```
+- [ ]
+  ```
+  All of this files will be deleted
+  ```
+- [x]
+  ```bash
+  image1.gif
+  image1.jpg
+  image2.gif
+  image2.jpg
+  ```
 
 #### Q58. The code below seems to work and outputs "8 is greater than 5". However, what unexpected result will tell you it is not functioning properly?
 
@@ -826,37 +814,30 @@ filec.txt
 $ ls -l file[^abc]*.txt
 ```
 
-- [x] A
-
-```bash
-file1.txt
-file10.txt
-```
-
-- [ ] B
-
-```bash
-file10.txt
-file1.txt
-fileabc.txt
-filea.txt
-fileb.txt
-filec.txt
-```
-
-- [ ] C
-
-```bash
-fileabc.txt filea.txt fileb.txt filec.txt
-```
-
-- [ ] D
-
-```bash
-filea.txt
-fileb.txt
-filec.txt
-```
+- [x]
+  ```bash
+  file1.txt
+  file10.txt
+  ```
+- [ ]
+  ```bash
+  file10.txt
+  file1.txt
+  fileabc.txt
+  filea.txt
+  fileb.txt
+  filec.txt
+  ```
+- [ ]
+  ```bash
+  fileabc.txt filea.txt fileb.txt filec.txt
+  ```
+- [ ]
+  ```bash
+  filea.txt
+  fileb.txt
+  filec.txt
+  ```
 
 The caret (`^`) symbol here negates matches inside the bracket. [Reference](https://tldp.org/LDP/abs/html/globbingref.html)
 
@@ -872,39 +853,32 @@ cat <<EOF
 EOF
 ```
 
-- [ ] A
-
-```bash
-This is line 1.
-This is line 2.
-This is line 3.
-```
-
-- [ ] B
-
-```bash
-------------------------This is line 1.This is line 2.This is line 3.------------------------
-```
-
-- [x] C
-
-```bash
-------------------------
-   This is line 1.
-   This is line 2.
-   This is line 3.
-------------------------
-```
-
-- [ ] D
-
-```bash
-------------------------
-This is line 1.
-This is line 2.
-This is line 3.
-------------------------
-```
+- [ ]
+  ```bash
+  This is line 1.
+  This is line 2.
+  This is line 3.
+  ```
+- [ ]
+  ```bash
+  ------------------------This is line 1.This is line 2.This is line 3.------------------------
+  ```
+- [x]
+  ```bash
+  ------------------------
+     This is line 1.
+     This is line 2.
+     This is line 3.
+  ------------------------
+  ```
+- [ ]
+  ```bash
+  ------------------------
+  This is line 1.
+  This is line 2.
+  This is line 3.
+  ------------------------
+  ```
 
 #### Q75. What is the out.txt, in the next example?
 
