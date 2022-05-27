@@ -264,8 +264,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
     </shape>
   ```
 - [ ]
-  ```
-    xml
+  ```xml
     <oval xmlns:android="http://schemas.android.com/apk/res/android">
         <stroke android:width="4dp" android:color="@android:color/black"/>
         <solid android:color="@android:color/white"/>
