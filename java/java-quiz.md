@@ -109,56 +109,48 @@ class Main {
 
 #### Q8. Which class can compile given these declarations?
 
-```java
-interface One {
+ ```java
+  interface One {
     default void method() {
         System.out.println("One");
     }
-}
+  }
 
-interface Two {
+  interface Two {
     default void method () {
         System.out.println("One");
     }
-}
-```
-
-- [ ] A
-
-```java
-class Three implements One, Two {
+  }
+  ```
+- [ ]
+  ```java
+  class Three implements One, Two {
     public void method() {
-        super.One.method();
+      super.One.method();
     }
-}
-```
-
-- [ ] B
-
-```java
-class Three implements One, Two {
-    public void method() {
-        One.method();
-    }
-}
-```
-
-- [ ] C
-
-```java
-class Three implements One, Two {
-}
-```
-
-- [x] D
-
-```java
-class Three implements One, Two {
-    public void method() {
-        One.super.method();
-    }
-}
-```
+  }
+  ```
+- [ ]
+  ```java
+  class Three implements One, Two {
+      public void method() {
+	One.method();
+      }
+  }
+  ```
+- [ ]
+  ```java
+  class Three implements One, Two {
+  }
+  ```
+- [x]
+  ```java
+  class Three implements One, Two {
+      public void method() {
+  	  One.super.method();
+      }
+  }
+  ```
 
 #### Q9. What is the output of the following code?
 
@@ -617,36 +609,29 @@ public class Main {
 
 #### Q38. Which approach cannot be used to iterate over a List named _theList_?
 
-- [ ] A
-
-```java
-for (int i = 0; i < theList.size(); i++) {
+- [ ] 
+  ```jaa
+  for (int i = 0; i < theList.size(); i++) {
     System.out.println(theList.get(i));
-}
-```
-
-- [ ] B
-
-```java
-for (Object object : theList) {
+  }
+  ```
+- [ ]
+  ```java
+  for (Object object : theList) {
     System.out.println(object);
-}
-```
-
-- [x] C
-
-```java
-Iterator it = theList.iterator();
-for (it.hasNext()) {
+  }
+  ```
+- [x]
+  ```java
+  Iterator it = theList.iterator();
+  for (it.hasNext()) {
     System.out.println(it.next());
-}
-```
-
-- [ ] D
-
-```java
-theList.forEach(System.out::println);
-```
+  }
+  ```
+- [ ]
+  ```java
+  theList.forEach(System.out::println);
+  ```
 
 **Explanation:** `for (it.hasNext())` should be `while (it.hasNext())`.
 
@@ -746,40 +731,33 @@ public class TheClass {
 }
 ```
 
-- [ ] A
-
-```java
-public TheClass() {
+- [ ]
+  ```java
+  public TheClass() {
     x += 77;
-}
-```
-
-- [ ] B
-
-```java
-public TheClass() {
+  }
+  ```
+- [ ]
+  ```java
+  public TheClass() {
     x = null;
-}
-```
-
-- [x] C
-
-```java
-public TheClass() {
+  }
+  ```
+- [x]
+  ```java
+  public TheClass() {
     x = 77;
-}
-```
-
-- [ ] D
-
-```java
-private void setX(int x) {
+  }
+  ```
+- [ ]
+  ```java
+  private void setX(int x) {
     this.x = x;
-}
-public TheClass() {
+  }
+  public TheClass() {
     setX(77);
-}
-```
+  }
+  ```
 
 **Explanation:** `final` class members are allowed to be assigned only in three places: declaration, constructor or an instance-initializer block.
 
@@ -1541,49 +1519,42 @@ interface MyInterface {
 }
 ```
 
-- [ ] A
-
-```java
-public class MyClass implements MyInterface {
+- [ ]
+  ```java
+  public class MyClass implements MyInterface {
     // ....
     public void foo(int x){
         System.out.println(x);
     }
-}
-```
-
-- [ ] B
-
-```java
-public class MyClass implements MyInterface {
+  }
+  ```
+- [ ]
+  ```java
+  public class MyClass implements MyInterface {
     // ....
     public double foo(int x){
         return x * 100;
     }
-}
-```
-
-- [x] C
-
-```java
-public class MyClass implements MyInterface {
+  }
+  ```
+- [x]
+  ```java
+  public class MyClass implements MyInterface {
     // ....
     public int foo(int x){
         return x * 100;
     }
-}
-```
-
-- [ ] D
-
-```java
-public class MyClass implements MyInterface {
+  }
+  ```
+- [ ]
+  ```java
+  public class MyClass implements MyInterface {
     // ....
     public int foo(){
         return 100;
     }
-}
-```
+  }
+  ```
 
 #### Q110. What is the result of this program?
 
