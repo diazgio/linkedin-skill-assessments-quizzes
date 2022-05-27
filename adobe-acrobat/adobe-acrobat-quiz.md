@@ -157,24 +157,3 @@
 - [ ] Tools > PDF Standards
 
 [Reference](https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html)
-
-#### Q23. In a fillable form, you would like the user to be able to enter their own text in a multi-choice form field, if none of the existing choices in the form field are suitable. Which type of form field would provide this option?
-
-- [ ] a list box field
-- [ ] a multi-line text field
-- [ ] a drop-down field
-- [ ] a text field with rich text formatting
-
-#### Q23. A client sent a PDF to be included as a page in a book you are designing. The client misspelled several words in the PDF. The PDF is a scan of text. What can you do to fix the misspelled words?
-
-- [ ] **Tools > Organize Pages**
-- [ ] **Tools > Accessibility**
-- [ ] **Took > Edit PDF**
-- [ ] **File > Export to > Microsoft Word**
-
-#### Q24. You would like to convert a layered Visio file to PDF. However, that option is not available. How can you control the conversion of Visio layers to layers in the exported PDF?
-
-- [ ] Click **Create Layer Set**.
-- [ ] Click **Add Layers**.
-- [ ] Deselect the **Convert All Pages in Drawing** option.
-- [ ] Select **Retain Some Layers in the Selected Page**.
