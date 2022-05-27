@@ -3,42 +3,35 @@
 ##### Q1. Which Code sample will eventually cause the computer to run out of memory?
 
 - [x]
-
-```c
-while(1)
-{
-    char *smallString = (char *) malloc(10);
-}
-```
-
+  ```c
+  while(1)
+  {
+      char *smallString = (char *) malloc(10);
+  }
+  ```
 - [ ]
-
-```c
-long long number = 1;
-    while(1)
-    number *= 2;
-```
-
+  ```c
+  long long number = 1;
+      while(1)
+      number *= 2;
+  ```
 - [ ]
-
-```c
-while(1)
-{
-    char hugeString[1000000L];
-    memset(hugeString, 0, 1000000L);
-}
-```
-
+  ```c
+  while(1)
+  {
+      char hugeString[1000000L];
+      memset(hugeString, 0, 1000000L);
+  }
+  ```
 - [ ]
-
-```c
-while(1)
-{
-    long *bigArray = (long *) malloc(sizeof(long) * 1000);
-    memset(bigArray, 1000000, 1000);
-    free(bigArray);
-}
-```
+  ```c
+  while(1)
+  {
+      long *bigArray = (long *) malloc(sizeof(long) * 1000);
+      memset(bigArray, 1000000, 1000);
+      free(bigArray);
+  }
+  ```
 
 #### Q2. What will this code print on the screen?
 
@@ -65,27 +58,21 @@ main()
 ```
 
 - [x]
-
-```
-A is greater then B
-C is fun!
-```
-
+  ```
+  A is greater then B
+  C is fun!
+  ```
 - [ ]
-
-```
-A is greater then B
-B is greater then A
-C is fun!
-```
-
+  ```
+  A is greater then B
+  B is greater then A
+  C is fun!
+  ```
 - [ ]
-
-```
-A is greater then B
-B is greater then A
-```
-
+  ```
+  A is greater then B
+  B is greater then A
+  ```
 - [ ] Nothing is printed on Screen
 
 #### Q3. What is the name for calling a function inside the same function?
@@ -146,40 +133,33 @@ struct s {
 #### Q8. Using a for loop, how could you write a C code to count down from 10 to 1 and display each number on its own line?
 
 - [ ]
-
-```c
-for (int i = 0; i>=0, i--){
-    printf("%d\n", i);
-}//end of loop
-```
-
+  ```c
+  for (int i = 0; i>=0, i--){
+      printf("%d\n", i);
+  }//end of loop
+  ```
 - [ ]
-
-```c
-int i;
-for (i=1; i<=10; i++){
-    printf("%d", i);
-}
-```
-
+  ```c
+  int i;
+  for (i=1; i<=10; i++){
+      printf("%d", i);
+  }
+  ```
 - [ ]
-
-```c
-int i = 10;
-while (i>0){
-    printf("%d\n", i);
-    i--;
-}
-```
-
+  ```c
+  int i = 10;
+  while (i>0){
+      printf("%d\n", i);
+      i--;
+  }
+  ```
 - [x]
-
-```c
-int i;
-for (i= 10; i>0; i--){
-    printf("%d\n", i);
-}// end of loop
-```
+  ```c
+  int i;
+  for (i= 10; i>0; i--){
+      printf("%d\n", i);
+  }// end of loop
+  ```
 
 #### Q9. What is not one of the reserved words in standard C?
 
@@ -349,39 +329,32 @@ char *string[20] = { "one", "two", "three"};
 #### Q26. Which program will compile and run without errors?
 
 - [ ]
-
-```c
-main() {
-    for(i=0; i<10; i++) ;
-}
-```
-
+  ```c
+  main() {
+      for(i=0; i<10; i++) ;
+  }
+  ```
 - [x]
-
-```c
-main() {
-int i=0;
-    for(; i<10; i++) ;
-}
-```
-
+  ```c
+  main() {
+  int i=0;
+      for(; i<10; i++) ;
+  }
+  ```
 - [ ]
-
-```c
-main() {
-    int i;
-    for(i=0; i<j; i++) ;
-}
-```
-
+  ```c
+  main() {
+      int i;
+      for(i=0; i<j; i++) ;
+  }
+  ```
 - [ ]
-
-```c
-main() {
-int i;
-    for (i= 10; i<10; i++)
-}
-```
+  ```c
+  main() {
+  int i;
+      for (i= 10; i<10; i++)
+  }
+  ```
 
 #### Q27. What does this function call return?
 
@@ -463,46 +436,39 @@ printf("%d", f1(5));
 #### Q35. Which choice is an include guard for the header file mylib.h?
 
 - [ ]
+  ```c
+  #ifdef MYLIB_H
+  #undef MYLIB_H
 
-```c
-#ifdef MYLIB_H
-#undef MYLIB_H
+  // mylib.h content
 
-// mylib.h content
-
-#endif /* MYLIB_H */
-```
-
+  #endif /* MYLIB_H */
+  ```
 - [x]
+  ```c
+  #ifndef MYLIB_H
+  #define MYLIB_H
 
-```c
-#ifndef MYLIB_H
-#define MYLIB_H
+  // mylib.h content
 
-// mylib.h content
-
-#endif /* MYLIB_H */
-```
-
+  #endif /* MYLIB_H */
+  ```
 - [ ]
+  ```c
+  #define MYLIB_H
+  #include "mylib.h"
 
-```c
-#define MYLIB_H
-#include "mylib.h"
-
-#undef MYLIB_H
-```
-
+  #undef MYLIB_H
+  ```
 - [ ]
+  ```c
+  #ifdef MYLIB_H
+  #define MYLIB_H
 
-```c
-#ifdef MYLIB_H
-#define MYLIB_H
+  // mylib.h content
 
-// mylib.h content
-
-#endif /* MYLIB_H */
-```
+  #endif /* MYLIB_H */
+  ```
 
 #### Q36. How many times does the code inside the while loop get executed in this program?
 
@@ -553,36 +519,29 @@ main(){
 #### Q41. You have written a function that you want to include as a member of structure a. How is such as structure member defiened?
 
 - [x]
-
-```c
-struct a {
-    void *f1;
-};
-```
-
+  ```c
+  struct a {
+      void *f1;
+  };
+  ```
 - [ ]
-
-```c
-struct a {
-    void (*f1)();
-};
-```
-
+  ```c
+  struct a {
+      void (*f1)();
+  };
+  ```
 - [ ]
-
-```c
-struct a {
-    *(void *f1)();
-};
-```
-
+  ```c
+  struct a {
+      *(void *f1)();
+  };
+  ```
 - [ ]
-
-```c
-struct a {
-    void *f1();
-};
-```
+  ```c
+  struct a {
+      void *f1();
+  };
+  ```
 
 #### Q42. A Stack data structure allows all data operations at one end only, making it what kind of an implementation?
 
@@ -642,144 +601,132 @@ main()
 ```
 
 - [ ]
+  ```c
+  void add (int a, int b, int result)
+  {
+      result = a+b;
+  }
 
-```c
-void add (int a, int b, int result)
-{
-    result = a+b;
-}
+  main()
+  {
+      int a = 10;
+      int b = 20;
+      int result = 0;
 
-main()
-{
-    int a = 10;
-    int b = 20;
-    int result = 0;
-
-    add(a,b,result);
-}
-```
-
+      add(a,b,result);
+  }
+  ```
 - [ ]
+  ```c
+  void add (int a, int b, int *result)
+  {
+      result = a+b;
+  }
 
-```c
-void add (int a, int b, int *result)
-{
-    result = a+b;
-}
+  main()
+  {
+      int a = 10;
+      int b = 20;
+      int result = 0;
 
-main()
-{
-    int a = 10;
-    int b = 20;
-    int result = 0;
-
-    add(a,b,result);
-}
-```
-
+      add(a,b,result);
+  }
+  ```
 - [ ]
+  ```c
+  void add (int *a, int *b, int *result)
+  {
+      result = a+b;
+  }
 
-```c
-void add (int *a, int *b, int *result)
-{
-    result = a+b;
-}
+  main()
+  {
+      int a = 10;
+      int b = 20;
+      int result = 0;
 
-main()
-{
-    int a = 10;
-    int b = 20;
-    int result = 0;
-
-    add(*a,*b,*result);
-}
-```
+      add(*a,*b,*result);
+  }
+  ```
 
 #### Q47. Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?
 
 - [ ]
+  ```c
+  void fibonacci(int a, int b)
+  {
+      int c = a+b;
 
-```c
-void fibonacci(int a, int b)
-{
-    int c = a+b;
+      if(a>100)
+         return;
 
-    if(a>100)
-       return;
+      printf("%d", a);
 
-    printf("%d", a);
+      fibonacci(a,b);
+  }
 
-    fibonacci(a,b);
-}
-
-int main()
-{
-    fibonacci(0,1);
-}
-```
-
+  int main()
+  {
+      fibonacci(0,1);
+  }
+  ```
 - [ ]
+  ```c
+  void fibonacci(int a, int b)
+  {
+      int c = a+b;
 
-```c
-void fibonacci(int a, int b)
-{
-    int c = a+b;
+      if(a>100)
+         return;
 
-    if(a>100)
-       return;
+      printf("%d", b);
 
-    printf("%d", b);
+      fibonacci(a,c);
+  }
 
-    fibonacci(a,c);
-}
-
-int main()
-{
-    fibonacci(0,1);
-}
-```
-
+  int main()
+  {
+      fibonacci(0,1);
+  }
+  ```
 - [x]
+  ```c
+  void fibonacci(int a, int b)
+  {
+      int c = a+b;
 
-```c
-void fibonacci(int a, int b)
-{
-    int c = a+b;
+      if(a>100)
+         return;
 
-    if(a>100)
-       return;
+      printf("%d", a);
 
-    printf("%d", a);
+      fibonacci(b,c);
+  }
 
-    fibonacci(b,c);
-}
-
-int main()
-{
-    fibonacci(0,1);
-}
-```
-
+  int main()
+  {
+      fibonacci(0,1);
+  }
+  ```
 - [ ]
+  ```c
+  void fibonacci(int a, int b)
+  {
+      int c = a+b;
 
-```c
-void fibonacci(int a, int b)
-{
-    int c = a+b;
+      if(a>100)
+         return;
 
-    if(a>100)
-       return;
+      printf("%d", c);
 
-    printf("%d", c);
+      fibonacci(b,c);
+  }
 
-    fibonacci(b,c);
-}
-
-int main()
-{
-    fibonacci(0,1);
-}
-```
+  int main()
+  {
+      fibonacci(0,1);
+  }
+  ```
 
 #### Q48. Which is _not_ a storage class specifier?
 
@@ -855,31 +802,25 @@ void *vptr=&g;
 #### Q56. Using a _for_ loop, how would you write C code to count down from 10 to 1 and display each number on its own line?
 
 - [ ]
-
-```c
-for(int i=10;1>0;) {
-    printf("%d\n", i);
-    i--;
-}
-```
-
+  ```c
+  for(int i=10;1>0;) {
+      printf("%d\n", i);
+      i--;
+  }
+  ```
 - [x]
-
-```c
-for (int i=10; i>0; i--)
-    printf("%d\n", i);
-```
-
+  ```c
+  for (int i=10; i>0; i--)
+      printf("%d\n", i);
+  ```
 - [ ]
-
-```c
-for (int i=1; i<=10; i++)
-    printf("%d", i);
-```
-
+  ```c
+  for (int i=1; i<=10; i++)
+      printf("%d", i);
+  ```
 - [ ]
-
-```c
-for (int i=10; i>=0; i--)
-    printf("%d\n", i);
-```
+  ```c
+  for (int i=10; i>=0; i--)
+      printf("%d\n", i);
+  ```
+ 
