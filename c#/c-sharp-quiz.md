@@ -34,23 +34,18 @@ var type = typeof(SomeType);
 var attribute = type.GetCustomAttribute<SomeAttribute>();
 ```
 
-- [ ] .
-
-```cs
-var typeof(MyPresentationModel).Should().BeDecoratedWith<SomeAttribute>();
-```
-
-- [ ] .
-
-```cs
-Attribute.GetCustomAttribute, typeof(SubControllerActionToViewDataAttribute)
-```
-
-- [x] .
-
-```cs
-Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActionToViewDataAttribute))
-```
+- [ ]
+  ```cs
+  var typeof(MyPresentationModel).Should().BeDecoratedWith<SomeAttribute>();
+  ```
+- [ ]
+  ```cs
+  Attribute.GetCustomAttribute, typeof(SubControllerActionToViewDataAttribute)
+  ```
+- [x]
+  ```cs
+  Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActionToViewDataAttribute))
+  ```
 
 [Official documentation: Attribute Class](https://docs.microsoft.com/en-us/dotnet/api/system.attribute?view=net-5.0)
 
@@ -548,40 +543,33 @@ public static void Main(string[] args)
 #### Q51. What is the correct way to write a public property with a private backing field?
 
 - [ ]
-
-```cs
-private int _password;
-pubic int Password = { get; set; }
-```
-
+  ```cs
+  private int _password;
+  pubic int Password = { get; set; }
+  ```
 - [ ]
-
-```cs
-private int _password;
-public int Password = _password;
-```
-
+  ```cs
+  private int _password;
+  public int Password = _password;
+  ```
 - [ ]
-
-```cs
-private int _password;
-public int Password
-{
-  get -> _password;
-  set-> _password = value;
-}
-```
-
+  ```cs
+  private int _password;
+  public int Password
+  {
+    get -> _password;
+    set-> _password = value;
+  }
+  ```
 - [x]
-
-```cs
-private int _password;
-public int Password
-{
-  get { return _password; }
-  set { _password = value; }
-}
-```
+  ```cs
+  private int _password;
+  public int Password
+  {
+    get { return _password; }
+    set { _password = value; }
+  }
+  ```
 
 [Official documentation: Using Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)
 
@@ -713,12 +701,15 @@ public int Password
 
 [c-sharpcorner: Virtual Method in C#](https://www.c-sharpcorner.com/UploadFile/3d39b4/virtual-method-in-C-Sharp/)
 
-#### Q66. What is likely to happen if you have multiple threads accessing the same resource in your program?
+#### Q66. What is true about thread multitasking?
 
-- [ ] `resource overload`
-- [ ] `thread jumping`
-- [ ] `deadlock and race conditions`
-- [ ] `nothing, since this is what threading is for`
+- [x] `Thread multitasking allows code to be executed concurrently`
+- [ ] `Thread multitasking allows code to be executed only when handling a user event.`
+- [ ] `Thread multitasking blocks code from being executed simultaneously to guard memory.`
+- [ ] `Thread multitasking adds single-threaded code blocks together.`
+
+[Official Documentation: Threads](https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading)
+
 
 #### Q67. How do you indicate that a string might be null?
 
@@ -751,12 +742,3 @@ public int Password
 - [ ] `after compile time`
 
 [C-sharpcorner: Anonymous Types](https://www.c-sharpcorner.com/UploadFile/ff2f08/anonymous-types-in-C-Sharp/)
-
-#### Q71. What is true about thread multitasking?
-
-- [x] `Thread multitasking allows code to be executed concurrently`
-- [ ] `Thread multitasking allows code to be executed only when handling a user event.`
-- [ ] `Thread multitasking blocks code from being executed simultaneously to guard memory.`
-- [ ] `Thread multitasking adds single-threaded code blocks together.`
-
-[Official Documentation: Threads](https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading)
