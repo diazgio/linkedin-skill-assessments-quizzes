@@ -635,19 +635,12 @@
 - [ ] unit testing
 - [ ] test then code
 
-#### Q89. The team is not going to complete its Sprint Commitment. As the Team Facilitator, what should you do?
+### Q90. How can you impove interaction between team members?
 
-- [ ] Ask the PO to extend the sprint.
-- [ ] Report this at the Sprint Review.
-- [ ] Point out the reasons why and collaborate on solutions.
-- [ ] Advise the PO as soon as possible.
-
-#### Q90. What is the term for a team member who is "T-skilled"?
-
-- [ ] cross-functional
-- [ ] jack-of-all-trades
-- [ ] apprentice developer
-- [ ] generalizing specialist
+- [x] Move people's workstations around in the team room to create new social possibilities.
+- [ ] Ask the team if they would like to do something recreational together and offer to organize it.
+- [ ] Tell the team that you see this as a problem and ask them to solve it.
+- [ ] Since no one has come to you with a complaint, assume that the limited interaction works for everyone.
 
 ### Q91. Which statement is _not_ true about pair programming?
 
@@ -662,10 +655,3 @@
 - [ ] are more goal oriented
 - [ ] tend to be more resilient
 - [ ] are more afraid of failure
-
-### Q93. How can you impove interaction between team members?
-
-- [x] Move people's workstations around in the team room to create new social possibilities.
-- [ ] Ask the team if they would like to do something recreational together and offer to organize it.
-- [ ] Tell the team that you see this as a problem and ask them to solve it.
-- [ ] Since no one has come to you with a complaint, assume that the limited interaction works for everyone.
