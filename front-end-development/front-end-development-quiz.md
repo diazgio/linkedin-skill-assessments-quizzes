@@ -210,37 +210,30 @@ h1 {
 <cite>Noam Chomsky</cite>
 ```
 
-- [ ] A
-
-```css
-cite {
-  text-color: cyan;
-}
-```
-
-- [ ] B
-
-```css
-cite {
-  font-color: cyan;
-}
-```
-
-- [x] C
-
-```css
-cite {
-  color: cyan;
-}
-```
-
-- [ ] D
-
-```css
-cite {
-  text: cyan;
-}
-```
+- [ ]
+  ```css
+  cite {
+    text-color: cyan;
+  }
+  ```
+- [ ]
+  ```css
+  cite {
+    font-color: cyan;
+  }
+  ```
+- [x]
+  ```css
+  cite {
+    color: cyan;
+  }
+  ```
+- [ ]
+  ```css
+  cite {
+    text: cyan;
+  }
+  ```
 
 #### Q25. You find this code in a stylesheet. What is it being used for?
 
@@ -617,17 +610,14 @@ console.log(currencies);
 </div>
 ```
 
-- [ ] A
-
+- [ ]
   ```css
   .container {
     display: flex;
     align-items: center;
   }
   ```
-
-- [x] B
-
+- [x]
   ```css
   .container {
     display: flex;
@@ -635,18 +625,14 @@ console.log(currencies);
     justify-content: center;
   }
   ```
-
-- [ ] C
-
+- [ ]
   ```css
   .box {
     align-items: center;
     justify-content: center;
   }
   ```
-
-- [ ] D
-
+- [ ]
   ```css
   .container {
     display: flex;
