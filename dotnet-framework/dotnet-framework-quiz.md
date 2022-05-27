@@ -399,19 +399,12 @@
 
 [ASP.NET Core Module](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-5.0)
 
-#### Q55. In the code below, what is the difference between RenderPartial and RenderAction?
+#### Q55. What is the difference between a heap and a stack?
 
-```cs
-@{
-  Html.RenderAction("Add");
-  Html.RenderPartial("Add");
-}
-```
-
-- [ ] RenderPartial will call an action method of the current controller and render a result inline. RenderAction will render the specified view inline without calling any action method.
-- [ ] RenderAction will call an action method of the current model and render a result inline. RenderPartial will render the specified view inline without calling any action method.
-- [ ] RenderAction will call an action method of the current controller and render a result inline. RenderPartial will render the specified view inline without calling any action method.
-- [ ] RenderPartial will call an action method of the current model and render a result inline. RenderAction will render the specified view inline without calling any action method.
+- [x] The stack contains stored value types; the heap contains stored reference types.
+- [ ] The heap is stored value types; the stack is stored reference types.
+- [ ] The heap is stored object types; the stack is stored class types.
+- [ ] The stack is stored object types; the heap is stored class types.
 
 #### Q56. What is the Liskov substitution principle?
 
@@ -449,19 +442,19 @@
 
 [What is the full form of CIL?](https://ythi.net/abbreviations/english/what-does-cil-mean-what-is-the-full-form-of-cil/)
 
-#### Q60. Which choice best describes the difference between a namespace and an assembly?
+#### Q60. Which choice is a set of features that extends the query capabilities of the .NET language syntax by adding sets of new standard query operators that allow data manipulation, regardless of the data source?
 
-- [ ] Namespace contains code to form MSIL (Microsoft Intermediate Language). An assembly contains a set of unique names.
-- [ ] Namespace is the logical naming decided at design time by the developer. Scope for a particular type is defined at run time using an assembly.
-- [ ] A namespace has logical units that are physically grouped together. An assembly does not have any classification.
-- [ ] A namespace has logical units that are physically grouped together for assemblies. Assembly classes are available in your program and will be logically grouped.
+- [ ] XAML
+- [ ] C#
+- [ ] XML
+- [x] LINQ
 
-#### Q61. What is a tuple?
+#### Q61. Why would the .NET Framework use Econo-JIT (Just-inTime)?
 
-- [ ] A data structure that has a specific number and sequence of elements
-- [ ] An object to store multiple variables of the same type in an array data structure
-- [ ] A group of classes designed specifically for grouping together objects and performing tasks on them
-- [ ] An array whose elements are jagged
+- [ ] to compile only the methods that are called at run time and then store them in cache for one minute
+- [ ] to compile only methods called at run time - which are compiled the first time the methods are called and then stored in cache to be used for execution when the same methods are called again
+- [ ] to compile complete source code into native code in a single compilation cycle during deployment of the application
+- [x] to compile only the methods that are called at run time and remove them from memory after execution
 
 #### Q62. What does IL stand for?
 
@@ -491,23 +484,3 @@
 - [ ] A class should have only a single responsibility - that is, only changes to one part of the software's specification should be able to affect the specification of the class.
 - [ ] Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
 
-#### Q66. Which choice is a set of features that extends the query capabilities of the .NET language syntax by adding sets of new standard query operators that allow data manipulation, regardless of the data source?
-
-- [ ] XAML
-- [ ] C#
-- [ ] XML
-- [x] LINQ
-
-#### Q67. Why would the .NET Framework use Econo-JIT (Just-inTime)?
-
-- [ ] to compile only the methods that are called at run time and then store them in cache for one minute
-- [ ] to compile only methods called at run time - which are compiled the first time the methods are called and then stored in cache to be used for execution when the same methods are called again
-- [ ] to compile complete source code into native code in a single compilation cycle during deployment of the application
-- [x] to compile only the methods that are called at run time and remove them from memory after execution
-
-#### Q68. What is the difference between a heap and a stack?
-
-- [x] The stack contains stored value types; the heap contains stored reference types.
-- [ ] The heap is stored value types; the stack is stored reference types.
-- [ ] The heap is stored object types; the stack is stored class types.
-- [ ] The stack is stored object types; the heap is stored class types.
