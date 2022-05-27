@@ -41,84 +41,42 @@
 - [ ] pin
 - [x] fixed
 
-#### Q6. In the CAM workspace, which strategy removes a part's interior cavity?
-
-- [ ] Slot
-- [ ] 2D Pocket
-- [ ] Bore
-- [ ] 2D Contour
-
-#### Q7. What does the Zebra Analysis tool do?
-
-- [ ] It applies a metal render.
-- [ ] It fixes bodies.
-- [ ] It checks a body's continuity.
-- [ ] It splits bodies apart.
-
-#### Q8. Which command creates a plane at the midpoint between two faces or work planes?
-
-- [ ] Midplane
-- [ ] Plane Tangent to Face at Point
-- [ ] Offset Plane
-- [ ] Plane at Angle
-
-#### Q9. Which hole type automatically enters a diameter value based on the type of fastener it will accomodate?
+#### Q6. Which hole type automatically enters a diameter value based on the type of fastener it will accomodate?
 
 - [x] Clearance
 - [ ] Simple
 - [ ] Drilled
 - [ ] Through
 
-#### Q10. Which workspace creates components made from thin, premade material formed into specific shapes?
-
-- [ ] Mesh
-- [ ] Simulation
-- [ ] Animation
-- [ ] Sheet Metal
-
-#### Q11. What is required to invite other people into your project folder?
+#### Q7. What is required to invite other people into your project folder?
 
 - [ ] a name
 - [x] an email address
 - [ ] an IP address
 - [ ] a phone number
 
-#### Q12. Which tool connects two joints in a way that the motion of one joint can drive the motion of another joint?
-
-- [ ] Drive Joints
-- [ ] As-built Joint
-- [ ] Motion Study
-- [ ] Motion Link
-
-#### Q13. Which joint type allows components to translate along two axes and rotate around a single axis?
+#### Q8. Which joint type allows components to translate along two axes and rotate around a single axis?
 
 - [ ] slider
 - [ ] revolute
 - [x] planar
 - [ ] pin-slot
 
-#### Q14. Which view shows a drawing part at an enlarged scale?
+#### Q9. Which view shows a drawing part at an enlarged scale?
 
 - [x] detail view
 - [ ] section view
 - [ ] base view
 - [ ] projected view
 
-#### Q15. Which file type is not a drawing output?
+#### Q10. Which file type is not a drawing output?
 
 - [ ] DWG file
 - [x] CSV file
 - [ ] STEP file
 - [ ] PDF file
 
-#### Q16. What command do you use to understand the relationship between multiple joints?
-
-- [ ] Lock
-- [ ] Animate Joint
-- [ ] Animate Model
-- [ ] Motion Link
-
-#### Q17. What translator converts the screen toolpath into language the CNC machine understands?
+#### Q11. What translator converts the screen toolpath into language the CNC machine understands?
 
 - [x] a post processor
 - [ ] G-code
