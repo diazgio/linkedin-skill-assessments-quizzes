@@ -410,56 +410,49 @@ startActivity(dialerIntent)
 #### Q34. You would like to enable analytics tracking only in `release` builds. How can you create a new field in the generated `BuildConfig` class to store that value?
 
 - [ ]
-
-```
-buildTypes {
-	debug {
-		buildConfig 'boolean', 'ENABLE_ANALYTICS', 'false'
-	}
-	release {
-		buildConfig 'boolean', 'ENABLE_ANALYTICS', 'true'
-	}
-}
-```
-
+  ```
+  buildTypes {
+    debug {
+  	buildConfig 'boolean', 'ENABLE_ANALYTICS', 'false'
+    }
+    release {
+	buildConfig 'boolean', 'ENABLE_ANALYTICS', 'true'
+    }
+  }
+  ```
 - [ ]
-
-```
-buildTypes {
-	debug {
-		buildConfig 'String', 'ENABLE_ANALYTICS', 'false'
-	}
-	release {
-		buildConfig 'String', 'ENABLE_ANALYTICS', 'true'
-	}
-}
-```
-
+  ```
+  buildTypes {
+    debug {
+      buildConfig 'String', 'ENABLE_ANALYTICS', 'false'
+    }
+    release {
+      buildConfig 'String', 'ENABLE_ANALYTICS', 'true'
+    }
+  }
+  ```
 - [x]
-
-```
-buildTypes {
-	debug {
-		buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'
-	}
-	release {
-		buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
-	}
-}
-```
-
+  ```
+  buildTypes {
+    debug {
+	buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'
+    }
+    release {
+	buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
+    }
+  }
+  ```
 - [ ]
-
-```
-buildTypes {
-	debug {
-		buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
-	}
-	release {
-		buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'
-	}
-}
-```
+  ```
+  buildTypes {
+    debug {
+	buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
+    }
+    release {
+	buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'
+    }
+  }
+  ```
 
 #### Q35. To optimize your APK size, what image codec should you use?
 
@@ -480,95 +473,88 @@ buildTypes {
 ![img](image/04.jpeg)
 
 - [ ]
+  ```
+  xml
+      <androidx.constraintlayout.widget.ConstraintLayout
+  	  ...>
 
-```
-xml
-    <androidx.constraintlayout.widget.ConstraintLayout
-	...>
+	  <TextView
+	  	  android:id="@+id/text_dashboard"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="16dp"
+		  android:padding="8dp"
+		  android:textAlignment="center"
+		  android:text="Dashboard"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+		  app:layout_constraintTop_toTopOf="parent" />
 
-	<TextView
-		android:id="@+id/text_dashboard"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="16dp"
-		android:padding="8dp"
-		android:textAlignment="center"
-		android:text="Dashboard"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-```
-
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  ```
 - [x]
+  ```
+  xml
+      <androidx.constraintlayout.widget.ConstraintLayout
+	  ...>
 
-```
-xml
-    <androidx.constraintlayout.widget.ConstraintLayout
-	...>
+	  <TextView
+		  android:id="@+id/text_dashboard"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginStart="8dp"
+		  android:layout_marginEnd="8dp"
+		  android:textAlignment="center"
+		  android:text="Dashboard"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+		  app:layout_constraintTop_toTopOf="parent" />
 
-	<TextView
-		android:id="@+id/text_dashboard"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="8dp"
-		android:layout_marginEnd="8dp"
-		android:textAlignment="center"
-		android:text="Dashboard"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-```
-
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  ```
 - [ ]
+  ```
+  xml
+      <androidx.constraintlayout.widget.ConstraintLayout
+	  ...>
 
-```
-xml
-    <androidx.constraintlayout.widget.ConstraintLayout
-	...>
+	  <TextView
+		  android:id="@+id/text_dashboard"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginStart="8dp"
+		  android:layout_marginTop="16dp"
+		  android:layout_marginEnd="8dp"
+		  android:padding="8dp"
+		  android:textAlignment="center"
+		  android:text="Dashboard"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+		  app:layout_constraintTop_toTopOf="parent" />
 
-	<TextView
-		android:id="@+id/text_dashboard"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="8dp"
-		android:layout_marginTop="16dp"
-		android:layout_marginEnd="8dp"
-		android:padding="8dp"
-		android:textAlignment="center"
-		android:text="Dashboard"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-```
-
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  ```
 - [ ]
+  ```
+  xml
+      <androidx.constraintlayout.widget.ConstraintLayout
+	  ...>
 
-```
-xml
-    <androidx.constraintlayout.widget.ConstraintLayout
-	...>
+	  <TextView
+		  android:id="@+id/text_dashboard"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginStart="8dp"
+		  android:layout_marginTop="16dp"
+		  android:layout_marginEnd="8dp"
+		  android:padding="8dp"
+		  android:text="Dashboard"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+	  />
 
-	<TextView
-		android:id="@+id/text_dashboard"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="8dp"
-		android:layout_marginTop="16dp"
-		android:layout_marginEnd="8dp"
-		android:padding="8dp"
-		android:text="Dashboard"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-	/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-```
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  ```
 
 #### Q38. Which source set is `_not_` available to you by default when Android Studio creates a new project?
 
@@ -580,45 +566,38 @@ xml
 #### Q39. Which definition will prevent other apps from accessing your `Activity` class via an `intent`?
 
 - [x]
-
-```
-xml
+  ```
+  xml
 	<activity android:name=".ExampleActivity" />
-```
-
+  ```
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.SEND" />
 		</intent-filter>
 	</activity>
-```
-
+  ```
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.MAIN" />
 			<category android:name="android.intent.category.LAUNCHER" />
 		</intent-filter>
 	</activity>
-```
-
+  ```
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.VIEW" />
 		</intent-filter>
 	</activity>
-```
+  ```
 
 **Explanation:** Intent filters are used to make activities accessible to other apps using intents. So we have to choose option which have no intent filter to make sure it is not accessible by intent
 
@@ -673,9 +652,8 @@ xml
 ![img](image/43.jpeg)
 
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	    android:shape-"oval">
 	    <gradient
@@ -683,24 +661,20 @@ xml
                android:endColor-"@android:color/black"
                android:angle-"45"/>
 	</shape>
-```
-
+  ```
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<rectangle xmlns:android-"http://schemas.android.com/apk/res/android">
 	   <gradient
 	      android:startColor-"@android:color/white"
 	      android:endColor-"android:color/black"
 	      android:angle-"135"/>
 	</rectangle>
-```
-
+  ```
 - [x]
-
-```
-xml
+  ```
+  xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	   android:shape-"rectangle">
 	   <gradient
@@ -708,12 +682,10 @@ xml
 	      android:endColor-"@android:color/black"
 	      android:angle-"135"/>
 	</shape>
-```
-
+  ```
 - [ ]
-
-```
-xml
+  ```
+  xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	   android:shape-"rectangle">
 	   <gradient
@@ -721,7 +693,7 @@ xml
 	      android:endColor-"@android:color/black"
 	      android:angle-"98"/>
 	</shape>
-```
+  ```
 
 #### Q47. Given the ConstraintLayout below, which statement is true?
 
@@ -800,46 +772,40 @@ xml
 ```
 
 - [ ]
-
-```
-<ImageView
-   android:id=@+id/image_map_pin"
-   android:layout_width="wrap_content"
-   android:layout_heignt="wrap_content"
-   android:src=@drawable/map_pin />
-```
-
+  ```
+  <ImageView
+     android:id=@+id/image_map_pin"
+     android:layout_width="wrap_content"
+     android:layout_heignt="wrap_content"
+     android:src=@drawable/map_pin />
+  ```
 - [ ]
-
-```<ImageView
-   android:id=@+id/image_map_pin"
-   android:layout_width="wrap_content"
-   android:layout_heignt="wrap_content"
-   androi:layout_botttom="@dimen/spacing_medium"
-   android:src=@drawable/map_pin />
-```
-
+  ```
+  <ImageView
+     android:id=@+id/image_map_pin"
+     android:layout_width="wrap_content"
+     android:layout_heignt="wrap_content"
+     androi:layout_botttom="@dimen/spacing_medium"
+     android:src=@drawable/map_pin />
+  ```
 - [ ]
-
-```
-<ImageView
-   android:id=@+id/image_map_pin"
-   android:layout_width="wrap_content"
-   android:layout_heignt="wrap_content"
-   android:layout_marginBottom="@resources/spacing_medium"
-   android:src=@drawable/map_pin />
-```
-
+  ```
+  <ImageView
+     android:id=@+id/image_map_pin"
+     android:layout_width="wrap_content"
+     android:layout_heignt="wrap_content"
+     android:layout_marginBottom="@resources/spacing_medium"
+     android:src=@drawable/map_pin />
+  ```
 - [x]
-
-```
-<ImageView
-   android:id=@+id/image_map_pin"
-   android:layout_width="wrap_content"
-   android:layout_heignt="wrap_content"
-   android:layout_marginBottom="@dimen/spacing_medium"
-   android:src=@drawable/map_pin />
-```
+  ```
+  <ImageView
+     android:id=@+id/image_map_pin"
+     android:layout_width="wrap_content"
+     android:layout_heignt="wrap_content"
+     android:layout_marginBottom="@dimen/spacing_medium"
+     android:src=@drawable/map_pin />
+  ```
 
 #### Q54. what is not a benefit of externalizing app resources such as image and string from a code?
 
