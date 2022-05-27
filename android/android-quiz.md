@@ -122,7 +122,7 @@
     minApiVersion 21
     targetApiVersion 28
   }
-```
+  ```
 - [ ]
   ```
   defaultConfig {
