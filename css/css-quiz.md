@@ -1635,62 +1635,52 @@ img {
 ```
 
 - [ ]
+  ```css
+  .highlight {
+    background-color: yellow;
+  }
+  ```
 
-```css
-.highlight {
-  background-color: yellow;
-}
-```
+  - [ ]
 
-- [ ]
-
-```css
-#highlight {
-  background-color: yellow;
-}
-```
-
+  ```css
+  #highlight {
+    background-color: yellow;
+  }
+  ```
 - [x]
+  ```css
+  .highlight {
+    color: yellow;
+  }
+  ```
 
-```css
-.highlight {
-  color: yellow;
-}
-```
+  - [ ]
 
-- [ ]
-
-```css
-#highlight {
-  color: yellow;
-}
-```
+  ```css
+  #highlight {
+    color: yellow;
+  }
+  ```
 
 #### Q116. To prevent a background image from tiling in any direction, which style property would you apply?
 
-- [X]
-
-```css
-background-repeat: no-repeat;
-```
-
+- [x]
+  ```css
+  background-repeat: no-repeat;
+  ```
 - [ ]
-
-```css
-background-repeat: fixed;
-```
-
+  ```css
+  background-repeat: fixed;
+  ```
 - [ ]
-
-```css
-background-repeat: none;
-```
-
+  ```css
+  background-repeat: none;
+  ```
 - [ ]
-
-```css
-background-tile: none;
-```
+  ```css
+  background-tile: none;
+  ```
 
 #### Q117. To rotate an object 30 degrees counterclockwise, which style property would you apply?
 
@@ -1715,36 +1705,29 @@ background-tile: none;
 ```
 
 - [ ]
-
-```css
-section > p {
-  color: blue;
-}
-```
-
+  ```css
+  section > p {
+    color: blue;
+  }
+  ```
 - [ ]
-
-```css
-p {
-  color: blue;
-}
-```
-
+  ```css
+  p {
+    color: blue;
+  }
+  ```
 - [x]
-
-```css
-section + p {
-  color: blue;
-}
-```
-
+  ```css
+  section + p {
+    color: blue;
+  }
+  ```
 - [ ]
-
-```css
-p + section {
-  color: blue;
-}
-```
+  ```css
+  p + section {
+    color: blue;
+  }
+  ```
 
 [Reference](https://www.w3schools.com/cssref/sel_element_pluss.asp)
 
@@ -1764,43 +1747,36 @@ p + section {
 ```
 
 - [ ]
+  ```css
+  #inner {
+    width: 50%;
+  }
 
-```css
-#inner {
-  width: 50%;
-}
-
-#outer {
-  width: 100%;
-}
-```
-
+  #outer {
+    width: 100%;
+  }
+  ```
 - [ ]
-
-```css
-#inner {
-  left: 0;
-  right: 0;
-  position: center;
-}
-```
-
+  ```css
+  #inner {
+    left: 0;
+    right: 0;
+    position: center;
+  }
+  ```
 - [ ]
-
-```css
-#inner {
-  text-align: center;
-}
-```
-
+  ```css
+  #inner {
+    text-align: center;
+  }
+  ```
 - [x]
-
-```css
-#inner {
-  width: 50%;
-  margin: 0 auto;
-}
-```
+  ```css
+  #inner {
+    width: 50%;
+    margin: 0 auto;
+  }
+  ```
 
 #### Q122. Which corner will the puppy be in when these CSS rules are applied?
 
