@@ -212,40 +212,41 @@
 #### Q31. Single-line text can be added anywhere in a drawing. If middle-center justified text with height of 0 was required in model space that was 300 millimeters high, what workflow would you use?
 
 - [ ]
-
-1. Right-click and select Justify.
-2. Select MC.
-3. Pick a middle point.
-4. Type text.
-5. Specify the height.
-6. Specify the rotation angle.
-
+  ```markdown
+  1. Right-click and select Justify.
+  2. Select MC.
+  3. Pick a middle point.
+  4. Type text.
+  5. Specify the height.
+  6. Specify the rotation angle.
+  ```
 - [x]
-
-1. Right-click and select Justify.
-2. Select MC.
-3. Specify the height.
-4. Specify the rotation angle.
-5. Pick a middle point.
-6. Type text.
-
+  ```markdown
+  1. Right-click and select Justify.
+  2. Select MC.
+  3. Specify the height.
+  4. Specify the rotation angle.
+  5. Pick a middle point.
+  6. Type text.
+  ```
 - [ ]
-
-1. Right-click and select Justify.
-2. Select MC.
-3. Specify the height.
-4. Specify the rotation angle.
-5. Pick a middle point.
-6. Type text.
-
+  ```markdown
+  1. Right-click and select Justify.
+  2. Select MC.
+  3. Specify the height.
+  4. Specify the rotation angle.
+  5. Pick a middle point.
+  6. Type text.
+  ```
 - [ ]
-
-1. Right-click and select Justify.
-2. Select MC.
-3. Pick a middle point.
-4. Drag the mouse to set the height.
-5. Drag the mouse to set the rotation angle.
-6. Type text.
+  ```markdown
+  1. Right-click and select Justify.
+  2. Select MC.
+  3. Pick a middle point.
+  4. Drag the mouse to set the height.
+  5. Drag the mouse to set the rotation angle.
+  6. Type text.
+  ```
 
 #### Q32. A circle has five grips: a center grip and four quadrant grips. When using the Tan Tan Radius (TTR) method to draw a circle in a right-angled corner, which of the two quadrant grips will be touching other objects?
 
@@ -282,12 +283,14 @@
 - [x] ID Point (ID)
 - [ ] List (LIST)
 
-#### Q37. The DONUT command creates donut-shaped drawing objects. Which two values are needed to place a donut on a drawing?
+#### Q37. When using the POLYGON command in AutoCAD, you can create an inscribed polygon and a circumscribed polygon. What other type of polygon is available?
 
-- [ ] internal and external quadrants
-- [ ] internal and external circumference
-- [ ] internal and external diameter
-- [ ] internal and external radius
+![q75](images/q75_autocad.png)
+
+- [ ] side polygon
+- [ ] polyline polygon
+- [ ] line polygon
+- [x] edge polygon
 
 #### Q38. An inscribed polygopoln gives you what type of point at the end of the polygon radius?
 
@@ -347,12 +350,12 @@
 - [ ] to stop anyone seeing which AutoCAD palettes you are using
 - [x] to automatically hide the palette content and display only the docked palette title bar
 
-#### Q46. The navigation bar is normally on by default and is located to the right-hand side of the drawing area. Which variable controls the display of the navigation bar, and to what value does it need to be set for the navigation bar to display on the screen?
+#### Q46. When drawing a Start, Center, End arc, which key do you press to draw the arc in a clockwise direction?
 
-- [ ] The NAVBARDISPLAY value should be set to 1
-- [ ] The NAVBARDISPLAY value should be set to 0.
-- [ ] The NAVIGATIONBARDISPLAYON value should be set to 1.
-- [ ] The NAVIGATIONBARDISPLAYON value should be set to 0.
+- [ ] C (clockwise)
+- [ ] Alt
+- [ ] D (direction)
+- [x] Ctrl
 
 #### Q47. In a complex drawing, it is sometimes difficult to select the geometry you wish to modify. You might want to move, scale, or rotate geometry and make sure the appropriate objects are selected. You can do this with window and crossing selections, but what other selection method can make this easier?
 
@@ -361,12 +364,12 @@
 - [ ] PREVIOUS (P)
 - [ ] FENCE (F)
 
-#### Q48. When working with layers in your drawings, you may regularly go to the Layer drop- down menu on the Layers panel on the Home tab of the ribbon. Which part of the AutoCAD interface can you customize to allow the Layer drop-down menu to be available regardless of which ribbon tab you are currently using?
+#### Q48. Using the Array command, you have the option to create an associative array. What does this mean?
 
-- [ ] the status bar
-- [ ] the navigation bar
-- [ ] the Quick Access toolbar (QAT)
-- [ ] the info bar
+- [ ] When dimensioning an array, the dimensions displayed are associative.
+- [x] The arrayed objects becomes a single entity and, when selected, display as a single entity.
+- [ ] The arrayed objects become associated to the X and Y coordinates used for the array.
+- [ ] The array is associated to the linetype scale.
 
 #### Q49. When drafting with object snaps and object snap tracking, what other drafting setting can you use to set object snap tracking points?
 
@@ -396,12 +399,12 @@
 - [ ] six
 - [ ] four
 
-#### Q53. When hatching in a drawing with the Hatch (HATCH) command and the pick points selection method, what hatch setting needs to be switched OFF in order to make sure that all hatch boundaries selected form one hatch object?
+#### Q53. To plot the same drawing with the same settings each time, what needs to be set up in AutoCAD?
 
-- [ ] Create Separate Hatches
-- [ ] Associative Boundaries
-- [ ] Set the HATCHMULTIPLE variable to 0 (OFF).
-- [ ] Set the HATCHMULTIPLE variable to 1 (ON).
+- [ ] the Output tab
+- [ ] the Plot dialog boxt
+- [ ] batch plotting
+- [x] Page Setup Manager (Windows) or Page Setup (Mac)
 
 #### Q54. AutoCAD allows you to select individual objects cumulatively to create a selection set. You can remove individual objects from that selection by using a mouse click combined with which keystroke?
 
@@ -528,42 +531,3 @@
 - [ ] paper space
 - [ ] layout space
 - [x] model space
-
-#### Q72. To plot the same drawing with the same settings each time, what needs to be set up in AutoCAD?
-
-- [ ] the Output tab
-- [ ] the Plot dialog boxt
-- [ ] batch plotting
-- [x] Page Setup Manager (Windows) or Page Setup (Mac)
-
-#### Q73. Using the Array command, you have the option to create an associative array. What does this mean?
-
-- [ ] When dimensioning an array, the dimensions displayed are associative.
-- [x] The arrayed objects becomes a single entity and, when selected, display as a single entity.
-- [ ] The arrayed objects become associated to the X and Y coordinates used for the array.
-- [ ] The array is associated to the linetype scale.
-
-#### Q74. When drawing a Start, Center, End arc, which key do you press to draw the arc in a clockwise direction?
-
-- [ ] C (clockwise)
-- [ ] Alt
-- [ ] D (direction)
-- [x] Ctrl
-
-#### Q75. When using the POLYGON command in AutoCAD, you can create an inscribed polygon and a circumscribed polygon. What other type of polygon is available?
-
-![q75](images/q75_autocad.png)
-
-- [ ] side polygon
-- [ ] polyline polygon
-- [ ] line polygon
-- [x] edge polygon
-
-#### Q76. When using blocks in a drawing, a selected block displays only one grip: the insertion point. How would you get a block to display all of its associated grips?
-
-![q76](images/q76_autocad.png)
-
-- [ ] Change the GRIPBLOCK system variable to 1.
-- [ ] Select the block and change it in the Properties palette.
-- [ ] Change the GRIPBLOCK system variable to 0.
-- [ ] Select the block and change it in the right-click shortcut menu.
