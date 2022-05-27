@@ -24,32 +24,25 @@
 #### Q4. A client wants their site to be able to load "Rick & Morty" episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?
 
 - [ ]
-
-```
-url(r'shows/<int:season>/<int:episode>/', views.episode_number),
-url(r'shows/<slug:episode_name>/', views.episode_name)
-```
-
+  ```
+  url(r'shows/<int:season>/<int:episode>/', views.episode_number),
+  url(r'shows/<slug:episode_name>/', views.episode_name)
+  ```
 - [x]
-
-```
-path('shows/<int:season>/<int:episode>/', views.episode_number),
-path(r'shows/<slug:episode_name>/', views.episode_name)
-```
-
+  ```
+  path('shows/<int:season>/<int:episode>/', views.episode_number),
+  path(r'shows/<slug:episode_name>/', views.episode_name)
+  ```
 - [ ]
-
-```
-path('shows/<int:season>/<int:episode>', views.episode_number),
-path(r'shows/<slug:episode_name>/', views.episode_number)
-```
-
+  ```
+  path('shows/<int:season>/<int:episode>', views.episode_number),
+  path(r'shows/<slug:episode_name>/', views.episode_number)
+  ```
 - [ ]
-
-```
-url(r'^show/(?P<season>[0-9]+)/(?P<episode>[0-9]+)/$', views.episode_number),
-url(r'^show/(?P<episode_name>[\w-]+)/', views.episode_name
-```
+  ```
+  url(r'^show/(?P<season>[0-9]+)/(?P<episode>[0-9]+)/$', views.episode_number),
+  url(r'^show/(?P<episode_name>[\w-]+)/', views.episode_name
+  ```
 
 #### Q5. How do you determine at startup time if a piece of middleware should be used?
 
@@ -131,40 +124,33 @@ url(r'^show/(?P<episode_name>[\w-]+)/', views.episode_name
 #### Q17. How would you define the relationship between a star and a constellation in a Django model?
 
 - [x]
-
-```
-class Star(models.Model):
-name = models.CharField(max_length=100)
-class Constellation(models.Model):
-stars = models.ManyToManyField(Star)
-```
-
+  ```
+  class Star(models.Model):
+  name = models.CharField(max_length=100)
+  class Constellation(models.Model):
+  stars = models.ManyToManyField(Star)
+  ```
 - [ ]
-
-```
-class Star(models.Model):
-constellation = models.ForeignKey(Constellation, on_delete=models.CASCADE)
-class Constellation(models.Model):
-stars = models.ForeignKey(Star, on_delete=models.CASCADE)
-```
-
+  ```
+  class Star(models.Model):
+  constellation = models.ForeignKey(Constellation, on_delete=models.CASCADE)
+  class Constellation(models.Model):
+  stars = models.ForeignKey(Star, on_delete=models.CASCADE)
+  ```
 - [ ]
-
-```
-class Star(models.Model):
-name = models.CharField(max_length=100)
-class Constellation(models.Model):
-stars = models.OneToManyField(Star)
-```
-
+  ```
+  class Star(models.Model):
+  name = models.CharField(max_length=100)
+  class Constellation(models.Model):
+  stars = models.OneToManyField(Star)
+  ```
 - [ ]
-
-```
-class Star(models.Model):
-constellation = models.ManyToManyField(Constellation)
-class Constellation(models.Model):
-name = models.CharField(max_length=100)
-```
+  ```
+  class Star(models.Model):
+  constellation = models.ManyToManyField(Constellation)
+  class Constellation(models.Model):
+  name = models.CharField(max_length=100)
+  ```
 
 #### Q18. Which is NOT a valid step in configuring your Django 2.x instance to serve up static files such as images or CSS?
 
@@ -304,49 +290,40 @@ name = models.CharField(max_length=100)
 #### Q37. How would you define the relation between a book and an author - book has only one author.
 
 - [ ]
-
-```
-class Author (models.model):
-book=models.foreignkey(Book,on_delete=models.cascade)
-class Book(models.model):
-name=models.charfield(max_length=100)
-```
-
+  ```
+  class Author (models.model):
+  book=models.foreignkey(Book,on_delete=models.cascade)
+  class Book(models.model):
+  name=models.charfield(max_length=100)
+  ```
 - [x]
-
-```python
-class Author (models.model):
-name=models.charfield(max_length=100)
-class Book(models.model):
-author=models.foreignkey(Author,on_delete=models.cascade)
-```
-
+  ```python
+  class Author (models.model):
+  name=models.charfield(max_length=100)
+  class Book(models.model):
+  author=models.foreignkey(Author,on_delete=models.cascade)
+  ```
 - [ ]
-
-```
-class Author (models.model):
-name=models.charfield(max_length=100)
-class Book(models.model):
-author=models.foreignkey(Author)
-```
-
+  ```
+  class Author (models.model):
+  name=models.charfield(max_length=100)
+  class Book(models.model):
+  author=models.foreignkey(Author)
+  ```
 - [ ]
-
-```
-class Author (models.model):
-name=models.charfield(max_length=100)
-class Book(models.model):
-author=models.foreignkey(Author,on_delete=models.cascade)
-```
-
+  ```
+  class Author (models.model):
+  name=models.charfield(max_length=100)
+  class Book(models.model):
+  author=models.foreignkey(Author,on_delete=models.cascade)
+  ```
 - [ ]
-
-```
-class Author (models.model):
-name=models.charfield(max_length=100)
-class Book(models.model):
-author=Author.name
-```
+  ```
+  class Author (models.model):
+  name=models.charfield(max_length=100)
+  class Book(models.model):
+  author=Author.name
+  ```
 
 #### Q38. What is a callable that takes a value and raises an error if the value fails?
 
@@ -397,45 +374,38 @@ from .models import Planet
 ```
 
 - [x]
-
-```
-class PlanetSerializer(serializers.ModelSerializer):
-class Meta:
-model=Planet
-fields=('name','position', 'mass', 'rings')
-```
-
+  ```
+  class PlanetSerializer(serializers.ModelSerializer):
+  class Meta:
+  model=Planet
+  fields=('name','position', 'mass', 'rings')
+  ```
 - [ ]
-
-```
-from rest_framework import serializers
-from .models import Planet
-class PlanetSerializer():
-class Meta:
-fields=('name','position', 'mass', 'rings')
-model=Planet
-```
-
+  ```
+  from rest_framework import serializers
+  from .models import Planet
+  class PlanetSerializer():
+  class Meta:
+  fields=('name','position', 'mass', 'rings')
+  model=Planet
+  ```
 - [ ]
-
-```
-from django.db import serializers
-from .models import Planet
-class PlanetSerializer(serializers.ModelSerializer):
-fields=('name','position', 'mass', 'rings')
-model=Sandwich
-```
-
+  ```
+  from django.db import serializers
+  from .models import Planet
+  class PlanetSerializer(serializers.ModelSerializer):
+  fields=('name','position', 'mass', 'rings')
+  model=Sandwich
+  ```
 - [ ]
-
-```
-from django.db import serializers
-from .models import Planet
-class PlanetSerializer(serializers.ModelSerializer):
-class Meta:
-fields=('name')
-model=Planet
-```
+  ```
+  from django.db import serializers
+  from .models import Planet
+  class PlanetSerializer(serializers.ModelSerializer):
+  class Meta:
+  fields=('name')
+  model=Planet
+  ```
 
 #### Q44 Which class allows you to automatically create a Serializer class with fields and validators that correspond to your model's fields?
 
