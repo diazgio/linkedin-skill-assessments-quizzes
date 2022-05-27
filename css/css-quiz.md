@@ -1547,56 +1547,49 @@ D. font-size: 20px
 ```
 
 - [ ]
-
-```css
-.overlay {
-  position: static;
-  top: 200px;
-  bottom: 200px;
-  right: 200px;
-  left: 200px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-```
-
+  ```css
+  .overlay {
+    position: static;
+    top: 200px;
+    bottom: 200px;
+    right: 200px;
+    left: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  ```
 - [ ]
-
-```css
-.overlay {
-  position: absolute;
-  top: 200px;
-  bottom: 200px;
-  right: 200px;
-  left: 200px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-```
-
+  ```css
+  .overlay {
+    position: absolute;
+    top: 200px;
+    bottom: 200px;
+    right: 200px;
+    left: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  ```
 - [ ]
-
-```css
-.overlay {
-  position: static;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-```
-
+  ```css
+  .overlay {
+    position: static;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  ```
 - [x]
-
-```css
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-```
+  ```css
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  ```
 
 #### Q113. Which missing line of code would place the text on top of the image?
 
@@ -1640,9 +1633,7 @@ img {
     background-color: yellow;
   }
   ```
-
-  - [ ]
-
+- [ ]
   ```css
   #highlight {
     background-color: yellow;
@@ -1654,9 +1645,7 @@ img {
     color: yellow;
   }
   ```
-
-  - [ ]
-
+- [ ]
   ```css
   #highlight {
     color: yellow;
