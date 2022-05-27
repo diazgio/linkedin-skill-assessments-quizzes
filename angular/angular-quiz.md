@@ -102,38 +102,31 @@ export class OrderService {
 #### Q8. What is the correct template syntax for using the built-in ngFor structural directive to render out a list of productNames?
 
 - [ ]
-
-```html
-<ul>
-  <li [ngFor]="let productName of productNames">{{ productName }}</li>
-</ul>
-```
-
+  ```html
+  <ul>
+    <li [ngFor]="let productName of productNames">{{ productName }}</li>
+  </ul>
+  ```
 - [ ]
-
-```html
-<ul>
-  <li ngFor="let productName of productNames">{{ productName }}</li>
-</ul>
-```
-
+  ```html
+  <ul>
+    <li ngFor="let productName of productNames">{{ productName }}</li>
+  </ul>
+  ```
 - [x]
-
-```html
-<ul>
-  <li *ngFor="let productName of productNames">{{ productName }}</li>
-</ul>
-```
-
+  ```html
+  <ul>
+    <li *ngFor="let productName of productNames">{{ productName }}</li>
+  </ul>
+  ```
 - [ ]
-
-```html
-<ul>
-  <? for productName in productNames { ?>
-  <li>{{ productName }}</li>
-  <? } ?>
-</ul>
-```
+  ```html
+  <ul>
+    <? for productName in productNames { ?>
+    <li>{{ productName }}</li>
+    <? } ?>
+  </ul>
+  ```
 
 [Angular.io- Structural Directives](https://angular.io/guide/built-in-directives#listing-items-with-ngfor)
 
@@ -227,28 +220,21 @@ export class ShoppingCartComponent {
 ```
 
 - [ ]
-
-```html
-<button (click)="submit(userForm.value)" disable="userForm.invalid">Save</button>
-```
-
+  ```html
+  <button (click)="submit(userForm.value)" disable="userForm.invalid">Save</button>
+  ```
 - [x]
-
-```html
-<button (click)="submit(userForm.value)" [disabled]="userForm.invalid">Save</button>
-```
-
+  ```html
+  <button (click)="submit(userForm.value)" [disabled]="userForm.invalid">Save</button>
+  ```
 - [ ]
-
-```html
-<button (click)="submit(userForm.value)" [ngForm.disabled]="userForm.valid">Save</button>
-```
-
+  ```html
+  <button (click)="submit(userForm.value)" [ngForm.disabled]="userForm.valid">Save</button>
+  ```
 - [ ]
-
-```html
-<button (click)="submit(userForm.value)" *ngIf="userForm.valid">Save</button>
-```
+  ```html
+  <button (click)="submit(userForm.value)" *ngIf="userForm.valid">Save</button>
+  ```
 
 [Angular.io - Submit the form with ngSubmit](https://angular.io/guide/forms#submit-the-form-with-ngsubmit)
 
@@ -570,35 +556,28 @@ export class HighlightDirective {
 ```
 
 - [ ]
-
-```javascript
-    <span *ngIf="username.minLength.invalid"›
-        Username length is not valid
-    </span>
-```
-
+  ```javascript
+      <span *ngIf="username.minLength.invalid"›
+          Username length is not valid
+      </span>
+  ```
 - [ ]
-
-```javascript
-<input type="text" formControlName="username" [showMinLength]="true"›
-```
-
+  ```javascript
+  <input type="text" formControlName="username" [showMinLength]="true"›
+  ```
 - [ ]
-
-```javascript
-    <span *ngIf="form.get('username').getError('minLength') as minLengthError">
-      Username must be at least {{ minLengthError.requiredLength }} characters.
-    </span>
-```
-
+  ```javascript
+      <span *ngIf="form.get('username').getError('minLength') as minLengthError">
+        Username must be at least {{ minLengthError.requiredLength }} characters.
+      </span>
+  ```
 - [x]
-
-```javascript
-<input type="text" formControlName="username" #userName="ngModer">
-    <span *ngIf="userName.errors.minlength"›
-      Username must be at least {{ userName.errors.minlength.requiredLength }} characters.
-    </span>
-```
+  ```javascript
+  <input type="text" formControlName="username" #userName="ngModer">
+      <span *ngIf="userName.errors.minlength"›
+        Username must be at least {{ userName.errors.minlength.requiredLength }} characters.
+      </span>
+  ```
 
 [Codecraft](https://codecraft.tv/courses/angular/forms/template-driven/)
 
@@ -649,45 +628,38 @@ export class BioComponent { }
 ```
 
 - [x]
-
-```javascript
- <app-card>
-  <h1>Data Card</hl>
-  <app-bio>
-   Been around for four years.
-  </app-bio>
- </app-card>
-```
-
+  ```javascript
+   <app-card>
+    <h1>Data Card</hl>
+    <app-bio>
+     Been around for four years.
+    </app-bio>
+   </app-card>
+  ```
 - [ ]
-
-```javascript
-<h1>Data Card</h1>
- <app-bio>
-  Been around for four years.
- </app-bio>
-```
-
+  ```javascript
+  <h1>Data Card</h1>
+   <app-bio>
+    Been around for four years.
+   </app-bio>
+  ```
 - [ ]
-
-```javascript
-<app-card>
-  <h1>Data Card</hl>
-  <ng-content></ng-content>
-  <app-bio>
-   Been around for four years.
-   <ng-content></ng-content>
-  </app-bio>
-</app-card>
-```
-
+  ```javascript
+  <app-card>
+    <h1>Data Card</hl>
+    <ng-content></ng-content>
+    <app-bio>
+     Been around for four years.
+     <ng-content></ng-content>
+    </app-bio>
+  </app-card>
+  ```
 - [ ]
-
-```javascript
-<app-card>
-  <h1>Data Card</hl>
-</app-card>
-```
+  ```javascript
+  <app-card>
+    <h1>Data Card</hl>
+  </app-card>
+  ```
 
 #### Q40. Given the app-title-card component in the code below, what DOM will the app-user-card component render?
 
@@ -707,39 +679,32 @@ export class BioComponent { }
 ```
 
 - [x]
-
-```javascript
-<app-user-card>
-  <app-title-card>
-    <h1>User Data</h1>
-  </app-title-card>
-  <p>genny Smith</p>
-</app-user-card>
-```
-
+  ```javascript
+  <app-user-card>
+    <app-title-card>
+      <h1>User Data</h1>
+    </app-title-card>
+    <p>genny Smith</p>
+  </app-user-card>
+  ```
 - [ ]
-
-```javascript
-<h1>User Data</h1>
-<p>Jenny Smith<p>
-```
-
+  ```javascript
+  <h1>User Data</h1>
+  <p>Jenny Smith<p>
+  ```
 - [ ]
-
-```javascript
-<app-user-card>
-  <app-title-card></app-title-card>
-</app-user-card>
-```
-
+  ```javascript
+  <app-user-card>
+    <app-title-card></app-title-card>
+  </app-user-card>
+  ```
 - [ ]
-
-```javascript
-<div app-user-card>
-  <h1 app-title-card>User Data</h1>
-  <p>Jenny Smith</p>
-</div>
-```
+  ```javascript
+  <div app-user-card>
+    <h1 app-title-card>User Data</h1>
+    <p>Jenny Smith</p>
+  </div>
+  ```
 
 #### Q41. Pick the matching code for the custom provider registration that the @Inject () decorator is looking for:
 
@@ -748,30 +713,23 @@ constructor(@Inject('Logger') private logger) { }
 ```
 
 - [ ]
-
-```javascript
-providers: [Logger];
-```
-
+  ```javascript
+  providers: [Logger];
+  ```
 - [x]
-
-```javascript
-providers: [{ provide: 'Logger', useClass: Logger }];
-```
-
+  ```javascript
+  providers: [{ provide: 'Logger', useClass: Logger }];
+  ```
 - [ ]
-
-```javascript
-@Injectable({
-    providedln: 'root'
-})
-```
-
+  ```javascript
+  @Injectable({
+      providedln: 'root'
+  })
+  ```
 - [ ]
-
-```javascript
-providers: [{ provide: 'Logger' }];
-```
+  ```javascript
+  providers: [{ provide: 'Logger' }];
+  ```
 
 [StackOverflow](https://stackoverflow.com/a/37315355)
 
@@ -875,19 +833,16 @@ export class OrderService {
 - [ ] `return this.httpClient.get<Order[]>(this.ordersUrl, {'year': year})`
 - [ ] `return this.httpClient.get<Order[]>(this.ordersUrl, year)`
 - [x]
-
-```
-const options = {params: new HttpParams().set('year', year) };
-return this.httpClient.get<Order[]>(this.ordersUrl, options);
-```
-
+  ```
+  const options = {params: new HttpParams().set('year', year) };
+  return this.httpClient.get<Order[]>(this.ordersUrl, options);
+  ```
 - [ ]
-
-```angularjs
-getOrdersByYear(year: number): Observable<Order[]> {
-    return this.httpClient.addParam('year', year).get<Order[]>(this.ordersUrl, year);
-}
-```
+  ```angularjs
+  getOrdersByYear(year: number): Observable<Order[]> {
+      return this.httpClient.addParam('year', year).get<Order[]>(this.ordersUrl, year);
+  }
+  ```
 
 [StackOverflow](https://stackoverflow.com/a/34475594)
 
@@ -923,76 +878,62 @@ export class OrderHistoryComponent {
 ```
 
 - [ ]
-
-```angular2html
-<div #inactive>
-  User is not active.
-</div>
-```
-
+  ```angular2html
+  <div #inactive>
+    User is not active.
+  </div>
+  ```
 - [ ]
-
-```angular2html
-<div *ngIf="inactive">
-  User is not active.
-</div>
-```
-
+  ```angular2html
+  <div *ngIf="inactive">
+    User is not active.
+  </div>
+  ```
 - [ ]
-
-```angular2html
-<ng-template #else="inactive">
-  <div>User is not active.</div>
-</ng-template>
-```
-
+  ```angular2html
+  <ng-template #else="inactive">
+    <div>User is not active.</div>
+  </ng-template>
+  ```
 - [x]
-
-```angular2html
-<ng-template #inactive>
-  <div>User is not active.</div>
-</ng-template>
-```
+  ```angular2html
+  <ng-template #inactive>
+    <div>User is not active.</div>
+  </ng-template>
+  ```
 
 [Angular.io](https://angular.io/api/common/NgIf)
 
 #### Q50. What is the correct syntax for a route definition to lazy load a feature module?
 
 - [ ]
-
-```
-{
-    path: 'users',
-    lazy: './users/users.module#UsersModule'
-}
-```
-
+  ```
+  {
+      path: 'users',
+      lazy: './users/users.module#UsersModule'
+  }
+  ```
 - [x]
-
-```
-{
-    path: 'users',
-    loadChildren: () => import('./users/users.module').then(m => m.UserModule)
-}
-```
-
+  ```
+  {
+      path: 'users',
+      loadChildren: () => import('./users/users.module').then(m => m.UserModule)
+  }
+  ```
 - [ ]
-
-```
-{
-    path: 'users',
-    loadChildren: './users/users.module#UsersModule'
-}
-```
-
+  ```
+  {
+      path: 'users',
+      loadChildren: './users/users.module#UsersModule'
+  }
+  ```
 - [ ]
-
-```
-{
-    path: 'users',
-    module: UsersModule
-}
-```
+  ```
+  {
+      path: 'users',
+      module: UsersModule
+  }
+  ```
 
 [Angular.io - Lazy Loading Modules](https://angular.io/guide/lazy-loading-ngmodules)
 
