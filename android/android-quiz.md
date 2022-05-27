@@ -253,8 +253,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
 ![img](image/shape.png)
 
 - [ ]
-  ```
-    xml
+  ```xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
 	android:shape="oval">
 	<stroke
@@ -271,8 +270,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
     </oval>
   ```
 - [x]
-  ```
-    xml
+  ```xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="oval">
         <stroke
@@ -282,8 +280,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
     </shape>
   ```
 - [ ]
-  ```
-    xml
+  ```xml
     <shape xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="oval">
         <stroke
@@ -343,8 +340,7 @@ Notice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices
 
 #### Q29. Which image best corresponds to the following `LinearLayout`?
 
-```
-    xml
+```xml
     <LinearLayout
         android:layout_width="match_parent"
 	android:layout_height="match_parent"
@@ -472,8 +468,7 @@ startActivity(dialerIntent)
 ![img](image/04.jpeg)
 
 - [ ]
-  ```
-  xml
+  ```xml
       <androidx.constraintlayout.widget.ConstraintLayout
   	  ...>
 
@@ -492,8 +487,7 @@ startActivity(dialerIntent)
       </androidx.constraintlayout.widget.ConstraintLayout>
   ```
 - [x]
-  ```
-  xml
+  ```xml
       <androidx.constraintlayout.widget.ConstraintLayout
 	  ...>
 
@@ -512,8 +506,7 @@ startActivity(dialerIntent)
       </androidx.constraintlayout.widget.ConstraintLayout>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
       <androidx.constraintlayout.widget.ConstraintLayout
 	  ...>
 
@@ -534,8 +527,7 @@ startActivity(dialerIntent)
       </androidx.constraintlayout.widget.ConstraintLayout>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
       <androidx.constraintlayout.widget.ConstraintLayout
 	  ...>
 
@@ -565,13 +557,11 @@ startActivity(dialerIntent)
 #### Q39. Which definition will prevent other apps from accessing your `Activity` class via an `intent`?
 
 - [x]
-  ```
-  xml
+  ```xml
 	<activity android:name=".ExampleActivity" />
   ```
 - [ ]
-  ```
-  xml
+  ```xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.SEND" />
@@ -579,8 +569,7 @@ startActivity(dialerIntent)
 	</activity>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.MAIN" />
@@ -589,8 +578,7 @@ startActivity(dialerIntent)
 	</activity>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
 	<activity android:name=".ExampleActivity">
 		<intent-filter>
 			<action android:name="android.intent.action.VIEW" />
@@ -651,8 +639,7 @@ startActivity(dialerIntent)
 ![img](image/43.jpeg)
 
 - [ ]
-  ```
-  xml
+  ```xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	    android:shape-"oval">
 	    <gradient
@@ -662,8 +649,7 @@ startActivity(dialerIntent)
 	</shape>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
 	<rectangle xmlns:android-"http://schemas.android.com/apk/res/android">
 	   <gradient
 	      android:startColor-"@android:color/white"
@@ -672,8 +658,7 @@ startActivity(dialerIntent)
 	</rectangle>
   ```
 - [x]
-  ```
-  xml
+  ```xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	   android:shape-"rectangle">
 	   <gradient
@@ -683,8 +668,7 @@ startActivity(dialerIntent)
 	</shape>
   ```
 - [ ]
-  ```
-  xml
+  ```xml
 	<shape xmlns:android-"http://schemas.android.com/apk/res/android"
 	   android:shape-"rectangle">
 	   <gradient
