@@ -100,48 +100,41 @@ for (var i = 1; i <= 4; i++) {
 ```
 
 - [ ]
-
-```javascript
-for (var i = 1; i <= 4; i++) {
-  (function (i) {
-    setTimeout(function () {
-      console.log(j);
-    }, j * 1000);
-  })(j);
-}
-```
-
+  ```javascript
+  for (var i = 1; i <= 4; i++) {
+    (function (i) {
+      setTimeout(function () {
+        console.log(j);
+      }, j * 1000);
+    })(j);
+  }
+  ```
 - [ ]
-
-```javascript
-while (var i=1; i<=4; i++) {
-  setTimeout(function() {
-    console.log(i);
-    }, i*1000);
-}
-```
-
+  ```javascript
+  while (var i=1; i<=4; i++) {
+    setTimeout(function() {
+      console.log(i);
+      }, i*1000);
+  }
+  ```
 - [x]
-
-```javascript
-for (var i = 1; i <= 4; i++) {
-  (function (j) {
+  ```javascript
+  for (var i = 1; i <= 4; i++) {
+    (function (j) {
+      setTimeout(function () {
+        console.log(j);
+      }, j * 1000);
+    })(i);
+  }
+  ```
+- [ ]
+  ```javascript
+  for (var j = 1; j <= 4; j++) {
     setTimeout(function () {
       console.log(j);
     }, j * 1000);
-  })(i);
-}
-```
-
-- [ ]
-
-```javascript
-for (var j = 1; j <= 4; j++) {
-  setTimeout(function () {
-    console.log(j);
-  }, j * 1000);
-}
-```
+  }
+  ```
 
 1. [Reference setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 2. [Reference immediately invoked anonymous functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)
@@ -158,36 +151,29 @@ for (var j = 1; j <= 4; j++) {
 #### Q10. Which statement creates a new function called discountPrice?
 
 - [x]
-
-```js
-let discountPrice = function (price) {
-  return price * 0.85;
-};
-```
-
+  ```js
+  let discountPrice = function (price) {
+    return price * 0.85;
+  };
+  ```
 - [ ]
-
-```js
-let discountPrice(price) {
-  return price * 0.85;
-};
-```
-
+  ```js
+  let discountPrice(price) {
+    return price * 0.85;
+  };
+  ```
 - [ ]
-
-```js
-let function = discountPrice(price) {
-  return price * 0.85;
-};
+  ```js
+  let function = discountPrice(price) {
+    return price * 0.85;
+  };
 ```
-
 - [ ]
-
-```js
-discountPrice = function (price) {
-  return price * 0.85;
-};
-```
+  ```js
+  discountPrice = function (price) {
+    return price * 0.85;
+  };
+  ```
 
 [Reference defining javascript functions](https://www.w3schools.com/js/js_functions.asp)
 
@@ -1047,30 +1033,24 @@ console.log('Javascript!');
 ```
 
 - [ ]
-
-```plaintext
-I
-Javascript!
-love
-```
-
+  ```plaintext
+  I
+  Javascript!
+  love
+  ```
 - [ ]
-
-```plaintext
-love
-I
-Javascript!
-```
-
+  ```plaintext
+  love
+  I
+  Javascript!
+  ```
 - [x] The output may change with each execution of code and cannot be determined.
-
 - [ ]
-
-```
-I
-love
-Javascript!
-```
+  ```
+  I
+  love
+  Javascript!
+  ```
 
 **Reference**
 https://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified especially see the 'late timeouts' section.
@@ -1556,36 +1536,29 @@ console.log(plainText); //Prints YOU GOT THIS
 ```
 
 - [ ]
-
-```js
-for (let key of cipherText.keys()) {
-  plainText += key % 2 === 0 ? key : ' ';
-}
-```
-
+  ```js
+  for (let key of cipherText.keys()) {
+    plainText += key % 2 === 0 ? key : ' ';
+  }
+  ```
 - [ ]
-
-```js
-for (let [index, value] of cipherText.entries()) {
-  plainText += index % 2 !== 0 ? value : '';
-}
-```
-
+  ```js
+  for (let [index, value] of cipherText.entries()) {
+    plainText += index % 2 !== 0 ? value : '';
+  }
+  ```
 - [x]
-
-```js
-for (let [index, value] of cipherText.entries()) {
-  plainText += index % 2 === 0 ? value : '';
-}
-```
-
+  ```js
+  for (let [index, value] of cipherText.entries()) {
+    plainText += index % 2 === 0 ? value : '';
+  }
+  ```
 - [ ]
-
-```js
-for (let value of cipherText) {
-  plainText += value;
-}
-```
+  ```js
+  for (let value of cipherText) {
+    plainText += value;
+  }
+  ```
 
 1. [Reference MDN JavaScript Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 2. [Reference MDN JavaScript Array entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
