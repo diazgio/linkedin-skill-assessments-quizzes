@@ -907,14 +907,7 @@ override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanc
 1. [Reference](https://youtu.be/QdfStuj-MuA?t=86)
 2. [Reference](https://developer.android.com/guide/playcore/feature-delivery/on-demand)
 
-#### Q65. Which approach is not recommended for providing a useful offline state in your app?
-
-- [ ] caching data
-- [ ] storing data locally
-- [ ] queuing outbound requests to action when connectivity has been lost
-- [ ] always notifying users that connectivity has been lost
-
-#### Q66. If you need your app code to inspect information about the current build, which class should you use?
+#### Q65. If you need your app code to inspect information about the current build, which class should you use?
 
 - [x] `BuildConfig`
 - [ ] `BuildInfo`
