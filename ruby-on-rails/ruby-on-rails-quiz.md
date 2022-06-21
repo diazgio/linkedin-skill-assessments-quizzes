@@ -390,14 +390,47 @@ before_destroy :notify_admin_users, if: ->(model) { model.is_admin }
 - [x] `<=>`
 - [ ] `||`
 
-#### Q38. Which ActiveRecord query prevents SQL injection?
+#### Q38. Which code would you add to return a 404 to the API caller if the user is not found in the database?
 
-- [ ] `Product.where("name = " << @keyword)`
-- [ ] `Product.where("name = " + h(@keyword))`
-- [x] `Product.where("name = ?", @keyword)`
-- [ ] `Product.where("name = #{@keyword}")`
+```ruby
+class UsersController < ApplicationController
+  def show
+    @user = User.find(params[:id])
+    render json: @user, status: :ok,
+    # Missing code
+end
+```
 
-[Reference](https://guides.rubyonrails.org/active_record_querying.html#pure-string-conditions)
+- [ ] A
+
+```ruby
+rescue => e
+  logger.info e
+end
+```
+
+- [x] B
+
+```ruby
+rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+```
+
+- [ ] C
+
+```ruby
+rescue ActiveRecord::RecordNotFound
+  render json: { message: 'User not found' }, status: :not_found
+end
+```
+
+- [ ] D
+
+```ruby
+raise ActiveRecord::RecordNotFound
+  render json: { message: 'User not found' }, status: :user_not_found
+end
+```
+
 
 #### Q39. You made a spelling mistake while creating a table for bank accounts. Which code would you expect to see in a migration to fix the error?
 
@@ -774,44 +807,3 @@ end
 - [x] The galleries table will include a column named "updated_at".
 - [ ] The galleries table will contain exactly seven columns.
 - [ ] The galleries table will have an index on the position column.
-
-#### Q58. Which code would you add to return a 404 to the API caller if the user is not found in the database?
-
-```ruby
-class UsersController < ApplicationController
-  def show
-    @user = User.find(params[:id])
-    render json: @user, status: :ok,
-    # Missing code
-end
-```
-
-- [ ] A
-
-```ruby
-rescue => e
-  logger.info e
-end
-```
-
-- [x] B
-
-```ruby
-rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
-```
-
-- [ ] C
-
-```ruby
-rescue ActiveRecord::RecordNotFound
-  render json: { message: 'User not found' }, status: :not_found
-end
-```
-
-- [ ] D
-
-```ruby
-raise ActiveRecord::RecordNotFound
-  render json: { message: 'User not found' }, status: :user_not_found
-end
-```
